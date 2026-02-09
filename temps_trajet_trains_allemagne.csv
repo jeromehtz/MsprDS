@@ -1,0 +1,16 @@
+depart,arrivee,type_transport,distance_km,temps_minutes
+Berlin Hbf,Munchen Hbf,ICE Sprinter,625,240
+Berlin Hbf,Munchen Hbf,Train Classique,625,580
+Hamburg Hbf,Frankfurt Hbf,ICE,490,220
+Hamburg Hbf,Frankfurt Hbf,Train Classique,490,360
+Frankfurt Hbf,Munchen Hbf,ICE,395,190
+Frankfurt Hbf,Munchen Hbf,Train Classique,395,290
+Koln Hbf,Frankfurt Hbf,ICE (Ligne Rapide),180,62
+Koln Hbf,Frankfurt Hbf,Train Classique,180,145
+Berlin Hbf,Hamburg Hbf,ICE,280,105
+Berlin Hbf,Hamburg Hbf,Train Classique,280,185
+Stuttgart Hbf,Munchen Hbf,ICE,220,120
+Stuttgart Hbf,Munchen Hbf,Train Classique,220,160
+Frankfurt Hbf,Leipzig Hbf,ICE,390,180
+Frankfurt Hbf,Leipzig Hbf,Train Classique,390,310
+Hannover Hbf,Berlin Hbf,ICE,250,95
