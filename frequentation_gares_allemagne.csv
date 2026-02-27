@@ -1,0 +1,11 @@
+station_name,city,region,annual_passengers_millions,type
+Hamburg Hbf,Hamburg,Hamburg,192.5,Hub Majeur Nord
+Frankfurt (Main) Hbf,Frankfurt,Hessen,179.0,Hub Central / International
+Munchen Hbf,Munchen,Bayern,150.5,Hub Sud / International
+Berlin Hbf,Berlin,Berlin,120.0,Capitale / Noeud Est-Ouest
+Koln Hbf,Koln,Nordrhein-Westfalen,115.0,Hub Ouest / International
+Dusseldorf Hbf,Dusseldorf,Nordrhein-Westfalen,91.5,Regional / Intercite
+Stuttgart Hbf,Stuttgart,Baden-Wurttemberg,85.0,Hub Sud-Ouest
+Hannover Hbf,Hannover,Niedersachsen,78.0,Noeud Ferroviaire Nord-Sud
+Nurnberg Hbf,Nurnberg,Bayern,68.0,Hub Regional
+Leipzig Hbf,Leipzig,Sachsen,55.0,Hub Est

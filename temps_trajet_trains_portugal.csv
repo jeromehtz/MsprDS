@@ -1,0 +1,13 @@
+depart,arrivee,type_transport,distance_km,temps_minutes
+Lisboa Santa Apolonia,Porto Campanha,Alfa Pendular,300,162
+Lisboa Santa Apolonia,Porto Campanha,Intercidades,300,195
+Lisboa Oriente,Faro,Alfa Pendular,280,180
+Lisboa Oriente,Faro,Intercidades,280,210
+Porto Campanha,Braga,Alfa Pendular,55,38
+Porto Campanha,Braga,Intercidades,55,50
+Lisboa Oriente,Coimbra-B,Alfa Pendular,200,105
+Lisboa Oriente,Coimbra-B,Intercidades,200,120
+Porto Campanha,Aveiro,Alfa Pendular,65,32
+Porto Campanha,Aveiro,Intercidades,65,45
+Coimbra-B,Porto Campanha,Alfa Pendular,120,60
+Lisboa Oriente,Evora,Intercidades,150,95
