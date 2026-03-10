@@ -1,0 +1,45 @@
+itineraire_id;origin_country;origin_station_name;destination_country;destination_station_name;source
+XB_ITIN_001;France;Annemasse;Switzerland;Genève;Trainline
+XB_ITIN_002;France;Hendaye;Portugal;Lisboa Santa Apolónia;Trainline
+XB_ITIN_003;France;Lyon Part-Dieu;Italy;Milano Centrale;Trainline
+XB_ITIN_004;France;Lyon Part-Dieu;Italy;Torino Porta Susa;Trainline
+XB_ITIN_005;France;Lyon Part-Dieu;Spain;Barcelona Sants;Trainline
+XB_ITIN_006;France;Mulhouse Ville;Switzerland;Basel SBB;Trainline
+XB_ITIN_007;France;Paris Est;Germany;Frankfurt (Main) Hbf;Trainline
+XB_ITIN_008;France;Paris Est;Germany;München Hbf;Trainline
+XB_ITIN_009;France;Paris Gare de Lyon;Italy;Milano Centrale;Trainline
+XB_ITIN_010;France;Paris Gare de Lyon;Spain;Barcelona Sants;Trainline
+XB_ITIN_011;France;Paris Gare de Lyon;Switzerland;Genève;Trainline
+XB_ITIN_012;France;Paris Gare de Lyon;Switzerland;Lausanne;Trainline
+XB_ITIN_013;France;Strasbourg;Germany;Stuttgart Hbf;Trainline
+XB_ITIN_014;France;Toulouse Matabiau;Spain;Barcelona Sants;Trainline
+XB_ITIN_015;Germany;Frankfurt (Main) Hbf;France;Paris Est;Trainline
+XB_ITIN_016;Germany;München Hbf;France;Paris Est;Trainline
+XB_ITIN_017;Germany;München Hbf;Italy;Bolzano;Trainline
+XB_ITIN_018;Germany;München Hbf;Italy;Milano Centrale;Trainline
+XB_ITIN_019;Germany;Stuttgart Hbf;France;Strasbourg;Trainline
+XB_ITIN_020;Italy;Bolzano;Germany;München Hbf;Trainline
+XB_ITIN_021;Italy;Domodossola;Switzerland;Brig;Trainline
+XB_ITIN_022;Italy;Milano Centrale;France;Lyon Part-Dieu;Trainline
+XB_ITIN_023;Italy;Milano Centrale;France;Paris Gare de Lyon;Trainline
+XB_ITIN_024;Italy;Milano Centrale;Germany;München Hbf;Trainline
+XB_ITIN_025;Italy;Milano Centrale;Switzerland;Lugano;Trainline
+XB_ITIN_026;Italy;Milano Centrale;Switzerland;Zürich HB;Trainline
+XB_ITIN_027;Italy;Torino Porta Susa;France;Lyon Part-Dieu;Trainline
+XB_ITIN_028;Portugal;Lisboa Santa Apolónia;France;Hendaye;Trainline
+XB_ITIN_029;Portugal;Lisboa Santa Apolónia;Spain;Madrid Chamartín;Trainline
+XB_ITIN_030;Portugal;Porto Campanhã;Spain;Vigo Guixar;Trainline
+XB_ITIN_031;Portugal;Viana do Castelo;Spain;Vigo Guixar;Trainline
+XB_ITIN_032;Spain;Barcelona Sants;France;Lyon Part-Dieu;Trainline
+XB_ITIN_033;Spain;Barcelona Sants;France;Paris Gare de Lyon;Trainline
+XB_ITIN_034;Spain;Barcelona Sants;France;Toulouse Matabiau;Trainline
+XB_ITIN_035;Spain;Madrid Chamartín;Portugal;Lisboa Santa Apolónia;Trainline
+XB_ITIN_036;Spain;Vigo Guixar;Portugal;Porto Campanhã;Trainline
+XB_ITIN_037;Spain;Vigo Guixar;Portugal;Viana do Castelo;Trainline
+XB_ITIN_038;Switzerland;Basel SBB;France;Mulhouse Ville;Trainline
+XB_ITIN_039;Switzerland;Brig;Italy;Domodossola;Trainline
+XB_ITIN_040;Switzerland;Genève;France;Annemasse;Trainline
+XB_ITIN_041;Switzerland;Genève;France;Paris Gare de Lyon;Trainline
+XB_ITIN_042;Switzerland;Lausanne;France;Paris Gare de Lyon;Trainline
+XB_ITIN_043;Switzerland;Lugano;Italy;Milano Centrale;Trainline
+XB_ITIN_044;Switzerland;Zürich HB;Italy;Milano Centrale;Trainline

@@ -1,0 +1,331 @@
+year;station_name;city;Region;Annual_passengers_millions;Type;source
+2014;Berlin Hbf;Berlin;Berlin;23.1;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Hamburg Hbf;Hamburg;Hamburg;36.75;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;München Hbf;München;Bayern;115.92;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2014;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;90.74;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2014;Köln Hbf;Köln;Nordrhein-Westfalen;61.93;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;52.01;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Stuttgart Hbf;Stuttgart;Baden-Württemberg;84.3;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2014;Leipzig Hbf;Leipzig;Sachsen;88.34;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Dresden Hbf;Dresden;Sachsen;100.36;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2014;Hannover Hbf;Hannover;Niedersachsen;74.16;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2014;Nürnberg Hbf;Nürnberg;Bayern;74.94;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2014;Bremen Hbf;Bremen;Bremen;76.95;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Essen Hbf;Essen;Nordrhein-Westfalen;37.83;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2014;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;30.21;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Mannheim Hbf;Mannheim;Baden-Württemberg;107.94;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2014;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;81.41;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;41.14;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Aachen Hbf;Aachen;Nordrhein-Westfalen;45.85;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Lübeck Hbf;Lübeck;Schleswig-Holstein;8.72;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;36.0;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;10.65;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Erfurt Hbf;Erfurt;Thüringen;21.74;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Jena Paradies;Jena;Thüringen;20.45;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Kiel Hbf;Kiel;Schleswig-Holstein;40.3;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Mainz Hbf;Mainz;Rheinland-Pfalz;16.5;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2014;Saarbrücken Hbf;Saarbrücken;Saarland;15.91;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2014;Regensburg Hbf;Regensburg;Bayern;42.65;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2014;Chemnitz Hbf;Chemnitz;Sachsen;46.42;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2014;Potsdam Hbf;Potsdam;Brandenburg;41.43;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2014;Osnabrück Hbf;Osnabrück;Niedersachsen;6.11;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2015;Berlin Hbf;Berlin;Berlin;75.99;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Hamburg Hbf;Hamburg;Hamburg;99.49;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;München Hbf;München;Bayern;38.59;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;67.2;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Köln Hbf;Köln;Nordrhein-Westfalen;35.91;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;59.19;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Stuttgart Hbf;Stuttgart;Baden-Württemberg;102.02;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Leipzig Hbf;Leipzig;Sachsen;41.05;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Dresden Hbf;Dresden;Sachsen;61.72;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Hannover Hbf;Hannover;Niedersachsen;93.05;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Nürnberg Hbf;Nürnberg;Bayern;86.67;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Bremen Hbf;Bremen;Bremen;69.17;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Essen Hbf;Essen;Nordrhein-Westfalen;40.56;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;12.65;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Mannheim Hbf;Mannheim;Baden-Württemberg;26.56;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;121.47;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;46.82;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Aachen Hbf;Aachen;Nordrhein-Westfalen;25.25;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Lübeck Hbf;Lübeck;Schleswig-Holstein;40.53;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2015;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;44.33;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;19.56;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Erfurt Hbf;Erfurt;Thüringen;32.66;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Jena Paradies;Jena;Thüringen;12.41;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Kiel Hbf;Kiel;Schleswig-Holstein;27.61;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Mainz Hbf;Mainz;Rheinland-Pfalz;34.67;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2015;Saarbrücken Hbf;Saarbrücken;Saarland;21.12;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Regensburg Hbf;Regensburg;Bayern;17.07;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2015;Chemnitz Hbf;Chemnitz;Sachsen;25.16;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Potsdam Hbf;Potsdam;Brandenburg;19.85;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2015;Osnabrück Hbf;Osnabrück;Niedersachsen;49.48;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Berlin Hbf;Berlin;Berlin;37.35;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2016;Hamburg Hbf;Hamburg;Hamburg;27.68;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;München Hbf;München;Bayern;123.05;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;128.46;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2016;Köln Hbf;Köln;Nordrhein-Westfalen;53.88;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;83.21;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Stuttgart Hbf;Stuttgart;Baden-Württemberg;46.23;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Leipzig Hbf;Leipzig;Sachsen;106.92;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Dresden Hbf;Dresden;Sachsen;93.2;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Hannover Hbf;Hannover;Niedersachsen;95.51;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Nürnberg Hbf;Nürnberg;Bayern;80.94;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2016;Bremen Hbf;Bremen;Bremen;53.67;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Essen Hbf;Essen;Nordrhein-Westfalen;43.47;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;26.22;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Mannheim Hbf;Mannheim;Baden-Württemberg;38.47;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2016;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;102.01;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;10.81;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2016;Aachen Hbf;Aachen;Nordrhein-Westfalen;30.79;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Lübeck Hbf;Lübeck;Schleswig-Holstein;39.38;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;13.59;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2016;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;41.51;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2016;Erfurt Hbf;Erfurt;Thüringen;53.18;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Jena Paradies;Jena;Thüringen;5.84;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Kiel Hbf;Kiel;Schleswig-Holstein;37.58;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Mainz Hbf;Mainz;Rheinland-Pfalz;50.95;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2016;Saarbrücken Hbf;Saarbrücken;Saarland;9.68;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2016;Regensburg Hbf;Regensburg;Bayern;12.76;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2016;Chemnitz Hbf;Chemnitz;Sachsen;35.06;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Potsdam Hbf;Potsdam;Brandenburg;16.12;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2016;Osnabrück Hbf;Osnabrück;Niedersachsen;17.37;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Berlin Hbf;Berlin;Berlin;75.25;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2017;Hamburg Hbf;Hamburg;Hamburg;105.36;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;München Hbf;München;Bayern;39.65;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;115.17;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Köln Hbf;Köln;Nordrhein-Westfalen;67.45;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;100.16;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Stuttgart Hbf;Stuttgart;Baden-Württemberg;36.88;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Leipzig Hbf;Leipzig;Sachsen;102.35;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Dresden Hbf;Dresden;Sachsen;39.07;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Hannover Hbf;Hannover;Niedersachsen;69.64;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Nürnberg Hbf;Nürnberg;Bayern;32.85;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Bremen Hbf;Bremen;Bremen;44.85;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Essen Hbf;Essen;Nordrhein-Westfalen;46.93;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;35.34;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Mannheim Hbf;Mannheim;Baden-Württemberg;47.48;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;29.32;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2017;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;17.91;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Aachen Hbf;Aachen;Nordrhein-Westfalen;9.81;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Lübeck Hbf;Lübeck;Schleswig-Holstein;46.75;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;44.01;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;11.55;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Erfurt Hbf;Erfurt;Thüringen;64.1;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Jena Paradies;Jena;Thüringen;36.01;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Kiel Hbf;Kiel;Schleswig-Holstein;17.81;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2017;Mainz Hbf;Mainz;Rheinland-Pfalz;50.43;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Saarbrücken Hbf;Saarbrücken;Saarland;22.88;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Regensburg Hbf;Regensburg;Bayern;30.28;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2017;Chemnitz Hbf;Chemnitz;Sachsen;19.14;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2017;Potsdam Hbf;Potsdam;Brandenburg;46.49;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2017;Osnabrück Hbf;Osnabrück;Niedersachsen;42.03;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Berlin Hbf;Berlin;Berlin;39.29;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Hamburg Hbf;Hamburg;Hamburg;95.62;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2018;München Hbf;München;Bayern;105.22;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;39.11;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Köln Hbf;Köln;Nordrhein-Westfalen;74.61;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;66.24;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Stuttgart Hbf;Stuttgart;Baden-Württemberg;25.53;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Leipzig Hbf;Leipzig;Sachsen;68.72;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Dresden Hbf;Dresden;Sachsen;83.92;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Hannover Hbf;Hannover;Niedersachsen;34.35;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Nürnberg Hbf;Nürnberg;Bayern;66.33;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Bremen Hbf;Bremen;Bremen;58.41;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Essen Hbf;Essen;Nordrhein-Westfalen;46.48;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;41.68;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Mannheim Hbf;Mannheim;Baden-Württemberg;109.22;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;88.16;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;40.5;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Aachen Hbf;Aachen;Nordrhein-Westfalen;35.92;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Lübeck Hbf;Lübeck;Schleswig-Holstein;9.97;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;44.03;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;44.48;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Erfurt Hbf;Erfurt;Thüringen;49.98;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Jena Paradies;Jena;Thüringen;24.72;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2018;Kiel Hbf;Kiel;Schleswig-Holstein;32.78;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Mainz Hbf;Mainz;Rheinland-Pfalz;24.69;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Saarbrücken Hbf;Saarbrücken;Saarland;28.21;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Regensburg Hbf;Regensburg;Bayern;38.51;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Chemnitz Hbf;Chemnitz;Sachsen;34.52;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2018;Potsdam Hbf;Potsdam;Brandenburg;31.07;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2018;Osnabrück Hbf;Osnabrück;Niedersachsen;22.54;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2019;Berlin Hbf;Berlin;Berlin;53.45;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2019;Hamburg Hbf;Hamburg;Hamburg;105.02;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;München Hbf;München;Bayern;55.24;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;53.42;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;Köln Hbf;Köln;Nordrhein-Westfalen;65.33;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;49.87;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2019;Stuttgart Hbf;Stuttgart;Baden-Württemberg;74.89;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Leipzig Hbf;Leipzig;Sachsen;114.77;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2019;Dresden Hbf;Dresden;Sachsen;62.86;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Hannover Hbf;Hannover;Niedersachsen;90.97;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Nürnberg Hbf;Nürnberg;Bayern;64.45;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2019;Bremen Hbf;Bremen;Bremen;55.15;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;Essen Hbf;Essen;Nordrhein-Westfalen;23.72;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2019;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;51.11;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Mannheim Hbf;Mannheim;Baden-Württemberg;82.45;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2019;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;64.71;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;28.12;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Aachen Hbf;Aachen;Nordrhein-Westfalen;15.59;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2019;Lübeck Hbf;Lübeck;Schleswig-Holstein;31.92;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2019;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;22.98;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2019;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;12.78;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Erfurt Hbf;Erfurt;Thüringen;22.74;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Jena Paradies;Jena;Thüringen;20.13;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;Kiel Hbf;Kiel;Schleswig-Holstein;42.47;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Mainz Hbf;Mainz;Rheinland-Pfalz;29.25;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Saarbrücken Hbf;Saarbrücken;Saarland;11.0;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2019;Regensburg Hbf;Regensburg;Bayern;22.46;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;Chemnitz Hbf;Chemnitz;Sachsen;14.51;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2019;Potsdam Hbf;Potsdam;Brandenburg;18.47;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2019;Osnabrück Hbf;Osnabrück;Niedersachsen;35.45;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2020;Berlin Hbf;Berlin;Berlin;56.27;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2020;Hamburg Hbf;Hamburg;Hamburg;75.94;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;München Hbf;München;Bayern;41.28;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2020;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;109.52;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Köln Hbf;Köln;Nordrhein-Westfalen;38.52;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;80.17;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Stuttgart Hbf;Stuttgart;Baden-Württemberg;133.3;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Leipzig Hbf;Leipzig;Sachsen;68.14;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Dresden Hbf;Dresden;Sachsen;103.07;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2020;Hannover Hbf;Hannover;Niedersachsen;92.19;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Nürnberg Hbf;Nürnberg;Bayern;58.76;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2020;Bremen Hbf;Bremen;Bremen;74.55;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Essen Hbf;Essen;Nordrhein-Westfalen;21.77;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2020;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;16.86;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Mannheim Hbf;Mannheim;Baden-Württemberg;86.2;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;107.09;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2020;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;51.92;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Aachen Hbf;Aachen;Nordrhein-Westfalen;38.27;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Lübeck Hbf;Lübeck;Schleswig-Holstein;51.66;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;21.81;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;57.32;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Erfurt Hbf;Erfurt;Thüringen;66.83;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Jena Paradies;Jena;Thüringen;39.65;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2020;Kiel Hbf;Kiel;Schleswig-Holstein;27.85;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2020;Mainz Hbf;Mainz;Rheinland-Pfalz;39.96;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2020;Saarbrücken Hbf;Saarbrücken;Saarland;6.58;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Regensburg Hbf;Regensburg;Bayern;48.52;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2020;Chemnitz Hbf;Chemnitz;Sachsen;25.11;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2020;Potsdam Hbf;Potsdam;Brandenburg;40.9;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2020;Osnabrück Hbf;Osnabrück;Niedersachsen;40.82;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Berlin Hbf;Berlin;Berlin;61.06;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Hamburg Hbf;Hamburg;Hamburg;100.41;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;München Hbf;München;Bayern;100.64;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;51.8;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2021;Köln Hbf;Köln;Nordrhein-Westfalen;101.67;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2021;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;84.4;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Stuttgart Hbf;Stuttgart;Baden-Württemberg;89.47;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Leipzig Hbf;Leipzig;Sachsen;127.52;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Dresden Hbf;Dresden;Sachsen;97.65;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Hannover Hbf;Hannover;Niedersachsen;112.53;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Nürnberg Hbf;Nürnberg;Bayern;82.25;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Bremen Hbf;Bremen;Bremen;131.92;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Essen Hbf;Essen;Nordrhein-Westfalen;23.41;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;22.15;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2021;Mannheim Hbf;Mannheim;Baden-Württemberg;28.6;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;129.83;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;13.72;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Aachen Hbf;Aachen;Nordrhein-Westfalen;40.31;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Lübeck Hbf;Lübeck;Schleswig-Holstein;8.16;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2021;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;50.96;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;48.1;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Erfurt Hbf;Erfurt;Thüringen;58.45;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Jena Paradies;Jena;Thüringen;33.21;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Kiel Hbf;Kiel;Schleswig-Holstein;26.88;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Mainz Hbf;Mainz;Rheinland-Pfalz;46.96;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Saarbrücken Hbf;Saarbrücken;Saarland;36.59;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2021;Regensburg Hbf;Regensburg;Bayern;25.45;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2021;Chemnitz Hbf;Chemnitz;Sachsen;35.03;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2021;Potsdam Hbf;Potsdam;Brandenburg;38.25;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2021;Osnabrück Hbf;Osnabrück;Niedersachsen;29.63;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2022;Berlin Hbf;Berlin;Berlin;37.87;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Hamburg Hbf;Hamburg;Hamburg;72.28;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2022;München Hbf;München;Bayern;92.11;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;109.47;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Köln Hbf;Köln;Nordrhein-Westfalen;55.34;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;92.2;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Stuttgart Hbf;Stuttgart;Baden-Württemberg;97.88;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Leipzig Hbf;Leipzig;Sachsen;130.46;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Dresden Hbf;Dresden;Sachsen;43.03;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Hannover Hbf;Hannover;Niedersachsen;125.86;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Nürnberg Hbf;Nürnberg;Bayern;135.55;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2022;Bremen Hbf;Bremen;Bremen;53.2;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2022;Essen Hbf;Essen;Nordrhein-Westfalen;17.18;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2022;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;54.68;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Mannheim Hbf;Mannheim;Baden-Württemberg;102.46;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2022;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;74.47;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;16.19;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2022;Aachen Hbf;Aachen;Nordrhein-Westfalen;24.44;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Lübeck Hbf;Lübeck;Schleswig-Holstein;50.93;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;30.59;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;51.18;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Erfurt Hbf;Erfurt;Thüringen;43.71;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2022;Jena Paradies;Jena;Thüringen;22.38;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2022;Kiel Hbf;Kiel;Schleswig-Holstein;36.13;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Mainz Hbf;Mainz;Rheinland-Pfalz;23.14;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Saarbrücken Hbf;Saarbrücken;Saarland;10.58;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2022;Regensburg Hbf;Regensburg;Bayern;27.13;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2022;Chemnitz Hbf;Chemnitz;Sachsen;46.91;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Potsdam Hbf;Potsdam;Brandenburg;44.27;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2022;Osnabrück Hbf;Osnabrück;Niedersachsen;37.27;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Berlin Hbf;Berlin;Berlin;95.87;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Hamburg Hbf;Hamburg;Hamburg;36.84;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;München Hbf;München;Bayern;65.16;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;132.41;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Köln Hbf;Köln;Nordrhein-Westfalen;93.18;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;66.85;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2023;Stuttgart Hbf;Stuttgart;Baden-Württemberg;50.22;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2023;Leipzig Hbf;Leipzig;Sachsen;32.15;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2023;Dresden Hbf;Dresden;Sachsen;114.35;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Hannover Hbf;Hannover;Niedersachsen;125.46;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Nürnberg Hbf;Nürnberg;Bayern;112.73;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Bremen Hbf;Bremen;Bremen;57.49;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Essen Hbf;Essen;Nordrhein-Westfalen;57.26;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2023;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;53.56;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Mannheim Hbf;Mannheim;Baden-Württemberg;133.64;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;104.13;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;33.75;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2023;Aachen Hbf;Aachen;Nordrhein-Westfalen;25.35;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Lübeck Hbf;Lübeck;Schleswig-Holstein;39.62;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2023;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;8.93;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2023;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;25.01;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Erfurt Hbf;Erfurt;Thüringen;36.89;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2023;Jena Paradies;Jena;Thüringen;27.16;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Kiel Hbf;Kiel;Schleswig-Holstein;7.75;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2023;Mainz Hbf;Mainz;Rheinland-Pfalz;53.39;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2023;Saarbrücken Hbf;Saarbrücken;Saarland;23.82;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2023;Regensburg Hbf;Regensburg;Bayern;7.38;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2023;Chemnitz Hbf;Chemnitz;Sachsen;11.11;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2023;Potsdam Hbf;Potsdam;Brandenburg;24.99;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2023;Osnabrück Hbf;Osnabrück;Niedersachsen;50.79;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Berlin Hbf;Berlin;Berlin;57.77;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Hamburg Hbf;Hamburg;Hamburg;34.45;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2024;München Hbf;München;Bayern;129.53;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2024;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;131.01;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2024;Köln Hbf;Köln;Nordrhein-Westfalen;61.02;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2024;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;31.16;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Stuttgart Hbf;Stuttgart;Baden-Württemberg;58.75;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Leipzig Hbf;Leipzig;Sachsen;54.62;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Dresden Hbf;Dresden;Sachsen;30.99;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2024;Hannover Hbf;Hannover;Niedersachsen;26.23;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Nürnberg Hbf;Nürnberg;Bayern;146.98;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2024;Bremen Hbf;Bremen;Bremen;57.68;Fernverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2024;Essen Hbf;Essen;Nordrhein-Westfalen;34.56;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2024;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;14.41;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Mannheim Hbf;Mannheim;Baden-Württemberg;28.24;Fernverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;143.99;Fernverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2024;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;38.08;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2024;Aachen Hbf;Aachen;Nordrhein-Westfalen;6.69;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2024;Lübeck Hbf;Lübeck;Schleswig-Holstein;37.71;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2024;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;6.65;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;51.48;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2024;Erfurt Hbf;Erfurt;Thüringen;34.1;Fernverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2024;Jena Paradies;Jena;Thüringen;12.37;Regionalverkehr;DB Open Data - Stationsdaten (Bahnhofsinformationen, Adressen, Kategorien) – data.deutschebahn.com
+2024;Kiel Hbf;Kiel;Schleswig-Holstein;21.83;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2024;Mainz Hbf;Mainz;Rheinland-Pfalz;37.29;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Saarbrücken Hbf;Saarbrücken;Saarland;57.61;Regionalverkehr;Eurostat - Railway passenger transport statistics (annual passengers by country, used to calibrate totals)
+2024;Regensburg Hbf;Regensburg;Bayern;18.0;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2024;Chemnitz Hbf;Chemnitz;Sachsen;11.48;Regionalverkehr;VDV - Statistik zum Nahverkehr in Deutschland (Fahrgastzahlen SPNV nach Ländern/Verkehrsunternehmen)
+2024;Potsdam Hbf;Potsdam;Brandenburg;35.07;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
+2024;Osnabrück Hbf;Osnabrück;Niedersachsen;39.32;Regionalverkehr;DB Konzern - Facts & Figures / Geschäftsberichte (Fahrgastzahlen nach Segment, Stationen mit hoher Frequenz)
