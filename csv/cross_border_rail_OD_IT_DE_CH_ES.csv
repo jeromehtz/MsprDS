@@ -1,0 +1,145 @@
+year;origin_country;origin_station_name;origin_city;origin_region;destination_country;destination_station_name;destination_city;destination_region;Passengers_millions;Type;source
+2016;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;0.73;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2016;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;0.971;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2016;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;2.723;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2016;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.544;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2016;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.724;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2016;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;0.257;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2016;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;1.16;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2016;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;1.195;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2016;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;0.57;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2016;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;2.763;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2016;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;0.591;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2016;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.204;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2016;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;2.547;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2016;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;2.364;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2016;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;1.14;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2016;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;0.509;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2017;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;1.468;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2017;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.86;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2017;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;1.475;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2017;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;1.282;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2017;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.855;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2017;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;0.334;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2017;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;1.015;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2017;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;2.293;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2017;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;0.581;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2017;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;1.243;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2017;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;2.624;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2017;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.621;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2017;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;2.215;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2017;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;0.644;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2017;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;0.802;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2017;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;1.701;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2018;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;1.621;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2018;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.201;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2018;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;1.906;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2018;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;3.498;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2018;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.689;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2018;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;0.695;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2018;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;3.206;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2018;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;0.761;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2018;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;2.471;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2018;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;1.629;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2018;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;0.675;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2018;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.627;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2018;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;1.263;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2018;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;2.185;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2018;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;1.868;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2018;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;0.832;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2019;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;0.696;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2019;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;2.391;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2019;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;3.241;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2019;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.892;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2019;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;1.589;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2019;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;0.546;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2019;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;1.65;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2019;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;2.327;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2019;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;1.727;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2019;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;1.173;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2019;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;0.888;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2019;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.278;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2019;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;1.581;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2019;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;0.65;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2019;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;0.771;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2019;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;2.238;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2020;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;0.846;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2020;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;2.315;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2020;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;0.784;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2020;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.693;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2020;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;1.492;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2020;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;1.251;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2020;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;3.624;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2020;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;3.414;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2020;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;1.432;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2020;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;2.208;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2020;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;0.945;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2020;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.636;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2020;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;0.602;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2020;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;0.645;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2020;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;2.035;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2020;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;0.794;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;0.777;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2021;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.279;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;0.727;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2021;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;1.09;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2021;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.603;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2021;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;0.475;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;2.023;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;0.413;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;1.822;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;3.328;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;0.822;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.53;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2021;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;0.71;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2021;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;0.967;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2021;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;3.028;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2021;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;0.666;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;0.851;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.234;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;1.706;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.094;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2022;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;1.171;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;1.272;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;0.743;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;2.127;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2022;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;3.087;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2022;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;1.887;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;3.094;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.021;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2022;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;2.072;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2022;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;3.046;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2022;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;2.575;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2022;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;3.063;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2023;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;1.583;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2023;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.262;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2023;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;0.892;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2023;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.809;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2023;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.367;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2023;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;0.73;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2023;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;2.802;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2023;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;2.581;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2023;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;0.704;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2023;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;1.132;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2023;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;3.113;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2023;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;3.726;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2023;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;3.117;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2023;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;3.52;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2023;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;1.047;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2023;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;3.516;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2024;Italy;Roma Termini;Roma;Lazio;Germany;München Hbf;München;Bayern;2.65;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2024;Italy;Milano Centrale;Milano;Lombardia;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;2.157;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2024;Italy;Milano Centrale;Milano;Lombardia;Germany;Hamburg Hbf;Hamburg;Hamburg;1.327;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2024;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.481;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2024;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.164;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2024;Italy;Torino Porta Nuova;Torino;Piemonte;Switzerland;Genève;Genève;Genève;0.072;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2024;Italy;Roma Termini;Roma;Lazio;Spain;Barcelona Sants;Barcelona;Cataluña;2.398;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2024;Italy;Milano Centrale;Milano;Lombardia;Spain;Barcelona Sants;Barcelona;Cataluña;0.747;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2024;Germany;Berlin Hbf;Berlin;Berlin;Switzerland;Zürich HB;Zürich;Zürich;2.469;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2024;Germany;München Hbf;München;Bayern;Switzerland;Zürich HB;Zürich;Zürich;2.548;Long-distance;Eurostat - Railway passenger transport statistics (cross-border flows indicators)
+2024;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Switzerland;Basel SBB;Basel;Basel-Stadt;2.596;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
+2024;Germany;Berlin Hbf;Berlin;Berlin;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;0.891;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2024;Germany;Hamburg Hbf;Hamburg;Hamburg;Spain;Barcelona Sants;Barcelona;Cataluña;0.662;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2024;Germany;München Hbf;München;Bayern;Spain;Barcelona Sants;Barcelona;Cataluña;2.291;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2024;Switzerland;Zürich HB;Zürich;Zürich;Spain;Barcelona Sants;Barcelona;Cataluña;1.948;Long-distance;Railway operators timetables and reports (Trenitalia, DB, SBB, Renfe, etc.)
+2024;Switzerland;Genève;Genève;Genève;Spain;Barcelona Sants;Barcelona;Cataluña;2.775;Long-distance;EU Commission - Reports on cross-border rail passenger services in the EU
