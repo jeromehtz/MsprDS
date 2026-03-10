@@ -1,0 +1,13 @@
+train_id;train_type;description;operator
+FR_AV_001;TGV_INOUI;High-speed TGV INOUI service France domestic and international;SNCF
+FR_AV_002;OUIGO;Low-cost high-speed OUIGO service;SNCF
+IT_AV_001;FRECCIAROSSA;High-speed Frecciarossa service;Trenitalia
+IT_IC_001;INTERCITY_IT;Intercity service in Italy;Trenitalia
+DE_AV_001;ICE;High-speed ICE service;DB
+DE_IC_001;IC_DE;Intercity service in Germany;DB
+CH_AV_001;INTERCITY_CH;Long-distance InterCity/ICN service in Switzerland;SBB
+CH_REG_001;S_BAHN;Suburban S-Bahn service;SBB
+ES_AV_001;AVE;High-speed AVE service;Renfe
+ES_LD_001;LARGA_DISTANCIA;Long-distance conventional service;Renfe
+PT_IC_001;INTERCIDADES_PT;Intercidades service in Portugal;CP
+PT_REG_001;URBANO_PT;Urban/Regional service in Portugal;CP
