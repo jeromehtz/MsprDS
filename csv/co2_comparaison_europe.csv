@@ -1,0 +1,6 @@
+﻿Pays;Emissions_Train_g_km;Emissions_Voiture_g_km;Emissions_Avion_g_km;CO2_evite_Train_vs_Voiture_g_km;CO2_evite_Train_vs_Avion_g_km;Reduction_Train_vs_Voiture_%
+France;3.0;192;255;189.0;252.0;98.44
+Suisse;1.5;180;255;178.5;253.5;99.17
+Portugal;30.0;190;250;160.0;220.0;84.21
+Allemagne;32.0;192;255;160.0;223.0;83.33
+Italie;35.0;185;250;150.0;215.0;81.08
