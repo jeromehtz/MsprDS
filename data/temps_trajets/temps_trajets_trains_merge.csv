@@ -1,0 +1,73 @@
+depart,arrivee,type_transport,distance_km,temps_minutes
+Berlin Hbf,Munchen Hbf,ICE Sprinter,625,240
+Berlin Hbf,Munchen Hbf,Train Classique,625,580
+Hamburg Hbf,Frankfurt Hbf,ICE,490,220
+Hamburg Hbf,Frankfurt Hbf,Train Classique,490,360
+Frankfurt Hbf,Munchen Hbf,ICE,395,190
+Frankfurt Hbf,Munchen Hbf,Train Classique,395,290
+Koln Hbf,Frankfurt Hbf,ICE (Ligne Rapide),180,62
+Koln Hbf,Frankfurt Hbf,Train Classique,180,145
+Berlin Hbf,Hamburg Hbf,ICE,280,105
+Berlin Hbf,Hamburg Hbf,Train Classique,280,185
+Stuttgart Hbf,Munchen Hbf,ICE,220,120
+Stuttgart Hbf,Munchen Hbf,Train Classique,220,160
+Frankfurt Hbf,Leipzig Hbf,ICE,390,180
+Frankfurt Hbf,Leipzig Hbf,Train Classique,390,310
+Hannover Hbf,Berlin Hbf,ICE,250,95
+Roma Termini,Milano Centrale,Grande Vitesse,580,180
+Roma Termini,Milano Centrale,Train Classique,580,450
+Roma Termini,Napoli Centrale,Grande Vitesse,220,70
+Roma Termini,Napoli Centrale,Train Classique,220,135
+Firenze SMN,Roma Termini,Grande Vitesse,260,95
+Firenze SMN,Roma Termini,Train Classique,260,210
+Milano Centrale,Venezia Santa Lucia,Grande Vitesse,265,135
+Milano Centrale,Venezia Santa Lucia,Train Classique,265,210
+Bologna Centrale,Firenze SMN,Grande Vitesse,100,35
+Bologna Centrale,Firenze SMN,Train Classique,100,95
+Torino Porta Nuova,Milano Centrale,Grande Vitesse,140,60
+Torino Porta Nuova,Milano Centrale,Train Classique,140,105
+Milano Centrale,Bologna Centrale,Grande Vitesse,215,65
+Milano Centrale,Bologna Centrale,Train Classique,215,170
+Napoli Centrale,Salerno,Grande Vitesse,55,35
+Paris Gare de Lyon,Lyon Part-Dieu,TGV,460,120
+Paris Gare de Lyon,Lyon Part-Dieu,Train Classique,460,310
+Paris Gare de Lyon,Marseille Saint-Charles,TGV,775,200
+Paris Gare de Lyon,Marseille Saint-Charles,Train Classique,775,520
+Paris Montparnasse,Bordeaux Saint-Jean,TGV,580,125
+Paris Montparnasse,Bordeaux Saint-Jean,Train Classique,580,360
+Paris Nord,Lille Flandres,TGV,225,60
+Paris Nord,Lille Flandres,Train Classique,225,140
+Lyon Part-Dieu,Marseille Saint-Charles,TGV,315,100
+Lyon Part-Dieu,Marseille Saint-Charles,Train Classique,315,210
+Paris Est,Strasbourg,TGV,450,110
+Paris Est,Strasbourg,Train Classique,450,250
+Bordeaux Saint-Jean,Toulouse Matabiau,TGV,250,130
+Bordeaux Saint-Jean,Toulouse Matabiau,Train Classique,250,150
+Lyon Part-Dieu,Geneve Cornavin,Train Classique,150,110
+Lisboa Santa Apolonia,Porto Campanha,Alfa Pendular,300,162
+Lisboa Santa Apolonia,Porto Campanha,Intercidades,300,195
+Lisboa Oriente,Faro,Alfa Pendular,280,180
+Lisboa Oriente,Faro,Intercidades,280,210
+Porto Campanha,Braga,Alfa Pendular,55,38
+Porto Campanha,Braga,Intercidades,55,50
+Lisboa Oriente,Coimbra-B,Alfa Pendular,200,105
+Lisboa Oriente,Coimbra-B,Intercidades,200,120
+Porto Campanha,Aveiro,Alfa Pendular,65,32
+Porto Campanha,Aveiro,Intercidades,65,45
+Coimbra-B,Porto Campanha,Alfa Pendular,120,60
+Lisboa Oriente,Evora,Intercidades,150,95
+Zurich HB,Bern,InterCity (IC),125,56
+Zurich HB,Bern,InterRegio (IR),125,75
+Zurich HB,Geneve Cornavin,InterCity (IC),280,161
+Zurich HB,Geneve Cornavin,InterRegio (IR),280,195
+Bern,Lausanne,InterCity (IC),100,66
+Bern,Lausanne,InterRegio (IR),100,85
+Zurich HB,Basel SBB,InterCity (IC),85,53
+Zurich HB,Basel SBB,InterRegio (IR),85,65
+Geneve Cornavin,Lausanne,InterCity (IC),60,36
+Geneve Cornavin,Lausanne,InterRegio (IR),60,48
+Zurich HB,Luzern,InterCity (IC),55,41
+Zurich HB,Luzern,InterRegio (IR),55,50
+Basel SBB,Bern,InterCity (IC),100,56
+Basel SBB,Bern,InterRegio (IR),100,75
+Lausanne,Fribourg,InterCity (IC),65,42
