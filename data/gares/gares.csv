@@ -1,0 +1,124 @@
+country_code;station_name;city;Region;station_type
+CH;Aarau;Aarau;Aargau;Passenger
+CH;Basel SBB;Basel;Basel-Stadt;Passenger
+CH;Bellinzona;Bellinzona;Ticino;Passenger
+CH;Bern;Bern;Bern;Passenger
+CH;Biel/Bienne;Biel/Bienne;Bern;Passenger
+CH;Brig;Brig;Valais;Passenger
+CH;Chur;Chur;Graubünden;Passenger
+CH;Fribourg/Freiburg;Fribourg;Fribourg;Passenger
+CH;Genève;Genève;Genève;Passenger
+CH;Lausanne;Lausanne;Vaud;Passenger
+CH;Lugano;Lugano;Ticino;Passenger
+CH;Luzern;Luzern;Luzern;Passenger
+CH;Neuchâtel;Neuchâtel;Neuchâtel;Passenger
+CH;Olten;Olten;Solothurn;Passenger
+CH;St. Gallen;St. Gallen;St. Gallen;Passenger
+CH;Thun;Thun;Bern;Passenger
+CH;Winterthur;Winterthur;Zürich;Passenger
+CH;Zug;Zug;Zug;Passenger
+CH;Zürich HB;Zürich;Zürich;Passenger
+CH;Zürich Oerlikon;Zürich;Zürich;Passenger
+CH;Zürich Stadelhofen;Zürich;Zürich;Passenger
+DE;Aachen Hbf;Aachen;Nordrhein-Westfalen;Passenger
+DE;Berlin Hbf;Berlin;Berlin;Passenger
+DE;Bremen Hbf;Bremen;Bremen;Passenger
+DE;Chemnitz Hbf;Chemnitz;Sachsen;Passenger
+DE;Dortmund Hbf;Dortmund;Nordrhein-Westfalen;Passenger
+DE;Dresden Hbf;Dresden;Sachsen;Passenger
+DE;Düsseldorf Hbf;Düsseldorf;Nordrhein-Westfalen;Passenger
+DE;Erfurt Hbf;Erfurt;Thüringen;Passenger
+DE;Essen Hbf;Essen;Nordrhein-Westfalen;Passenger
+DE;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;Passenger
+DE;Freiburg (Breisgau) Hbf;Freiburg im Breisgau;Baden-Württemberg;Passenger
+DE;Hamburg Hbf;Hamburg;Hamburg;Passenger
+DE;Hannover Hbf;Hannover;Niedersachsen;Passenger
+DE;Jena Paradies;Jena;Thüringen;Passenger
+DE;Karlsruhe Hbf;Karlsruhe;Baden-Württemberg;Passenger
+DE;Kiel Hbf;Kiel;Schleswig-Holstein;Passenger
+DE;Köln Hbf;Köln;Nordrhein-Westfalen;Passenger
+DE;Leipzig Hbf;Leipzig;Sachsen;Passenger
+DE;Lübeck Hbf;Lübeck;Schleswig-Holstein;Passenger
+DE;Magdeburg Hbf;Magdeburg;Sachsen-Anhalt;Passenger
+DE;Mainz Hbf;Mainz;Rheinland-Pfalz;Passenger
+DE;Mannheim Hbf;Mannheim;Baden-Württemberg;Passenger
+DE;München Hbf;München;Bayern;Passenger
+DE;Nürnberg Hbf;Nürnberg;Bayern;Passenger
+DE;Osnabrück Hbf;Osnabrück;Niedersachsen;Passenger
+DE;Potsdam Hbf;Potsdam;Brandenburg;Passenger
+DE;Regensburg Hbf;Regensburg;Bayern;Passenger
+DE;Rostock Hbf;Rostock;Mecklenburg-Vorpommern;Passenger
+DE;Saarbrücken Hbf;Saarbrücken;Saarland;Passenger
+DE;Stuttgart Hbf;Stuttgart;Baden-Württemberg;Passenger
+ES;Alicante Terminal;Alicante;Comunidad Valenciana;Passenger
+ES;Barcelona Sants;Barcelona;Cataluña;Passenger
+ES;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;Passenger
+ES;Córdoba Central;Córdoba;Andalucía;Passenger
+ES;Gijón;Gijón;Asturias;Passenger
+ES;Granada;Granada;Andalucía;Passenger
+ES;La Coruña-San Cristóbal;A Coruña;Galicia;Passenger
+ES;Logroño;Logroño;La Rioja;Passenger
+ES;Madrid Chamartín;Madrid;Comunidad de Madrid;Passenger
+ES;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Passenger
+ES;Murcia del Carmen;Murcia;Región de Murcia;Passenger
+ES;Málaga María Zambrano;Málaga;Andalucía;Passenger
+ES;Oviedo;Oviedo;Asturias;Passenger
+ES;Pamplona;Pamplona;Navarra;Passenger
+ES;Santander;Santander;Cantabria;Passenger
+ES;Santiago de Compostela;Santiago de Compostela;Galicia;Passenger
+ES;Sevilla Santa Justa;Sevilla;Andalucía;Passenger
+ES;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Passenger
+ES;Valladolid Campo Grande;Valladolid;Castilla y León;Passenger
+ES;Vigo Guixar;Vigo;Galicia;Passenger
+ES;Zaragoza Delicias;Zaragoza;Aragón;Passenger
+FR;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Passenger
+FR;Hendaye;Hendaye;Nouvelle-Aquitaine;Passenger
+FR;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Passenger
+FR;Mulhouse Ville;Mulhouse;Grand Est;Passenger
+FR;Paris Est;Paris;Île-de-France;Passenger
+FR;Paris Gare de Lyon;Paris;Île-de-France;Passenger
+FR;Paris Montparnasse;Paris;Île-de-France;Passenger
+FR;Strasbourg;Strasbourg;Grand Est;Passenger
+FR;Toulouse Matabiau;Toulouse;Occitanie;Passenger
+IT;Ancona;Ancona;Marche;Passenger
+IT;Bari Centrale;Bari;Puglia;Passenger
+IT;Bologna Centrale;Bologna;Emilia-Romagna;Passenger
+IT;Bolzano;Bolzano;Trentino-Alto Adige;Passenger
+IT;Cagliari;Cagliari;Sardegna;Passenger
+IT;Catania Centrale;Catania;Sicilia;Passenger
+IT;Domodossola;Domodossola;Piemonte;Passenger
+IT;Firenze S. M. Novella;Firenze;Toscana;Passenger
+IT;Genova Piazza Principe;Genova;Liguria;Passenger
+IT;Lecce;Lecce;Puglia;Passenger
+IT;Messina Centrale;Messina;Sicilia;Passenger
+IT;Milano Centrale;Milano;Lombardia;Passenger
+IT;Modena;Modena;Emilia-Romagna;Passenger
+IT;Napoli Centrale;Napoli;Campania;Passenger
+IT;Padova;Padova;Veneto;Passenger
+IT;Palermo Centrale;Palermo;Sicilia;Passenger
+IT;Parma;Parma;Emilia-Romagna;Passenger
+IT;Perugia;Perugia;Umbria;Passenger
+IT;Pescara Centrale;Pescara;Abruzzo;Passenger
+IT;Pisa Centrale;Pisa;Toscana;Passenger
+IT;Reggio Calabria;Reggio Calabria;Calabria;Passenger
+IT;Rimini;Rimini;Emilia-Romagna;Passenger
+IT;Roma Termini;Roma;Lazio;Passenger
+IT;Salerno;Salerno;Campania;Passenger
+IT;Taranto;Taranto;Puglia;Passenger
+IT;Torino Porta Nuova;Torino;Piemonte;Passenger
+IT;Torino Porta Susa;Torino;Piemonte;Passenger
+IT;Trento;Trento;Trentino-Alto Adige;Passenger
+IT;Trieste Centrale;Trieste;Friuli-Venezia Giulia;Passenger
+IT;Udine;Udine;Friuli-Venezia Giulia;Passenger
+IT;Venezia Santa Lucia;Venezia;Veneto;Passenger
+IT;Verona Porta Nuova;Verona;Veneto;Passenger
+PT;Aveiro;Aveiro;Aveiro;Passenger
+PT;Braga;Braga;Braga;Passenger
+PT;Coimbra-B;Coimbra;Coimbra;Passenger
+PT;Faro;Faro;Faro;Passenger
+PT;Guimarães;Guimarães;Braga;Passenger
+PT;Lisboa Oriente;Lisboa;Lisboa;Passenger
+PT;Lisboa Santa Apolónia;Lisboa;Lisboa;Passenger
+PT;Porto Campanhã;Porto;Porto;Passenger
+PT;Viana do Castelo;Viana do Castelo;Viana do Castelo;Passenger
+PT;Évora;Évora;Évora;Passenger
