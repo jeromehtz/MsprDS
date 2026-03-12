@@ -1,6 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
+import uvicorn
+import sqlite3
 
 app = FastAPI(
     title="API MSPR1",
@@ -8,20 +10,58 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Modèle de données
-class User(BaseModel):
-    id: int
-    nom: str
-    email: str
-    actif: bool = True
+class Trajet(BaseModel):
+    origin_city: str
+    destination_city: str
+    origin_country: str
+    destination_country: str
+
+class trajetsFerroviaires:
+    def __init__(self, db_path: str):
+        self.db_path = db_path
+        self.conn = sqlite3.connect(self.db_path, check_same_thread=False)
+        self.cursor = self.conn.cursor()
+        
 
 
-# Base de données 
+    def get_trajets(self) -> List[dict]:
+        self.conn.row_factory = sqlite3.Row
+        self.cursor = self.conn.cursor()
+        self.cursor.execute("SELECT * FROM trajets")
+        rows = self.cursor.fetchall()
+        
+        return [dict(row) for row in rows]
 
-users_db: List[User] = [
-    User(id=1, nom="Alice", email="alice@mail.com"),
-    User(id=2, nom="Bob", email="bob@mail.com"),
-]
+    def get_trajets_interpays(self) -> List[dict]:
+        self.conn.row_factory = sqlite3.Row
+        self.cursor = self.conn.cursor()
+        self.cursor.execute("SELECT * FROM trajetsInterPays")
+        rows = self.cursor.fetchall()
+        
+        return [dict(row) for row in rows]
+
+    def calculer_itineraire(self, depart: str, arrivee: str) -> List[dict]:
+        self.conn.row_factory = sqlite3.Row
+        self.cursor = self.conn.cursor()
+        
+        try:
+            query = f'SELECT * FROM trajets WHERE origin_city = "{depart}" AND destination_city = "{arrivee}"'
+            self.cursor.execute(query)
+            result = self.cursor.fetchall()
+
+            if result == []:
+                query = f'SELECT * FROM trajetsInterPays WHERE origin_city = "{depart}" AND destination_city = "{arrivee}"'
+                self.cursor.execute(query)
+                result = self.cursor.fetchall()
+            if result == []:
+                return {"message": "Aucun trajet trouvé entre ces villes."}
+            
+        except:
+            return {"message": "Erreur lors de la connexion à la base de données."}
+        return [dict(row) for row in result]    
+
+trajets_interpays = trajetsFerroviaires("./bdd/trajetsFerroviairesBDD.db")
+
 
 
 
@@ -32,46 +72,20 @@ def accueil():
     return {"message": "API MSPR1 en ligne 🚀"}
 
 
-# READ - Tous les utilisateurs
-@app.get("/users", response_model=List[User])
-def get_users():
-    return users_db
+@app.get("/trajetsInterPays", response_model=List[dict])
+def obetnir_trajets_inter_Pays():
+    return trajets_interpays.get_trajets_interpays()
+
+@app.get("/trajets")
+def obetnir_trajets():
+    trajets = trajetsFerroviaires("./bdd/trajetsFerroviairesBDD.db").get_trajets()
+    return trajets
+
+@app.get("/itineraire")
+def calculer_itineraire(depart: str, arrivee: str):
+    itineraire = trajets_interpays.calculer_itineraire(depart, arrivee)
+    return {"itineraire": itineraire}
 
 
-# READ - Un utilisateur
-@app.get("/users/{user_id}", response_model=User)
-def get_user(user_id: int):
-    for user in users_db:
-        if user.id == user_id:
-            return user
-    raise HTTPException(status_code=404, detail="Utilisateur non trouvé")
-
-
-# Pour Ajouter un utilisateur
-@app.post("/users", response_model=User)
-def create_user(user: User):
-    for u in users_db:
-        if u.id == user.id:
-            raise HTTPException(status_code=400, detail="ID déjà existant")
-    users_db.append(user)
-    return user
-
-
-# Pour Modifier un utilisateur
-@app.put("/users/{user_id}", response_model=User)
-def update_user(user_id: int, updated_user: User):
-    for index, user in enumerate(users_db):
-        if user.id == user_id:
-            users_db[index] = updated_user
-            return updated_user
-    raise HTTPException(status_code=404, detail="Utilisateur non trouvé")
-
-
-# Pour Supprimer un utilisateur
-@app.delete("/users/{user_id}")
-def delete_user(user_id: int):
-    for user in users_db:
-        if user.id == user_id:
-            users_db.remove(user)
-            return {"message": "Utilisateur supprimé"}
-    raise HTTPException(status_code=404, detail="Utilisateur non trouvé")
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000)

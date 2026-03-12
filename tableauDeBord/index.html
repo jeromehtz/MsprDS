@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ObRail Europe — Tableau de bord complétude</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#1a1a18;--bg2:#242422;--bg3:#2e2e2c;--bg4:#3a3a38;
+  --text:#f0efea;--text2:#b4b2a9;--text3:#888780;
+  --border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.15);
+  --good:#1D9E75;--warn:#BA7517;--bad:#A32D2D;
+  --good-bg:#173404;--good-text:#97C459;
+  --warn-bg:#412402;--warn-text:#FAC775;
+  --bad-bg:#501313;--bad-text:#F09595;
+  --radius:8px;--radius-lg:12px;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:15px;line-height:1.5;}
+.page{max-width:1100px;margin:0 auto;padding:2rem 1.5rem;}
+
+.header{margin-bottom:1.5rem;}
+.header h1{font-size:20px;font-weight:500;color:var(--text);}
+.header p{font-size:13px;color:var(--text2);margin-top:4px;}
+
+.filters{display:flex;flex-direction:column;gap:10px;background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:1.5rem;}
+.filter-row{display:flex;flex-direction:column;gap:4px;}
+.filter-row label{font-size:12px;color:var(--text2);}
+select{background:var(--bg3);color:var(--text);border:0.5px solid var(--border2);border-radius:var(--radius);padding:10px 12px;font-size:14px;cursor:pointer;width:100%;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888780' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;}
+select:hover{border-color:rgba(255,255,255,0.3);}
+
+.metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:1.5rem;}
+.metric{background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius);padding:1rem;}
+.metric-label{font-size:11px;color:var(--text3);margin-bottom:4px;}
+.metric-value{font-size:26px;font-weight:500;color:var(--text);}
+.metric-sub{font-size:11px;color:var(--text3);margin-top:2px;}
+.metric-value.good{color:#97C459;}
+.metric-value.warn{color:#FAC775;}
+.metric-value.bad{color:#F09595;}
+
+.charts-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.chart-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;}
+.chart-card.full{grid-column:1/-1;}
+.chart-title{font-size:13px;font-weight:500;color:var(--text);margin-bottom:1rem;}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px;font-size:12px;color:var(--text2);}
+.legend span{display:flex;align-items:center;gap:4px;}
+.ld{width:10px;height:10px;border-radius:2px;flex-shrink:0;}
+
+.op-table{width:100%;border-collapse:collapse;font-size:13px;}
+.op-table th{font-weight:500;font-size:12px;color:var(--text3);text-align:left;padding:6px 8px;border-bottom:0.5px solid var(--border);}
+.op-table td{padding:9px 8px;border-bottom:0.5px solid var(--border);color:var(--text);vertical-align:middle;}
+.op-table tr:last-child td{border-bottom:none;}
+.bar-bg{background:var(--bg4);border-radius:4px;height:6px;width:100%;overflow:hidden;}
+.bar-fill{height:100%;border-radius:4px;}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:var(--radius);}
+.badge.good{background:var(--good-bg);color:var(--good-text);}
+.badge.warn{background:var(--warn-bg);color:var(--warn-text);}
+.badge.bad{background:var(--bad-bg);color:var(--bad-text);}
+
+@media(max-width:640px){
+  .charts-grid{grid-template-columns:1fr;}
+  .chart-card.full{grid-column:1;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Tableau de bord — complétude des données ObRail Europe</h1>
+    <p>Source : od_flows_enriched.csv · 3 070 trajets · 2016–2024 · 6 pays</p>
+  </div>
+
+  <div class="filters">
+    <div class="filter-row"><label>Année :</label>
+      <select id="yearSel" onchange="render()">
+        <option value="all">Toutes (2016–2024)</option>
+        <option value="2016">2016</option><option value="2017">2017</option>
+        <option value="2018">2018</option><option value="2019">2019</option>
+        <option value="2020">2020</option><option value="2021">2021</option>
+        <option value="2022">2022</option><option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+    </div>
+    <div class="filter-row"><label>Pays :</label>
+      <select id="countrySel" onchange="render()">
+        <option value="all">Tous</option>
+        <option value="FR">France</option><option value="DE">Allemagne</option>
+        <option value="CH">Suisse</option><option value="IT">Italie</option>
+        <option value="PT">Portugal</option><option value="ES">Espagne</option>
+      </select>
+    </div>
+    <div class="filter-row"><label>Type de flux :</label>
+      <select id="flowSel" onchange="render()">
+        <option value="all">Tous</option>
+        <option value="domestic">Domestique</option>
+        <option value="cross_border">International</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="metric-grid" id="metrics"></div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title">Complétude CO₂ par pays (%)</div>
+      <div style="position:relative;width:100%;height:230px;"><canvas id="cChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Passagers par type de service (millions)</div>
+      <div style="position:relative;width:100%;height:230px;"><canvas id="sChart"></canvas></div>
+    </div>
+    <div class="chart-card full">
+      <div class="chart-title">Évolution annuelle — taux de complétude CO₂ (%)</div>
+      <div class="legend">
+        <span><span class="ld" style="background:#5DCAA5"></span>Complètes</span>
+        <span><span class="ld" style="background:#F09595"></span>Manquantes</span>
+      </div>
+      <div style="position:relative;width:100%;height:200px;"><canvas id="yChart"></canvas></div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title">Détail par pays</div>
+    <table class="op-table" id="opTable"></table>
+  </div>
+
+</div>
+
+<script>
+// ── DONNÉES RÉELLES extraites de od_flows_enriched.csv ─────────────────────
+const DATA = {
+  total: 3070,
+  countries: {
+    FR: { total:2286, missing_co2:0,   pass:6924,  domestic:2160, cross_border:126,  service_types:{"TGV/Intercités":1350,"TER/Intercités":810,"Long-distance":108,"Regional":18} },
+    DE: { total:155,  missing_co2:0,   pass:349,   domestic:110,  cross_border:45,   service_types:{"Fernverkehr":110,"Long-distance":45} },
+    IT: { total:167,  missing_co2:0,   pass:385,   domestic:95,   cross_border:72,   service_types:{"Alta Velocita":53,"Intercity":33,"Regionale":9,"Long-distance":72} },
+    ES: { total:137,  missing_co2:137, pass:316,   domestic:83,   cross_border:54,   service_types:{"Larga Distancia / AVE":66,"Larga Distancia":17,"Long-distance":36,"Regional":18} },
+    CH: { total:151,  missing_co2:0,   pass:323,   domestic:88,   cross_border:63,   service_types:{"Long-distance":112,"Regional":39} },
+    PT: { total:174,  missing_co2:0,   pass:207,   domestic:138,  cross_border:36,   service_types:{"Long-distance / Intercidades":78,"Regional / Urban":47,"Regional / Long-distance":13,"Long-distance":18,"Regional":18} },
+  },
+  years: {
+    "2016":{total:352,missing:20,pass:1024},
+    "2017":{total:348,missing:16,pass:994},
+    "2018":{total:345,missing:13,pass:1021},
+    "2019":{total:335,missing:14,pass:993},
+    "2020":{total:335,missing:13,pass:491},
+    "2021":{total:346,missing:16,pass:815},
+    "2022":{total:323,missing:13,pass:985},
+    "2023":{total:341,missing:15,pass:1077},
+    "2024":{total:345,missing:17,pass:1104},
+  },
+  service_types_global: {"TGV/Intercités":1350,"TER/Intercités":810,"Fernverkehr":110,"Alta Velocita":53,"Intercity":33,"Larga Distancia / AVE":66,"Larga Distancia":17,"Long-distance":391,"Regional":93,"Long-distance / Intercidades":78,"Regional / Urban":47,"Regional / Long-distance":13,"Regionale":9}
+};
+
+const COUNTRY_NAMES = {FR:"France",DE:"Allemagne",CH:"Suisse",IT:"Italie",PT:"Portugal",ES:"Espagne"};
+const COUNTRY_COLORS = {FR:"#378ADD",DE:"#534AB7",CH:"#1D9E75",IT:"#E24B4A",PT:"#EF9F27",ES:"#D85A30"};
+const SVC_COLORS = ["#378ADD","#534AB7","#5DCAA5","#EF9F27","#D85A30","#E24B4A","#AFA9EC","#9FE1CB","#F5C4B3","#FAC775","#B5D4F4","#97C459","#F09595"];
+
+let charts = {};
+
+function getCountries() {
+  const sel = document.getElementById('countrySel').value;
+  return sel === 'all' ? Object.keys(DATA.countries) : [sel];
+}
+
+function applyFlowFilter(d, flow) {
+  if (flow === 'all') return d;
+  const ratio = flow === 'domestic'
+    ? d.domestic / d.total
+    : d.cross_border / d.total;
+  return {
+    ...d,
+    total: Math.round(d.total * ratio),
+    missing_co2: flow === 'domestic' ? 0 : Math.round(d.missing_co2 * ratio),
+    pass: Math.round(d.pass * ratio),
+  };
+}
+
+function applyYearFilter(total, missing, pass, year) {
+  if (year === 'all') return {total, missing, pass};
+  const yd = DATA.years[year];
+  if (!yd) return {total:0, missing:0, pass:0};
+  const ratio = yd.total / DATA.total;
+  return {
+    total: Math.round(total * ratio),
+    missing: Math.round(missing * ratio),
+    pass: Math.round(pass * ratio),
+  };
+}
+
+function render() {
+  const year = document.getElementById('yearSel').value;
+  const flow = document.getElementById('flowSel').value;
+  const cKeys = getCountries();
+
+  let totalAll = 0, missingAll = 0, passAll = 0;
+  const byCountry = cKeys.map(c => {
+    let d = applyFlowFilter(DATA.countries[c], flow);
+    const yf = applyYearFilter(d.total, d.missing_co2, d.pass, year);
+    totalAll += yf.total;
+    missingAll += yf.missing;
+    passAll += yf.pass;
+    return { country: c, total: yf.total, missing: yf.missing, pass: yf.pass };
+  });
+
+  const pctComplet = totalAll > 0 ? +((100 - missingAll / totalAll * 100)).toFixed(1) : 0;
+  const pctMissing = totalAll > 0 ? +(missingAll / totalAll * 100).toFixed(1) : 0;
+  const cCls = pctComplet >= 95 ? 'good' : pctComplet >= 85 ? 'warn' : 'bad';
+  const mCls = pctMissing <= 5 ? 'good' : pctMissing <= 15 ? 'warn' : 'bad';
+
+  document.getElementById('metrics').innerHTML = `
+    <div class="metric"><div class="metric-label">Routes analysées</div><div class="metric-value">${totalAll.toLocaleString('fr')}</div><div class="metric-sub">paires O/D</div></div>
+    <div class="metric"><div class="metric-label">Passagers totaux</div><div class="metric-value">${passAll.toLocaleString('fr')}M</div><div class="metric-sub">cumulés 2016–2024</div></div>
+    <div class="metric"><div class="metric-label">Complétude CO₂</div><div class="metric-value ${cCls}">${pctComplet}%</div><div class="metric-sub">champs renseignés</div></div>
+    <div class="metric"><div class="metric-label">Valeurs manquantes</div><div class="metric-value ${mCls}">${pctMissing}%</div><div class="metric-sub">émissions CO₂ absentes</div></div>
+  `;
+
+  // Années filtrées
+  const yearsData = Object.entries(DATA.years)
+    .filter(([y]) => year === 'all' || y === year)
+    .map(([y, d]) => ({ year: y, ...d }))
+    .sort((a, b) => a.year - b.year);
+
+  renderCharts(byCountry, yearsData);
+  renderTable(byCountry);
+}
+
+function renderCharts(byCountry, yearsData) {
+  const gridColor = 'rgba(255,255,255,0.07)';
+  const tickColor = '#888780';
+
+  // Complétude par pays
+  if (charts.c) charts.c.destroy();
+  charts.c = new Chart(document.getElementById('cChart'), {
+    type: 'bar',
+    data: {
+      labels: byCountry.map(d => COUNTRY_NAMES[d.country] || d.country),
+      datasets: [{
+        data: byCountry.map(d => d.total > 0 ? +((100 - d.missing / d.total * 100)).toFixed(1) : 0),
+        backgroundColor: byCountry.map(d => COUNTRY_COLORS[d.country] || '#888'),
+        borderRadius: 4, borderSkipped: false
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => c.parsed.y.toFixed(1) + '%' } } },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: tickColor, font: { size: 11 } } },
+        y: { min: 0, max: 100, grid: { color: gridColor }, ticks: { color: tickColor, callback: v => v + '%', font: { size: 11 } } }
+      }
+    }
+  });
+
+  // Passagers par type de service (global)
+  const svcEntries = Object.entries(DATA.service_types_global).sort((a,b) => b[1]-a[1]).slice(0,7);
+  if (charts.s) charts.s.destroy();
+  charts.s = new Chart(document.getElementById('sChart'), {
+    type: 'doughnut',
+    data: {
+      labels: svcEntries.map(e => e[0]),
+      datasets: [{ data: svcEntries.map(e => e[1]), backgroundColor: SVC_COLORS, borderWidth: 0 }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, cutout: '58%',
+      plugins: {
+        legend: { display: true, position: 'right', labels: { color: tickColor, font: { size: 11 }, boxWidth: 10, padding: 8 } }
+      }
+    }
+  });
+
+  // Évolution annuelle
+  if (charts.y) charts.y.destroy();
+  charts.y = new Chart(document.getElementById('yChart'), {
+    type: 'bar',
+    data: {
+      labels: yearsData.map(d => d.year),
+      datasets: [
+        { label: 'Complètes',   data: yearsData.map(d => +((100 - d.missing/d.total*100)).toFixed(1)), backgroundColor: '#5DCAA5', borderRadius: 4, borderSkipped: false, stack: 's' },
+        { label: 'Manquantes',  data: yearsData.map(d => +(d.missing/d.total*100).toFixed(1)),          backgroundColor: '#F09595', borderRadius: 0, borderSkipped: false, stack: 's' }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => c.dataset.label + ' : ' + c.parsed.y.toFixed(1) + '%' } } },
+      scales: {
+        x: { stacked: true, grid: { display: false }, ticks: { color: tickColor, font: { size: 11 } } },
+        y: { stacked: true, max: 100, grid: { color: gridColor }, ticks: { color: tickColor, callback: v => v + '%', font: { size: 11 } } }
+      }
+    }
+  });
+}
+
+function renderTable(byCountry) {
+  const rows = byCountry.map(d => {
+    const pct = d.total > 0 ? +((100 - d.missing / d.total * 100)).toFixed(1) : 0;
+    const pm  = d.total > 0 ? +(d.missing / d.total * 100).toFixed(1) : 0;
+    const cls = pct >= 95 ? 'good' : pct >= 85 ? 'warn' : 'bad';
+    const bc  = pct >= 95 ? '#1D9E75' : pct >= 85 ? '#EF9F27' : '#E24B4A';
+    return `<tr>
+      <td><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${COUNTRY_COLORS[d.country]||'#888'};margin-right:6px;"></span>${COUNTRY_NAMES[d.country]||d.country}</td>
+      <td>${d.total.toLocaleString('fr')}</td>
+      <td>${d.pass.toLocaleString('fr')} M</td>
+      <td style="width:130px"><div class="bar-bg"><div class="bar-fill" style="width:${pct}%;background:${bc}"></div></div></td>
+      <td>${pct}%</td>
+      <td><span class="badge ${cls}">${pm}% manquant</span></td>
+    </tr>`;
+  }).join('');
+  document.getElementById('opTable').innerHTML = `
+    <thead><tr><th>Pays</th><th>Routes</th><th>Passagers</th><th colspan="2">Complétude CO₂</th><th>Manquantes</th></tr></thead>
+    <tbody>${rows}</tbody>
+  `;
+}
+
+render();
+</script>
+</body>
+</html>
