@@ -17,8 +17,8 @@ def import_csv_to_db(db_name, csv_path, table_name):
 
 def main():
     # db_name = input("Nom de la base de données (ex: database.db): ")
-    csv_path = "./data/trajets/cross_border_rail_OD_IT_DE_FR_CH_ES_PT_bidirectional.csv" # ou input("Chemin du fichier CSV: ")
-    table_name = "trajetsInterPays" # ou input("Nom de la table à créer: ")
+    csv_path = "./data/etl_output/od_flows_enriched.csv" # ou input("Chemin du fichier CSV: ")
+    table_name = "OD_FLOWS_ENRICHED" # ou input("Nom de la table à créer: ")
 
     if not os.path.exists(csv_path):
         print("Le fichier CSV n'existe pas.")
