@@ -60,7 +60,7 @@ class trajetsFerroviaires:
             return {"message": "Erreur lors de la connexion à la base de données."}
         return [dict(row) for row in result]    
 
-trajets_interpays = trajetsFerroviaires("./bdd/trajetsFerroviairesBDD.db")
+trajets_interpays = trajetsFerroviaires("../bdd/trajetsFerroviairesBDD.db")
 
 
 
@@ -78,7 +78,7 @@ def obetnir_trajets_inter_Pays():
 
 @app.get("/trajets")
 def obetnir_trajets():
-    trajets = trajetsFerroviaires("./bdd/trajetsFerroviairesBDD.db").get_trajets()
+    trajets = trajetsFerroviaires("../bdd/trajetsFerroviairesBDD.db").get_trajets()
     return trajets
 
 @app.get("/itineraire")
