@@ -1,13 +1,7 @@
 from fastapi import FastAPI
-
-from database import Base
-from database import engine
-
+from database import Base, engine
 from routers.auth_router import router as auth_router
 from routers.trajet_router import router as trajet_router
-
-from models.user import User
-from models.trajet import Trajet
 
 Base.metadata.create_all(
     bind=engine

@@ -1,16 +1,8 @@
-from fastapi import APIRouter
-from fastapi import Depends
-
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-
 from database import get_db
-
 from models.trajet import Trajet
-
-from schemas.trajet_schema import (
-    TrajetCreate,
-    TrajetResponse
-)
+from schemas.trajet_schema import TrajetCreate, TrajetResponse
 
 from auth.dependencies import get_current_user
 
