@@ -418,20 +418,20 @@ source venv/bin/activate  # ou venv\Scripts\activate (Windows)
 pip install -r API/requirements.txt
 ```
 
-### 8.3.1 Lancement API locale
+#### 8.3.1 Lancement API locale
 ```bash
 cd API
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### 8.3.2 Docker Compose (Recommandé)
+#### 8.3.2 Docker Compose (Recommandé)
 
 ```bash
 # Lancement stack complète
 docker compose up -d
 ```
 
-### 8.4 Tests
+#### 8.4 Tests
 
 ```bash
 # Tests unitaires
