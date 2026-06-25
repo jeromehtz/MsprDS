@@ -444,7 +444,6 @@ pytest ml_tests/ -v
 
 ## 9. Documentation et Ressources
 
-Documentation OpenAPI disponible :
 - Swagger UI : http://localhost:8000/docs
 - Dashboard Streamlit (**revérifier le port**) : http://localhost
 - Prometheus : http://localhost:9090
