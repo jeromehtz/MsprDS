@@ -416,7 +416,6 @@ cp API/.env.example API/.env
 python -m venv venv
 source venv/bin/activate  # ou venv\Scripts\activate (Windows)
 pip install -r API/requirements.txt
-pip install -r API/requirements-ml.txt  # (Phase 2)
 ```
 
 ### 8.3.1 Lancement API locale
