@@ -1,13 +1,24 @@
 # MSPR — Observatoire Rail Europe
 ## Plateforme d'Analyse Comparative des Trajectoires Ferroviaires Transfrontalières
 
+## Sommaire
+- [1. Contexte et Enjeux](#1-contexte-et-enjeux)
+- [2. Spécifications Fonctionnelles](#2-spécifications-fonctionnelles)
+- [3. Proposition d'Intégration IA](#3-proposition-dintégration-ia)
+- [4. Spécifications Fonctionnelles Détaillées](#4-spécifications-fonctionnelles-détaillées)
+- [5. Accessibilité et Usabilité](#5-accessibilité-et-usabilité)
+- [6. Architecture Technique et Applicative](#6-architecture-technique-et-applicative)
+- [7. Méthodologie de Développement](#7-méthodologie-de-développement)
+- [8. Installation et Exécution](#8-installation-et-exécution)
+- [9. Documentation et Ressources](#9-documentation-et-ressources)
+
 ---
 
 ## 1. Contexte et Enjeux
 
 ### 1.1 Description du Projet
 
-MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données intégrant les flux de trajets ferroviaires internationaux en Europe (2016–2024) couvrant six pays : France, Allemagne, Suisse, Italie, Portugal, Espagne.
+La plateforme que nous développons est une plateforme de données intégrant les flux de trajets ferroviaires internationaux en Europe (2016–2024) couvrant six pays : France, Allemagne, Suisse, Italie, Portugal, Espagne.
 
 **Objectif principal :** Centraliser, normaliser et analyser les données de mobilité ferroviaire transfrontalière pour identifier les tendances, évaluer la complétude des données, et supporter la prise de décision en matière de politique de mobilité.
 
@@ -77,9 +88,9 @@ MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données 
 ```
 ┌─────────────────────────────────────────────────────────┐
 │           FRONTEND (Tableau de Bord)                    │
-│        - Widgets prédiction CO₂                         │
-│        - Recommandation itinéraires (ARIA)              │
-│        - Alertes anomalies                              │
+|        - Authentification (enregistrement et connexion  |
+│        - Liste des itinéraires                          │
+|        -                                                |
 └────────────────┬────────────────────────────────────────┘
                  │ HTTP REST / WebSocket
 ┌────────────────▼────────────────────────────────────────┐
@@ -114,7 +125,7 @@ MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données 
          └────► MLflow (Versioning, Serving)
 ```
 
-### 3.3 Stack Technique IA Proposé
+### 3.3 Stack Technique IA
 
 | Composant | Technologie | Justification |
 |-----------|-------------|---------------|
@@ -271,12 +282,11 @@ Response 200:
 
 ```
                     ┌─────────────────────────┐
-                    │   CDN / Static Assets   │
                     │  (tableauDeBord + IA UI)│
                     └────────────┬────────────┘
                                  │
     ┌────────────────────────────┼────────────────────────────┐
-    │ LB / Reverse Proxy (nginx)  │                            │
+    │ LB / Reverse Proxy (nginx)  │                           │
     └────────────────────────────┼────────────────────────────┘
                                  │
             ┌────────────────────┴────────────────────┐
@@ -286,12 +296,12 @@ Response 200:
     │ ┌─────────────────┐  │              │ (Served by MLflow)│
     │ │ Auth, CRUD      │  │              │ ┌──────────────┐  │
     │ │ Existing Routes │  │              │ │ Model Server │  │
-    │ └─────────────────┘  │              │ │ gRPC / REST  │  │
+    │ └─────────────────┘  │              │ │     REST     │  │
     │ ┌─────────────────┐  │              │ └──────────────┘  │
     │ │ IA Routes       │  │              │                   │
     │ │ Orchestration   │  │              │ ┌──────────────┐  │
     │ └─────────────────┘  │              │ │ Model Store  │  │
-    └───────┬──────────────┘              │ │ (s3/local)   │  │
+    └───────┬──────────────┘              │ │ (local)      │  │
             │ SQLAlchemy / psycopg2       │ └──────────────┘  │
             │                             └──────────┬────────┘
             │                                        │
@@ -301,14 +311,14 @@ Response 200:
     │ │ Tables: users, trajets, predictions, models, ...   │  │
     │ │ Séries temporelles : trafic_forecast, anomalies    │  │
     │ └────────────────────────────────────────────────────┘  │
-    └────────────────────────────────────────────────────────┘
+    └─────────────────────────────────────────────────────────┘
 
     ┌────────────────────────────────────────────────────────┐
     │  DevOps / Monitoring                                   │
-    │ ┌──────────┐  ┌──────────┐  ┌────────┐  ┌──────────┐  │
-    │ │Prometheus│  │ Grafana  │  │MLflow  │  │ Evidently│  │
-    │ │(Metrics) │  │(Dashboard)  │(Track) │  │(DataQA)  │  │
-    │ └──────────┘  └──────────┘  └────────┘  └──────────┘  │
+    │ ┌──────────┐  ┌──────────┐  ┌────────┐  ┌──────────┐   │
+    │ │Prometheus│  │ Grafana  │  │MLflow  │  │ Evidently│   │
+    │ │(Metrics) │  │(Dashboard)  │(Track) │  │(DataQA)  │   │
+    │ └──────────┘  └──────────┘  └────────┘  └──────────┘   │
     └────────────────────────────────────────────────────────┘
 ```
 
@@ -406,29 +416,22 @@ cp API/.env.example API/.env
 python -m venv venv
 source venv/bin/activate  # ou venv\Scripts\activate (Windows)
 pip install -r API/requirements.txt
-pip install -r API/requirements-ml.txt  # (Phase 2)
 ```
 
-### 8.3.1 Lancement API locale
+#### 8.3.1 Lancement API locale
 ```bash
 cd API
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### 8.3.2 Docker Compose (Recommandé)
+#### 8.3.2 Docker Compose (Recommandé)
 
 ```bash
 # Lancement stack complète
 docker compose up -d
-
-# Accès services
-# API       : http://localhost:8000
-# Dashboard : http://localhost
-# Prometheus: http://localhost:9090
-# Grafana   : http://localhost:3000 (admin/admin)
 ```
 
-### 8.4 Tests
+#### 8.4 Tests
 
 ```bash
 # Tests unitaires
@@ -445,13 +448,8 @@ pytest ml_tests/ -v
 
 ## 9. Documentation et Ressources
 
-### 9.1 APIs et Endpoints
-
-Documentation OpenAPI disponible :
 - Swagger UI : http://localhost:8000/docs
-
----
-
-**Auteurs** : MSPR Development Team  
-**Dernière mise à jour** : 23 juin 2025  
-**Version** : 1.2.0 (Phase 1.2 + Spec Phase 2)
+- Dashboard Streamlit (**revérifier le port**) : http://localhost
+- Prometheus : http://localhost:9090
+- Grafana : http://localhost:3000 (admin/admin)
+- Base de données (**revérifier le port**) : http://localhost
