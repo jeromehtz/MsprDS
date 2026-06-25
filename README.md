@@ -18,7 +18,7 @@
 
 ### 1.1 Description du Projet
 
-MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données intégrant les flux de trajets ferroviaires internationaux en Europe (2016–2024) couvrant six pays : France, Allemagne, Suisse, Italie, Portugal, Espagne.
+La plateforme que nous développons est une plateforme de données intégrant les flux de trajets ferroviaires internationaux en Europe (2016–2024) couvrant six pays : France, Allemagne, Suisse, Italie, Portugal, Espagne.
 
 **Objectif principal :** Centraliser, normaliser et analyser les données de mobilité ferroviaire transfrontalière pour identifier les tendances, évaluer la complétude des données, et supporter la prise de décision en matière de politique de mobilité.
 
