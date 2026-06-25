@@ -394,19 +394,11 @@ git clone https://github.com/yourusername/MsprDS.git
 cd MsprDS
 ```
 
-#### Récupération du container Docker stocké dans GiHub
-[lien](https://github.com/jeromehtz/MsprDS/pkgs/container/msprds)
+# Pull du container stocké dans GitHub
+(lien)[https://github.com/jeromehtz/MsprDS/pkgs/container/msprds]
+Exécuter ommande `docker pull ghcr.io/jeromehtz/msprds:sha-e850fd4`
 
-Exécuter la commande commande ci-dessous
-```bash 
-docker pull ghcr.io/jeromehtz/msprds:sha-e850fd4
-```
-
-#### Initialisation Base de données
-Importer le fichier .backup dans pgAdmin
-
-#### Configuration .env
-```bash
+# Configuration .env
 cp API/.env.example API/.env
 # Éditer API/.env : DATABASE_URL, SECRET_KEY, etc.
 ```
