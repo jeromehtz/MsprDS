@@ -1,11 +1,12 @@
 import streamlit as st
 import requests
 import pandas as pd
+import os
 
 # =====================
 # CONFIG
 # =====================
-API_URL = "http://127.0.0.1:8000"
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
 
 st.set_page_config(
     page_title="ObRail - MSPR Dashboard",
@@ -77,12 +78,12 @@ elif menu == "🔐 Authentification":
 
     # ---------------- LOGIN ----------------
     with tab1:
-        email = st.text_input("Email", key="login_email")
-        password = st.text_input("Password", type="password", key="login_password")
+        username = st.text_input("Nom d'utilisateur", key="login_username")
+        password = st.text_input("Mot de passe", type="password", key="login_password")
 
         if st.button("Se connecter"):
             res = api_post("/auth/login", {
-                "email": email,
+                "username": username,
                 "password": password
             })
 
@@ -94,12 +95,12 @@ elif menu == "🔐 Authentification":
 
     # ---------------- REGISTER ----------------
     with tab2:
-        email_r = st.text_input("Email", key="register_email")
-        password_r = st.text_input("Password", type="password", key="register_password")
+        username_r = st.text_input("Nom d'utilisateur", key="register_username")
+        password_r = st.text_input("Mot de passe", type="password", key="register_password")
 
         if st.button("Créer compte"):
             res = api_post("/auth/register", {
-                "email": email_r,
+                "username": username_r,
                 "password": password_r
             })
 
