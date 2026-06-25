@@ -451,7 +451,3 @@ pytest ml_tests/ -v
 - Base de données (**revérifier le port**) : http://localhost
 
 ---
-
-**Auteurs** : MSPR Development Team  
-**Dernière mise à jour** : 23 juin 2025  
-**Version** : 1.2.0 (Phase 1.2 + Spec Phase 2)
