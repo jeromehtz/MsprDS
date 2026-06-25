@@ -411,6 +411,10 @@ Response 200:
 git clone https://github.com/yourusername/MsprDS.git
 cd MsprDS
 
+# Pull du container stocké dans GitHub
+(lien)[https://github.com/jeromehtz/MsprDS/pkgs/container/msprds]
+Exécuter ommande `docker pull ghcr.io/jeromehtz/msprds:sha-e850fd4`
+
 # Configuration .env
 cp API/.env.example API/.env
 # Éditer API/.env : DATABASE_URL, SECRET_KEY, etc.
