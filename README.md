@@ -449,5 +449,3 @@ pytest ml_tests/ -v
 - Prometheus : http://localhost:9090
 - Grafana : http://localhost:3000 (admin/admin)
 - Base de données (**revérifier le port**) : http://localhost
-
----
