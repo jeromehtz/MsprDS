@@ -430,12 +430,6 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```bash
 # Lancement stack complète
 docker compose up -d
-
-# Accès services
-# API       : http://localhost:8000
-# Dashboard : http://localhost
-# Prometheus: http://localhost:9090
-# Grafana   : http://localhost:3000 (admin/admin)
 ```
 
 ### 8.4 Tests
