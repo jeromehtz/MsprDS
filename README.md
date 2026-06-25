@@ -1,13 +1,24 @@
 # MSPR — Observatoire Rail Europe
 ## Plateforme d'Analyse Comparative des Trajectoires Ferroviaires Transfrontalières
 
+## Sommaire
+- [1. Contexte et Enjeux](#1-contexte-et-enjeux)
+- [2. Spécifications Fonctionnelles](#2-spécifications-fonctionnelles)
+- [3. Proposition d'Intégration IA](#3-proposition-dintégration-ia)
+- [4. Spécifications Fonctionnelles Détaillées](#4-spécifications-fonctionnelles-détaillées)
+- [5. Accessibilité et Usabilité](#5-accessibilité-et-usabilité)
+- [6. Architecture Technique et Applicative](#6-architecture-technique-et-applicative)
+- [7. Méthodologie de Développement](#7-méthodologie-de-développement)
+- [8. Installation et Exécution](#8-installation-et-exécution)
+- [9. Documentation et Ressources](#9-documentation-et-ressources)
+
 ---
 
 ## 1. Contexte et Enjeux
 
 ### 1.1 Description du Projet
 
-MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données intégrant les flux de trajets ferroviaires internationaux en Europe (2016–2024) couvrant six pays : France, Allemagne, Suisse, Italie, Portugal, Espagne.
+La plateforme que nous développons est une plateforme de données intégrant les flux de trajets ferroviaires internationaux en Europe (2016–2024) couvrant six pays : France, Allemagne, Suisse, Italie, Portugal, Espagne.
 
 **Objectif principal :** Centraliser, normaliser et analyser les données de mobilité ferroviaire transfrontalière pour identifier les tendances, évaluer la complétude des données, et supporter la prise de décision en matière de politique de mobilité.
 
@@ -21,9 +32,9 @@ MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données 
 
 ---
 
-## 2. Spécifications Fonctionnelles — Phase 1 (Version Actuelle)
+## 2. Spécifications Fonctionnelles
 
-### 2.1 Fonctionnalités Actuelles
+### 2.1 Fonctionnalités
 
 | Module | Fonctionnalités |
 |--------|-----------------|
@@ -32,16 +43,9 @@ MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données 
 | **Monitoring** | Prometheus + Grafana ; métriques de latence/requêtes API |
 | **Données** | ETL CSV → PostgreSQL ; normalisation calendriers GTFS |
 
-### 2.2 Limitation Actuelle
-
-- **Pas de capacité prédictive** : données brutes uniquement  
-- **Pas de recommandation** : pas d'intelligence pour suggérer trajets optimisés  
-- **Analyse manuelle** : interprétation manuelle des tendances  
-- **Accessibilité incomplète** : dashboards sans attributs ARIA  
-
 ---
 
-## 3. Proposition d'Intégration IA — Phase 2 (Spécifications)
+## 3. Proposition d'Intégration IA
 
 ### 3.1 Cas d'Usage IA Identifiés
 
@@ -79,14 +83,14 @@ MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données 
 - **Sortie** : intervalle confiance [−15%, +20%]
 - **Granularité** : par pays, service, pays-pair
 
-### 3.2 Architecture IA Proposée
+### 3.2 Architecture IA
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│           FRONTEND (Tableau de Bord Enrichi)            │
-│        - Widgets prédiction CO₂                         │
-│        - Recommandation itinéraires (ARIA)              │
-│        - Alertes anomalies                              │
+│           FRONTEND (Tableau de Bord)                    │
+|        - Authentification (enregistrement et connexion  |
+│        - Liste des itinéraires                          │
+|        -                                                |
 └────────────────┬────────────────────────────────────────┘
                  │ HTTP REST / WebSocket
 ┌────────────────▼────────────────────────────────────────┐
@@ -121,22 +125,20 @@ MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données 
          └────► MLflow (Versioning, Serving)
 ```
 
-### 3.3 Stack Technique IA Proposé
+### 3.3 Stack Technique IA
 
 | Composant | Technologie | Justification |
 |-----------|-------------|---------------|
 | **Framework ML** | `scikit-learn` | Prédiction, anomalies (léger, prod-ready) |
-| **Séries temporelles** | `statsmodels` / `Prophet` | ARIMA, décomposition saisonnière |
-| **Deep Learning** (opt.) | `PyTorch` | Embeddings trajets, clustering avancé |
 | **Feature Store** | PostgreSQL + `Feast` (opt.) | Gestion features partagées |
 | **Model Registry** | `MLflow` | Versioning, serving, A/B testing |
 | **Inference** | `FastAPI` + `Pydantic` | Endpoints ML typés, validation |
-| **Conteneurisation** | Docker + `BentoML` (opt.) | Packaging modèles indépendants |
-| **Monitoring IA** | `Prometheus` + `Evidently AI` (opt.) | Drift détection, data quality |
+| **Conteneurisation** | Docker | Exécuter le projet en local |
+| **Monitoring API** | `Prometheus` + `Evidently AI` (opt.) | Drift détection, data quality |
 
 ---
 
-## 4. Spécifications Fonctionnelles Détaillées (Phase 2)
+## 4. Spécifications Fonctionnelles Détaillées
 
 ### 4.1 Endpoint 1 : Prédiction CO₂
 
@@ -254,14 +256,14 @@ Response 200:
 
 ---
 
-## 5. Accessibilité et Usabilité (WCAG 2.1 AA)
+## 5. Accessibilité et Usabilité
 
-### 5.1 Dashboard Enrichi
+### 5.1 Dashboard
 
 - ✅ **Textes alternatifs (alt)** pour graphiques, tableaux exportables JSON
 - ✅ **Navigation clavier** : tabulation complète, focus visible
 - ✅ **Contraste** : ratio ≥ 4.5:1 (AA)
-- ✅ **ARIA labels** : `aria-label="Filtre année"`, `aria-live="polite"` pour mises à jour dynamiques
+- ✅ **Labels** : `aria-label="Filtre année"`, `aria-live="polite"` pour mises à jour dynamiques
 - ✅ **Structure** : HTML5 sémantique (`<main>`, `<section>`, `<nav>`)
 - ✅ **Résultats recommandation** : format texte + JSON + graphique
 
@@ -272,15 +274,6 @@ Response 200:
 - ✅ **Validations** : Pydantic, messages d'erreur clairs
 - ✅ **Rate limiting** : Protection données / fairness
 
-### 5.3 Recommandations UI/UX
-
-| Besoin | Solution |
-|--------|----------|
-| Expliquer prédictions | Explainability (LIME, SHAP) : «ce trajet car CO₂−18%» |
-| Confiance utilisateur | Intervalles confiance, métriques de précision affichées |
-| Accessibilité résultats | Résumé audio généré (text-to-speech), versions braille |
-| Mobile first | Dashboard responsive, API lightweight |
-
 ---
 
 ## 6. Architecture Technique et Applicative
@@ -289,12 +282,11 @@ Response 200:
 
 ```
                     ┌─────────────────────────┐
-                    │   CDN / Static Assets   │
                     │  (tableauDeBord + IA UI)│
                     └────────────┬────────────┘
                                  │
     ┌────────────────────────────┼────────────────────────────┐
-    │ LB / Reverse Proxy (nginx)  │                            │
+    │ LB / Reverse Proxy (nginx)  │                           │
     └────────────────────────────┼────────────────────────────┘
                                  │
             ┌────────────────────┴────────────────────┐
@@ -304,12 +296,12 @@ Response 200:
     │ ┌─────────────────┐  │              │ (Served by MLflow)│
     │ │ Auth, CRUD      │  │              │ ┌──────────────┐  │
     │ │ Existing Routes │  │              │ │ Model Server │  │
-    │ └─────────────────┘  │              │ │ gRPC / REST  │  │
+    │ └─────────────────┘  │              │ │     REST     │  │
     │ ┌─────────────────┐  │              │ └──────────────┘  │
     │ │ IA Routes       │  │              │                   │
     │ │ Orchestration   │  │              │ ┌──────────────┐  │
     │ └─────────────────┘  │              │ │ Model Store  │  │
-    └───────┬──────────────┘              │ │ (s3/local)   │  │
+    └───────┬──────────────┘              │ │ (local)      │  │
             │ SQLAlchemy / psycopg2       │ └──────────────┘  │
             │                             └──────────┬────────┘
             │                                        │
@@ -319,14 +311,14 @@ Response 200:
     │ │ Tables: users, trajets, predictions, models, ...   │  │
     │ │ Séries temporelles : trafic_forecast, anomalies    │  │
     │ └────────────────────────────────────────────────────┘  │
-    └────────────────────────────────────────────────────────┘
+    └─────────────────────────────────────────────────────────┘
 
     ┌────────────────────────────────────────────────────────┐
     │  DevOps / Monitoring                                   │
-    │ ┌──────────┐  ┌──────────┐  ┌────────┐  ┌──────────┐  │
-    │ │Prometheus│  │ Grafana  │  │MLflow  │  │ Evidently│  │
-    │ │(Metrics) │  │(Dashboard)  │(Track) │  │(DataQA)  │  │
-    │ └──────────┘  └──────────┘  └────────┘  └──────────┘  │
+    │ ┌──────────┐  ┌──────────┐  ┌────────┐  ┌──────────┐   │
+    │ │Prometheus│  │ Grafana  │  │MLflow  │  │ Evidently│   │
+    │ │(Metrics) │  │(Dashboard)  │(Track) │  │(DataQA)  │   │
+    │ └──────────┘  └──────────┘  └────────┘  └──────────┘   │
     └────────────────────────────────────────────────────────┘
 ```
 
@@ -334,24 +326,16 @@ Response 200:
 
 | Couche | Technologie | Version | Justification |
 |--------|-------------|---------|--------------|
-| **Frontend** | HTML5/CSS3 + JS (Canvas Charts.js) | – | Léger, responsive, accessible |
+| **Frontend** | Bibliothèque Streamlit | – | Léger, responsive, accessible |
 | **API** | FastAPI | 0.100+ | Type hints, async, OpenAPI auto |
 | **Serveur ASGI** | Uvicorn | 0.24+ | Perfs, déploiement simple |
 | **ORM** | SQLAlchemy | 2.0+ | Typage, migrations (Alembic) |
-| **BD** | PostgreSQL | 16 | JSONB, séries temporelles (PG-TimescaleDB opt.) |
+| **Base de données** | PostgreSQL | 16 | JSONB, séries temporelles (PG-TimescaleDB opt.) |
 | **IA/ML** | scikit-learn + statsmodels | 1.3+ | Léger, production-ready |
-| **Model Mgmt** | MLflow | 2.9+ | Versioning, serving, registry |
+| **Model management** | MLflow | 2.9+ | Versioning, serving, registry |
 | **Monitoring** | Prometheus + Grafana | latest | OSS, extensible |
 | **Conteneurs** | Docker + Compose | 24+ | Reproducibilité, scaling |
 | **CI/CD** | GitHub Actions | – | Gratuit, intégré repo |
-
-### 6.3 Améliorations Accessibilité (Phase 2)
-
-- [ ] Audit WCAG 2.1 AA complet (lighthouse + axe)
-- [ ] Refactor HTML : sémantique + ARIA labels
-- [ ] Tests clavier, lecteur d'écran (NVDA, JAWS)
-- [ ] Génération captions pour vidéos tutoriels
-- [ ] Documentation d'accessibilité maintenue
 
 ---
 
@@ -361,7 +345,6 @@ Response 200:
 
 - **Sprints** : 2 semaines
 - **Roles** : Product Owner (données mobiles), Scrum Master, Dev Team
-- **Artefacts** : Product Backlog IA, Sprint Backlog, Burndown
 
 ### 7.2 Standards de Qualité
 
@@ -372,21 +355,20 @@ Response 200:
 - **Couverture** : ≥ 80%
 
 #### IA/ML
-- **Data splitting** : stratified 80/10/10 (train/val/test)
+- **Data splitting** : stratified 70/15/15 (train/val/test)
 - **CV (Cross-validation)** : 5-fold pour modèles prédictifs
 - **Métriques** : MAE, RMSE (régression) ; F1, AUC (classification)
 - **Model card** : documentation type, limitations, biais connus
 
 #### DevOps
-- **Container scanning** : Trivy (vuln. images)
-- **SAST** : SonarQube (secrets, code smells)
-- **Versioning** : SemVer (MAJOR.MINOR.PATCH)
+- **Versioning** : GitHub
+- **Gestion de projet** : Jira
 
 ### 7.3 Plan de Livraison
 
 | Phase | Durée | Livrables |
 |-------|-------|-----------|
-| **Spec & Design** | 3 semaines | Spécs IA, architecture, maquettes UI/UX |
+| **Spec & Design** | 3 semaines | Spécifications IA, architecture, maquettes UI/UX |
 | **MVP IA** | 8 semaines | Prédiction CO₂ + Dashboard 1.0 + Tests |
 | **Recommandation** | 6 semaines | Endpoint recommandation, UI widgets |
 | **Anomalies & Forecast** | 6 semaines | Détection, prévisions, monitoring IA |
@@ -400,16 +382,17 @@ Response 200:
 ### 8.1 Prérequis
 
 - Python 3.13+
-- PostgreSQL 16+
+- PostgreSQL 16+ et pgAdmin
 - Docker & Docker Compose 24+
 - Git
 
 ### 8.2 Installation Locale
 
+#### Clone du repo
 ```bash
-# Clone du repo
 git clone https://github.com/yourusername/MsprDS.git
 cd MsprDS
+```
 
 # Pull du container stocké dans GitHub
 (lien)[https://github.com/jeromehtz/MsprDS/pkgs/container/msprds]
@@ -418,35 +401,29 @@ Exécuter ommande `docker pull ghcr.io/jeromehtz/msprds:sha-e850fd4`
 # Configuration .env
 cp API/.env.example API/.env
 # Éditer API/.env : DATABASE_URL, SECRET_KEY, etc.
+```
 
-# Installation Python & dépendances
+#### Installation Python & dépendances
+```bash
 python -m venv venv
 source venv/bin/activate  # ou venv\Scripts\activate (Windows)
 pip install -r API/requirements.txt
-pip install -r API/requirements-ml.txt  # (Phase 2)
+```
 
-# Initialisation BD
-python API/database.py  # création tables
-
-# Lancement API locale
+#### 8.3.1 Lancement API locale
+```bash
 cd API
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### 8.3 Docker Compose (Recommandé)
+#### 8.3.2 Docker Compose (Recommandé)
 
 ```bash
 # Lancement stack complète
 docker compose up -d
-
-# Accès services
-# API       : http://localhost:8000
-# Dashboard : http://localhost
-# Prometheus: http://localhost:9090
-# Grafana   : http://localhost:3000 (admin/admin)
 ```
 
-### 8.4 Tests
+#### 8.4 Tests
 
 ```bash
 # Tests unitaires
@@ -463,94 +440,8 @@ pytest ml_tests/ -v
 
 ## 9. Documentation et Ressources
 
-### 9.1 APIs et Endpoints
-
-Documentation OpenAPI disponible :
 - Swagger UI : http://localhost:8000/docs
-- ReDoc : http://localhost:8000/redoc
-
-### 9.2 Architecture & Design
-
-- [Architecture Decision Records (ADR)](./docs/adr/) : justifications techniques
-- [Data Model Diagram](./docs/data_model.md)
-- [ML Pipeline Design](./docs/ml_pipeline.md)
-
-### 9.3 Accessibilité
-
-- [WCAG 2.1 Compliance Checklist](./docs/accessibility.md)
-- [UI Component Library Accessible](./frontend/components/a11y/)
-
----
-
-## 10. Statut et Feuille de Route
-
-### 10.1 Statut Actuel (Phase 1)
-
-- ✅ API Authentication (OAuth2/JWT)
-- ✅ Dashboard Visualisation Données
-- ✅ Monitoring (Prometheus/Grafana)
-- ⚠️ Accessibilité (partielle, à améliorer)
-- ❌ Modèles IA (TODO Phase 2)
-
-### 10.2 Roadmap Phase 2–3
-
-**Q3 2025 (Phase 2 MVP):**
-- [ ] Modèle prédiction CO₂
-- [ ] API `/predict-co2`, `/recommend`
-- [ ] Audit accessibilité + corrections
-- [ ] Documentation IA
-
-**Q4 2025 (Phase 2 Complète):**
-- [ ] Anomaly detection + forecast trafic
-- [ ] MLflow integration
-- [ ] Performance tuning, scaling
-- [ ] Production deployment
-
-**2026 (Phase 3 Améliorations):**
-- [ ] Deep Learning pour embeddings
-- [ ] Recommandations temps-réel
-- [ ] Monitoring drift modèles
-- [ ] API marketplace (partenaires externes)
-
----
-
-## 11. Contribution et Support
-
-### 11.1 Comment Contribuer
-
-1. Fork le projet
-2. Créer branche : `git checkout -b feature/ma-fonctionnalité`
-3. Commit : `git commit -m "Add: description"`
-4. Push : `git push origin feature/ma-fonctionnalité`
-5. Ouvrir Pull Request (PR template disponible)
-
-### 11.2 Code de Conduite
-
-Voir [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
-
-### 11.3 Support
-
-- **Issues** : GitHub Issues (bug reports, questions)
-- **Email** : dev@msprds.example.com
-- **Slack** : #msprds-dev (interne)
-
----
-
-## 12. Licence
-
-Ce projet est sous licence [CC-BY-4.0](LICENSE) pour les données publiques exploitées.  
-Code source : [MIT License](LICENSE-CODE)
-
----
-
-## 13. Remerciements
-
-- **Données GTFS** : SNCF, Deutsche Bahn, RFI (Réseau Ferré d'Italie), etc.
-- **Framework** : FastAPI, SQLAlchemy, scikit-learn, Prometheus communities
-- **Partners** : Agence France-Mobilités, Eurail
-
----
-
-**Auteurs** : MSPR Development Team  
-**Dernière mise à jour** : 23 juin 2025  
-**Version** : 1.2.0 (Phase 1.2 + Spec Phase 2)
+- Dashboard Streamlit (**revérifier le port**) : http://localhost
+- Prometheus : http://localhost:9090
+- Grafana : http://localhost:3000 (admin/admin)
+- Base de données (**revérifier le port**) : http://localhost
