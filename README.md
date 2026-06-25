@@ -1,6 +1,17 @@
 # MSPR — Observatoire Rail Europe
 ## Plateforme d'Analyse Comparative des Trajectoires Ferroviaires Transfrontalières
 
+## Sommaire
+- [1. Contexte et Enjeux](#1-contexte-et-enjeux)
+- [2. Spécifications Fonctionnelles](#2-spécifications-fonctionnelles)
+- [3. Proposition d'Intégration IA](#3-proposition-dintégration-ia)
+- [4. Spécifications Fonctionnelles Détaillées](#4-spécifications-fonctionnelles-détaillées)
+- [5. Accessibilité et Usabilité](#5-accessibilité-et-usabilité)
+- [6. Architecture Technique et Applicative](#6-architecture-technique-et-applicative)
+- [7. Méthodologie de Développement](#7-méthodologie-de-développement)
+- [8. Installation et Exécution](#8-installation-et-exécution)
+- [9. Documentation et Ressources](#9-documentation-et-ressources)
+
 ---
 
 ## 1. Contexte et Enjeux
