@@ -378,19 +378,30 @@ Response 200:
 
 ### 8.2 Installation Locale
 
+#### Clone du repo
 ```bash
-# Clone du repo
 git clone https://github.com/yourusername/MsprDS.git
 cd MsprDS
+```
 
-# Initialisation Base de données
+#### Récupération du container Docker stocké dans GiHub
+(lien)[https://github.com/jeromehtz/MsprDS/pkgs/container/msprds]
+Exécuter la commande commande ci-dessous
+```bash 
+docker pull ghcr.io/jeromehtz/msprds:sha-e850fd4
+```
+
+#### Initialisation Base de données
 Importer le fichier .backup dans pgAdmin
 
-# Configuration .env
+#### Configuration .env
+```bash
 cp API/.env.example API/.env
 # Éditer API/.env : DATABASE_URL, SECRET_KEY, etc.
+```
 
-# Installation Python & dépendances
+#### Installation Python & dépendances
+```bash
 python -m venv venv
 source venv/bin/activate  # ou venv\Scripts\activate (Windows)
 pip install -r API/requirements.txt
