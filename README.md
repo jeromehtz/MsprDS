@@ -34,7 +34,7 @@ MSPR (Mobilité Soutenable en Pôles Régionaux) est une plateforme de données 
 
 ---
 
-## 3. Proposition d'Intégration IA — Phase 2 (Spécifications)
+## 3. Proposition d'Intégration IA
 
 ### 3.1 Cas d'Usage IA Identifiés
 
