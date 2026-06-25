@@ -16,21 +16,17 @@ def register(
     user: UserCreate,
     db: Session = Depends(get_db)
 ):
-
     existing_user = db.query(User).filter(
         User.username == user.username
     ).first()
 
     if existing_user:
-
         raise HTTPException(
             status_code=400,
             detail="Utilisateur déjà existant"
         )
 
-    hashed_password = hash_password(
-        user.password
-    )
+    hashed_password = hash_password(user.password)
 
     new_user = User(
         username=user.username,
@@ -38,47 +34,27 @@ def register(
     )
 
     db.add(new_user)
-
     db.commit()
 
-    return {
-        "message": "Utilisateur créé"
-    }
+    return {"message": "Utilisateur créé"}
 
 
-@router.post(
-    "/login",
-    response_model=Token
-)
+@router.post("/login", response_model=Token)
 def login(
     user: UserLogin,
     db: Session = Depends(get_db)
 ):
-
     db_user = db.query(User).filter(
         User.username == user.username
     ).first()
 
-    if not db_user:
-
+    if not db_user or not verify_password(user.password, db_user.password):
         raise HTTPException(
             status_code=401,
             detail="Identifiants invalides"
         )
 
-    if not verify_password(
-        user.password,
-        db_user.password
-    ):
-
-        raise HTTPException(
-            status_code=401,
-            detail="Identifiants invalides"
-        )
-
-    access_token = create_access_token({
-        "sub": db_user.username
-    })
+    access_token = create_access_token({"sub": db_user.username})
 
     return {
         "access_token": access_token,

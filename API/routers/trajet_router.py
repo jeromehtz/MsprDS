@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+﻿from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from database import get_db
 from models.trajet import Trajet
@@ -22,7 +22,7 @@ def get_trajets(
 ):
 
     trajets = db.query(Trajet).all()
-
+    print(db.query(Trajet).count())
     return trajets
 
 
@@ -34,13 +34,19 @@ def create_trajet(
 ):
 
     new_trajet = Trajet(
-        departure_city=trajet.departure_city,
-        arrival_city=trajet.arrival_city,
-        duration=trajet.duration
+        year=trajet.year,
+        origin_station_name=trajet.origin_station_name,
+        destination_station_name=trajet.destination_station_name,
+        origin_city=trajet.origin_city,
+        destination_city=trajet.destination_city,
+        origin_region=trajet.origin_region,
+        destination_region=trajet.destination_region,
+        passengers_millions=trajet.passengers_millions,
+        type=trajet.type,
+        source=trajet.source
     )
 
     db.add(new_trajet)
-
     db.commit()
 
     return {
