@@ -397,10 +397,11 @@ cd MsprDS
 #### Récupération du container Docker stocké dans GiHub
 [lien](https://github.com/jeromehtz/MsprDS/pkgs/container/msprds)
 
-# Configuration .env
+#### Configuration .env
+```bash
 cp API/.env.example API/.env
-# Éditer API/.env : DATABASE_URL, SECRET_KEY, etc.
 ```
+Éditer API/.env : DATABASE_URL, SECRET_KEY, etc.
 
 #### Installation Python & dépendances
 ```bash
