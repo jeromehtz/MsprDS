@@ -390,7 +390,7 @@ Response 200:
 
 #### Clone du repo
 ```bash
-git clone https://github.com/yourusername/MsprDS.git
+git clone https://github.com/jeromehtz/MsprDS.git
 cd MsprDS
 ```
 
