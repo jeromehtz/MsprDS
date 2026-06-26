@@ -36,15 +36,21 @@ services:
     volumes:
       - ./API:/app
 
-  # ─── Frontend ─────────────────────────────────────────────────
+  # ─── Frontend Streamlit ──────────────────────────────────────
   frontend:
-    image: nginx:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
     container_name: msprds_frontend
     restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      - API_URL=http://api:8000
     ports:
-      - "80:80"
+      - "8501:8501"
     volumes:
-      - ./tableauDeBord:/usr/share/nginx/html:ro
+      - ./app:/app
 
   # ─── Monitoring (à activer quand le monitoring sera prêt) ─────
   prometheus:

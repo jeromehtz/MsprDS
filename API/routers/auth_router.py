@@ -1,9 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
-from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from database import get_db
 from models.user import User
-from schemas.auth_schema import UserCreate, Token
+from schemas.auth_schema import UserCreate, UserLogin, Token
 from auth.password_handler import hash_password, verify_password
 from auth.jwt_handler import create_access_token
 
@@ -42,14 +41,14 @@ def register(
 
 @router.post("/login", response_model=Token)
 def login(
-    form_data: OAuth2PasswordRequestForm = Depends(),
+    user: UserLogin,
     db: Session = Depends(get_db)
 ):
     db_user = db.query(User).filter(
-        User.username == form_data.username
+        User.username == user.username
     ).first()
 
-    if not db_user or not verify_password(form_data.password, db_user.password):
+    if not db_user or not verify_password(user.password, db_user.password):
         raise HTTPException(
             status_code=401,
             detail="Identifiants invalides"
