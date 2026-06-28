@@ -28,9 +28,6 @@ if str(ROOT_DIR) not in sys.path:
 
 from app.utils import load_co2_comparison, load_station_frequencies, format_passenger_millions
 
-    layout="wide"
-)
-
 # =====================
 # SESSION STATE (AUTH)
 # =====================
