@@ -35,7 +35,6 @@ services:
       - "8000:8000"
     volumes:
       - ./API:/app
-      - ./data:/data
 
   # ─── Frontend Streamlit ──────────────────────────────────────
   frontend:
@@ -52,7 +51,6 @@ services:
       - "8501:8501"
     volumes:
       - ./app:/app
-      - ./data:/app/data
 
   # ─── Monitoring (à activer quand le monitoring sera prêt) ─────
   prometheus:
@@ -80,12 +78,13 @@ services:
       GF_SECURITY_ADMIN_USER: ${GRAFANA_USER:-admin}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
       GF_PATHS_PROVISIONING: /etc/grafana/provisioning
+      
       GF_SMTP_ENABLED: "true"
       GF_SMTP_HOST: smtp.gmail.com:587
-      GF_SMTP_USER: jerhertz@gmail.com
-      GF_SMTP_PASSWORD: evyj jpyf qnra qvhq
-      GF_SMTP_FROM_ADDRESS: jerhertz@gmail.com
-      GF_SMTP_STARTTLS_POLICY: MandatoryStartTLS
+      GF_SMTP_USER: ton.email@gmail.com
+      GF_SMTP_PASSWORD: ton_app_password
+      GF_SMTP_FROM_ADDRESS: ton.email@gmail.com
+      GF_SMTP_FROM_NAME: Grafana
     volumes:
       - grafana_data:/var/lib/grafana
       - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro

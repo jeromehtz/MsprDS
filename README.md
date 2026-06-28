@@ -390,13 +390,12 @@ Response 200:
 
 #### Clone du repo
 ```bash
-git clone https://github.com/yourusername/MsprDS.git
+git clone https://github.com/jeromehtz/MsprDS.git
 cd MsprDS
 ```
 
-# Pull du container stocké dans GitHub
-(lien)[https://github.com/jeromehtz/MsprDS/pkgs/container/msprds]
-Exécuter ommande `docker pull ghcr.io/jeromehtz/msprds:sha-e850fd4`
+#### Récupération du container Docker stocké dans GiHub
+[lien](https://github.com/jeromehtz/MsprDS/pkgs/container/msprds)
 
 # Configuration .env
 cp API/.env.example API/.env
