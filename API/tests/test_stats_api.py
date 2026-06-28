@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from API.main import app
+from main import app
 
 
 def test_stats_volumes_default_country():
