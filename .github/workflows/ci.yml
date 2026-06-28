@@ -45,6 +45,11 @@ jobs:
         run: |
           cd API
           pytest -q
+#       ── Tests (à activer quand les tests seront créés) ─────────
+      - name: Run tests
+        env:
+          DATABASE_URL: postgresql://mspr:mspr@localhost:5432/msprds
+        run: pytest API/tests/ -v --tb=short
 
       - name: Check API starts correctly
         env:

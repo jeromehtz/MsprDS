@@ -3,6 +3,9 @@ import sys
 from pathlib import Path
 
 import streamlit as st
+import requests
+import pandas as pd
+import os
 
 # =====================
 # CONFIG
@@ -24,6 +27,9 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
 from app.utils import load_co2_comparison, load_station_frequencies, format_passenger_millions
+
+    layout="wide"
+)
 
 # =====================
 # SESSION STATE (AUTH)
