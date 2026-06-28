@@ -3,3 +3,4 @@ __pycache__
 API/.env
 .env
 docker-compose.yml
+API/modèle/*.pkl
