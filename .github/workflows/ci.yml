@@ -39,11 +39,12 @@ jobs:
       - name: Install API dependencies
         run: pip install -r API/requirements.txt
 
-      # ── Tests (à activer quand les tests seront créés) ─────────
-      # - name: Run tests
-      #   env:
-      #     DATABASE_URL: postgresql://mspr:mspr@localhost:5432/msprds
-      #   run: pytest API/tests/ -v --tb=short
+      - name: Run backend tests
+        env:
+          DATABASE_URL: postgresql://mspr:mspr@localhost:5432/msprds
+        run: |
+          cd API
+          pytest -q
 
       - name: Check API starts correctly
         env:
@@ -71,6 +72,11 @@ jobs:
 
       - name: Install frontend dependencies
         run: pip install -r app/requirements.txt
+
+      - name: Run frontend unit tests
+        env:
+          PYTHONPATH: .
+        run: pytest -q app/tests
 
       - name: Check Python syntax
         run: python -m py_compile app/app.py
