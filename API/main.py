@@ -5,6 +5,8 @@ from routers.trajet_router import router as trajet_router
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
+from routers.model_router import router as model_router
+from routers.stats_router import router as stats_router
 import time
 
 Base.metadata.create_all(bind=engine)
@@ -27,6 +29,8 @@ app = FastAPI(title="API MSPR", version="1.0.0")
 app.add_middleware(MetricsMiddleware)
 
 app.include_router(auth_router)
+app.include_router(model_router)
+app.include_router(stats_router)
 app.include_router(trajet_router)
 
 @app.get("/")
