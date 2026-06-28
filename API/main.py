@@ -1,77 +1,38 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from typing import List
+from fastapi import FastAPI
+from database import Base, engine
+from routers.auth_router import router as auth_router
+from routers.trajet_router import router as trajet_router
+from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.responses import Response
+import time
 
-app = FastAPI(
-    title="API MSPR1",
-    description="API REST complète avec FastAPI",
-    version="1.0.0"
-)
-
-# Modèle de données
-class User(BaseModel):
-    id: int
-    nom: str
-    email: str
-    actif: bool = True
+Base.metadata.create_all(bind=engine)
 
 
-# Base de données 
+REQUEST_COUNT = Counter("api_requests_total", "Total requêtes", ["endpoint", "status"])
+REQUEST_LATENCY = Histogram("api_request_latency_seconds", "Latence", ["endpoint"])
 
-users_db: List[User] = [
-    User(id=1, nom="Alice", email="alice@mail.com"),
-    User(id=2, nom="Bob", email="bob@mail.com"),
-]
+class MetricsMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request, call_next):
+        start = time.time()
+        response = await call_next(request)
+        REQUEST_LATENCY.labels(endpoint=request.url.path).observe(time.time() - start)
+        REQUEST_COUNT.labels(endpoint=request.url.path, status=response.status_code).inc()
+        return response
 
 
+app = FastAPI(title="API MSPR", version="1.0.0")
 
-# Routes
+app.add_middleware(MetricsMiddleware)
+
+app.include_router(auth_router)
+app.include_router(trajet_router)
 
 @app.get("/")
-def accueil():
-    return {"message": "API MSPR1 en ligne 🚀"}
+def root():
+    return {"message": "API MSPR RUNNING"}
 
-
-# READ - Tous les utilisateurs
-@app.get("/users", response_model=List[User])
-def get_users():
-    return users_db
-
-
-# READ - Un utilisateur
-@app.get("/users/{user_id}", response_model=User)
-def get_user(user_id: int):
-    for user in users_db:
-        if user.id == user_id:
-            return user
-    raise HTTPException(status_code=404, detail="Utilisateur non trouvé")
-
-
-# Pour Ajouter un utilisateur
-@app.post("/users", response_model=User)
-def create_user(user: User):
-    for u in users_db:
-        if u.id == user.id:
-            raise HTTPException(status_code=400, detail="ID déjà existant")
-    users_db.append(user)
-    return user
-
-
-# Pour Modifier un utilisateur
-@app.put("/users/{user_id}", response_model=User)
-def update_user(user_id: int, updated_user: User):
-    for index, user in enumerate(users_db):
-        if user.id == user_id:
-            users_db[index] = updated_user
-            return updated_user
-    raise HTTPException(status_code=404, detail="Utilisateur non trouvé")
-
-
-# Pour Supprimer un utilisateur
-@app.delete("/users/{user_id}")
-def delete_user(user_id: int):
-    for user in users_db:
-        if user.id == user_id:
-            users_db.remove(user)
-            return {"message": "Utilisateur supprimé"}
-    raise HTTPException(status_code=404, detail="Utilisateur non trouvé")
+@app.get("/metrics")
+def metrics():
+    return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)

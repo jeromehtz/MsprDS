@@ -1,0 +1,96 @@
+year;origin_station_name;destination_station_name;origin_city;destination_city;origin_region;destination_region;Passengers_millions;Type;source
+2016;Milano Centrale;Napoli Centrale;Milano;Napoli;Lombardia;Campania;5.73;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2016;Milano Centrale;Torino Porta Nuova;Milano;Torino;Lombardia;Piemonte;9.118;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2016;Milano Centrale;Venezia Santa Lucia;Milano;Venezia;Lombardia;Veneto;3.384;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2016;Napoli Centrale;Roma Termini;Napoli;Roma;Campania;Lazio;3.396;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2016;Torino Porta Nuova;Bari Centrale;Torino;Bari;Piemonte;Puglia;4.304;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2016;Bologna Centrale;Torino Porta Nuova;Bologna;Torino;Emilia-Romagna;Piemonte;3.918;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2016;Firenze S. M. Novella;Milano Centrale;Firenze;Milano;Toscana;Lombardia;1.225;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2016;Firenze S. M. Novella;Napoli Centrale;Firenze;Napoli;Toscana;Campania;0.747;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2016;Venezia Santa Lucia;Napoli Centrale;Venezia;Napoli;Veneto;Campania;3.887;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2016;Genova Piazza Principe;Bologna Centrale;Genova;Bologna;Liguria;Emilia-Romagna;3.01;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2016;Genova Piazza Principe;Firenze S. M. Novella;Genova;Firenze;Liguria;Toscana;1.322;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2017;Roma Termini;Bari Centrale;Roma;Bari;Lazio;Puglia;2.344;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2017;Milano Centrale;Palermo Centrale;Milano;Palermo;Lombardia;Sicilia;1.172;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2017;Milano Centrale;Bari Centrale;Milano;Bari;Lombardia;Puglia;3.414;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2017;Napoli Centrale;Bologna Centrale;Napoli;Bologna;Campania;Emilia-Romagna;3.6;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2017;Napoli Centrale;Genova Piazza Principe;Napoli;Genova;Campania;Liguria;2.46;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2017;Torino Porta Nuova;Napoli Centrale;Torino;Napoli;Piemonte;Campania;2.615;Intercity;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2017;Torino Porta Nuova;Firenze S. M. Novella;Torino;Firenze;Piemonte;Toscana;1.357;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2017;Bologna Centrale;Roma Termini;Bologna;Roma;Emilia-Romagna;Lazio;3.844;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2017;Bologna Centrale;Milano Centrale;Bologna;Milano;Emilia-Romagna;Lombardia;0.222;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2017;Bologna Centrale;Venezia Santa Lucia;Bologna;Venezia;Emilia-Romagna;Veneto;2.918;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2017;Genova Piazza Principe;Roma Termini;Genova;Roma;Liguria;Lazio;0.594;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2017;Genova Piazza Principe;Napoli Centrale;Genova;Napoli;Liguria;Campania;2.867;Intercity;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2017;Genova Piazza Principe;Venezia Santa Lucia;Genova;Venezia;Liguria;Veneto;1.281;Intercity;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2018;Milano Centrale;Firenze S. M. Novella;Milano;Firenze;Lombardia;Toscana;0.584;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2018;Milano Centrale;Bari Centrale;Milano;Bari;Lombardia;Puglia;3.136;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2018;Napoli Centrale;Palermo Centrale;Napoli;Palermo;Campania;Sicilia;1.754;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2018;Torino Porta Nuova;Milano Centrale;Torino;Milano;Piemonte;Lombardia;4.669;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2018;Torino Porta Nuova;Bologna Centrale;Torino;Bologna;Piemonte;Emilia-Romagna;4.22;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2018;Torino Porta Nuova;Firenze S. M. Novella;Torino;Firenze;Piemonte;Toscana;2.246;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2018;Bologna Centrale;Venezia Santa Lucia;Bologna;Venezia;Emilia-Romagna;Veneto;2.246;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2018;Bologna Centrale;Genova Piazza Principe;Bologna;Genova;Emilia-Romagna;Liguria;0.958;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2018;Firenze S. M. Novella;Napoli Centrale;Firenze;Napoli;Toscana;Campania;2.539;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2018;Firenze S. M. Novella;Torino Porta Nuova;Firenze;Torino;Toscana;Piemonte;0.852;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2018;Venezia Santa Lucia;Genova Piazza Principe;Venezia;Genova;Veneto;Liguria;3.512;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2018;Genova Piazza Principe;Bari Centrale;Genova;Bari;Liguria;Puglia;1.19;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2018;Palermo Centrale;Bologna Centrale;Palermo;Bologna;Sicilia;Emilia-Romagna;1.686;Regionale;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2019;Milano Centrale;Roma Termini;Milano;Roma;Lombardia;Lazio;12.976;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2019;Torino Porta Nuova;Firenze S. M. Novella;Torino;Firenze;Piemonte;Toscana;3.747;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2019;Torino Porta Nuova;Palermo Centrale;Torino;Palermo;Piemonte;Sicilia;1.489;Intercity;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2019;Bologna Centrale;Roma Termini;Bologna;Roma;Emilia-Romagna;Lazio;2.075;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2019;Bologna Centrale;Bari Centrale;Bologna;Bari;Emilia-Romagna;Puglia;2.826;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2019;Firenze S. M. Novella;Torino Porta Nuova;Firenze;Torino;Toscana;Piemonte;4.712;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2019;Venezia Santa Lucia;Firenze S. M. Novella;Venezia;Firenze;Veneto;Toscana;3.478;Intercity;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2019;Palermo Centrale;Roma Termini;Palermo;Roma;Sicilia;Lazio;1.388;Regionale;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2020;Napoli Centrale;Milano Centrale;Napoli;Milano;Campania;Lombardia;6.267;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2020;Napoli Centrale;Bologna Centrale;Napoli;Bologna;Campania;Emilia-Romagna;2.073;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2020;Napoli Centrale;Genova Piazza Principe;Napoli;Genova;Campania;Liguria;0.734;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2020;Torino Porta Nuova;Venezia Santa Lucia;Torino;Venezia;Piemonte;Veneto;3.979;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2020;Venezia Santa Lucia;Torino Porta Nuova;Venezia;Torino;Veneto;Piemonte;3.636;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2020;Venezia Santa Lucia;Firenze S. M. Novella;Venezia;Firenze;Veneto;Toscana;4.128;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2020;Genova Piazza Principe;Firenze S. M. Novella;Genova;Firenze;Liguria;Toscana;3.763;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2020;Palermo Centrale;Genova Piazza Principe;Palermo;Genova;Sicilia;Liguria;0.881;Regionale;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2020;Bari Centrale;Bologna Centrale;Bari;Bologna;Puglia;Emilia-Romagna;3.26;Regionale;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2021;Roma Termini;Venezia Santa Lucia;Roma;Venezia;Lazio;Veneto;2.44;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2021;Roma Termini;Bari Centrale;Roma;Bari;Lazio;Puglia;0.789;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2021;Milano Centrale;Napoli Centrale;Milano;Napoli;Lombardia;Campania;6.777;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2021;Napoli Centrale;Roma Termini;Napoli;Roma;Campania;Lazio;10.836;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2021;Napoli Centrale;Bologna Centrale;Napoli;Bologna;Campania;Emilia-Romagna;4.542;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2021;Torino Porta Nuova;Milano Centrale;Torino;Milano;Piemonte;Lombardia;7.457;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2021;Torino Porta Nuova;Bari Centrale;Torino;Bari;Piemonte;Puglia;1.385;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2021;Bologna Centrale;Roma Termini;Bologna;Roma;Emilia-Romagna;Lazio;2.243;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2021;Bologna Centrale;Milano Centrale;Bologna;Milano;Emilia-Romagna;Lombardia;1.955;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2021;Firenze S. M. Novella;Bologna Centrale;Firenze;Bologna;Toscana;Emilia-Romagna;1.082;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2021;Venezia Santa Lucia;Roma Termini;Venezia;Roma;Veneto;Lazio;2.833;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2021;Genova Piazza Principe;Milano Centrale;Genova;Milano;Liguria;Lombardia;1.06;Intercity;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2022;Milano Centrale;Torino Porta Nuova;Milano;Torino;Lombardia;Piemonte;3.73;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2022;Napoli Centrale;Palermo Centrale;Napoli;Palermo;Campania;Sicilia;4.664;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2022;Torino Porta Nuova;Bologna Centrale;Torino;Bologna;Piemonte;Emilia-Romagna;4.414;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2022;Venezia Santa Lucia;Torino Porta Nuova;Venezia;Torino;Veneto;Piemonte;0.206;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2022;Genova Piazza Principe;Roma Termini;Genova;Roma;Liguria;Lazio;0.58;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2022;Genova Piazza Principe;Bologna Centrale;Genova;Bologna;Liguria;Emilia-Romagna;3.951;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2022;Palermo Centrale;Firenze S. M. Novella;Palermo;Firenze;Sicilia;Toscana;1.575;Regionale;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2022;Bari Centrale;Roma Termini;Bari;Roma;Puglia;Lazio;1.184;Regionale;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2023;Roma Termini;Bari Centrale;Roma;Bari;Lazio;Puglia;1.824;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2023;Milano Centrale;Firenze S. M. Novella;Milano;Firenze;Lombardia;Toscana;3.576;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2023;Milano Centrale;Venezia Santa Lucia;Milano;Venezia;Lombardia;Veneto;2.942;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2023;Napoli Centrale;Bologna Centrale;Napoli;Bologna;Campania;Emilia-Romagna;4.238;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2023;Torino Porta Nuova;Venezia Santa Lucia;Torino;Venezia;Piemonte;Veneto;1.971;Intercity;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2023;Bologna Centrale;Roma Termini;Bologna;Roma;Emilia-Romagna;Lazio;1.34;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2023;Bologna Centrale;Napoli Centrale;Bologna;Napoli;Emilia-Romagna;Campania;0.99;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2023;Bologna Centrale;Genova Piazza Principe;Bologna;Genova;Emilia-Romagna;Liguria;2.829;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2023;Firenze S. M. Novella;Palermo Centrale;Firenze;Palermo;Toscana;Sicilia;1.974;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2023;Venezia Santa Lucia;Roma Termini;Venezia;Roma;Veneto;Lazio;4.01;Intercity;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2023;Genova Piazza Principe;Milano Centrale;Genova;Milano;Liguria;Lombardia;4.384;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2023;Genova Piazza Principe;Firenze S. M. Novella;Genova;Firenze;Liguria;Toscana;3.107;Intercity;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2023;Palermo Centrale;Milano Centrale;Palermo;Milano;Sicilia;Lombardia;4.843;Regionale;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2024;Roma Termini;Firenze S. M. Novella;Roma;Firenze;Lazio;Toscana;2.619;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2024;Milano Centrale;Roma Termini;Milano;Roma;Lombardia;Lazio;4.997;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2024;Napoli Centrale;Bari Centrale;Napoli;Bari;Campania;Puglia;1.586;Alta Velocita;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
+2024;Bologna Centrale;Roma Termini;Bologna;Roma;Emilia-Romagna;Lazio;4.484;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2024;Firenze S. M. Novella;Milano Centrale;Firenze;Milano;Toscana;Lombardia;3.657;Alta Velocita;FS Italiane - Studi e ricerche sulla mobilità passeggeri (matrici OD, analisi di traffico)
+2024;Firenze S. M. Novella;Bologna Centrale;Firenze;Bologna;Toscana;Emilia-Romagna;2.543;Alta Velocita;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2024;Bari Centrale;Venezia Santa Lucia;Bari;Venezia;Puglia;Veneto;3.69;Regionale;Eurostat - Railway passenger transport statistics (used to calibrate total Italy flows)
+2024;Bari Centrale;Palermo Centrale;Bari;Palermo;Puglia;Sicilia;3.375;Regionale;FS Research Centre - Methodological aspects for passenger mobility analysis using big data
