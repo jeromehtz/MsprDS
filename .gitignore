@@ -2,3 +2,4 @@ __pycache__
 .vscode
 API/.env
 .env
+docker-compose.yml
