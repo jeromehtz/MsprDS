@@ -9,3 +9,4 @@ python-dotenv
 prometheus_client
 python-multipart
 pytest==7.4.3
+httpx2
