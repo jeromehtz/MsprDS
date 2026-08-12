@@ -231,40 +231,36 @@ def predict_co2(payload: dict) -> dict:
     try:
         train_g_km = float(model.predict(X)[0])
 
-    except Exception as e:
-        print("\n\n========== DIAGNOSTIC XGBOOST ==========")
-        print("Exception :", type(e).__name__)
-        print("Message   :", str(e))
+    except xgb.core.XGBoostError as e:
+        message = str(e)
 
-        print("\n--- Colonnes X ---")
-        for i, col in enumerate(X.columns):
-            print(f"[{i}] {col}")
+        if "Found a category not in the training set" not in message:
+            raise
 
-        print("\n--- Catégories Pandas ---")
-        for col in X.select_dtypes(include=["category"]).columns:
-            print(f"\nColonne : {col}")
-            print("dtype :", X[col].dtype)
-            print("categories :", list(X[col].cat.categories))
-            print("valeurs :", X[col].dropna().unique())
-
-        print("\n--- Booster XGBoost ---")
-        booster = model.get_booster()
-
-        print("feature_names :")
-        print(booster.feature_names)
-
-        print("\nfeature_types :")
-        print(booster.feature_types)
-
-        print("\n--- Paramètres modèle ---")
-        print(
-            "enable_categorical :",
-            model.get_params().get("enable_categorical")
+        match = re.search(
+            r"for the (\d+)th \(0-based\) column",
+            message
         )
 
-        print("\n=========================================\n")
+        if not match:
+            raise
 
-        raise
+        bad_column_index = int(match.group(1))
+        bad_column = X.columns[bad_column_index]
+
+        print(
+            f"⚠️ Catégorie XGBoost inconnue pour {bad_column}, "
+            f"fallback appliqué"
+        )
+
+        fallback = cm[bad_column][0]
+
+        X[bad_column] = pd.Categorical(
+            [fallback],
+            categories=cm[bad_column]
+        )
+
+        train_g_km = float(model.predict(X)[0])
 
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
