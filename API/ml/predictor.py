@@ -21,7 +21,7 @@ import pickle
 from functools import lru_cache
 from pathlib import Path
 import xgboost as xgb
-
+import re
 import pandas as pd
 
 # Racine du dépôt : API/ml/predictor.py -> parents[2]
