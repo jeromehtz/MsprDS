@@ -224,8 +224,8 @@ def predict_co2(payload: dict) -> dict:
             row[col] = _safe_category(row[col], cm[col])
 
     X = pd.DataFrame([row])[feats]
+
     for col in cats:
-        # Réplique l'encodage d'entraînement : mêmes catégories => mêmes codes.
         X[col] = pd.Categorical(X[col], categories=cm[col])
 
     try:
@@ -265,6 +265,7 @@ def predict_co2(payload: dict) -> dict:
         print("\n=========================================\n")
 
         raise
+
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
 
