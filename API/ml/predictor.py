@@ -126,6 +126,18 @@ def _plane_factor(iso: str) -> float:
     return plane_by_iso.get(iso, 250.0)  # défaut Europe si pays inconnu
 
 
+def _safe_category(value: str, categories: list, fallback: str | None = None) -> str:
+    """
+    Retombe sur une modalité connue du modèle si `value` n'est pas dans les catégories
+    vues à l'entraînement. Nécessaire car le booster XGBoost garde en interne sa propre
+    liste de catégories : une valeur présente dans `category_mappings` (référentiel
+    potentiellement enrichi après coup) peut malgré tout être inconnue du modèle entraîné.
+    """
+    if value in categories:
+        return value
+    return fallback if fallback in categories else categories[0]
+
+
 def get_options() -> dict:
     """Valeurs proposables à l'utilisateur (listes déroulantes) + métriques du modèle."""
     b = _bundle()
@@ -204,6 +216,12 @@ def predict_co2(payload: dict) -> dict:
         "temperature_moyenne": _NUMERIC_DEFAULTS["temperature_moyenne"],
         "pluie_mm": _NUMERIC_DEFAULTS["pluie_mm"],
     }
+
+    # Sécurise toutes les colonnes catégorielles vis-à-vis des catégories réellement
+    # connues du modèle entraîné (cf. _safe_category) avant de construire le DataFrame.
+    for col in cats:
+        if col in row:
+            row[col] = _safe_category(row[col], cm[col])
 
     X = pd.DataFrame([row])[feats]
     for col in cats:

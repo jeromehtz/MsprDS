@@ -42,6 +42,9 @@ jobs:
       # ── Tests unitaires + intégration backend ──────────────────
       # Les tests utilisent PostgreSQL en CI (grâce à la variable CI=true),
       # et SQLite en mémoire en local (conftest.py détecte l'environnement).
+      # tests/test_integration_trajets.py est exclu : ces tests appellent la
+      # sandbox Business Central réelle (credentials/API externe), non mockée,
+      # et ne doivent pas conditionner la CI. À réintégrer avec un mock BC.
       - name: Run backend tests (pytest)
         env:
           CI: true
@@ -50,7 +53,7 @@ jobs:
           ALGORITHM: HS256
         run: |
           cd API
-          pytest --cov=. --cov-report=term-missing
+          pytest --cov=. --cov-report=term-missing --ignore=tests/test_integration_trajets.py
 
       - name: Check API starts correctly
         env:
