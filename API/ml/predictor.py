@@ -228,7 +228,43 @@ def predict_co2(payload: dict) -> dict:
         # Réplique l'encodage d'entraînement : mêmes catégories => mêmes codes.
         X[col] = pd.Categorical(X[col], categories=cm[col])
 
-    train_g_km = float(model.predict(X)[0])
+    try:
+        train_g_km = float(model.predict(X)[0])
+
+    except Exception as e:
+        print("\n\n========== DIAGNOSTIC XGBOOST ==========")
+        print("Exception :", type(e).__name__)
+        print("Message   :", str(e))
+
+        print("\n--- Colonnes X ---")
+        for i, col in enumerate(X.columns):
+            print(f"[{i}] {col}")
+
+        print("\n--- Catégories Pandas ---")
+        for col in X.select_dtypes(include=["category"]).columns:
+            print(f"\nColonne : {col}")
+            print("dtype :", X[col].dtype)
+            print("categories :", list(X[col].cat.categories))
+            print("valeurs :", X[col].dropna().unique())
+
+        print("\n--- Booster XGBoost ---")
+        booster = model.get_booster()
+
+        print("feature_names :")
+        print(booster.feature_names)
+
+        print("\nfeature_types :")
+        print(booster.feature_types)
+
+        print("\n--- Paramètres modèle ---")
+        print(
+            "enable_categorical :",
+            model.get_params().get("enable_categorical")
+        )
+
+        print("\n=========================================\n")
+
+        raise
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
 
