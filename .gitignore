@@ -2,4 +2,10 @@ __pycache__
 .vscode
 API/.env
 .env
-docker-compose.yml
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+e2e/test-results/

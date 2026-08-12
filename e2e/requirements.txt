@@ -1,0 +1,4 @@
+# Dépendances des tests end-to-end (E2E) du frontend Streamlit
+pytest==8.3.4
+pytest-playwright==0.6.2
+# axe-core est injecté dynamiquement depuis le CDN au moment du test (cf. test_accessibility.py)

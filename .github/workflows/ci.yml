@@ -37,13 +37,15 @@ jobs:
           cache-dependency-path: API/requirements.txt
 
       - name: Install API dependencies
-        run: pip install -r API/requirements.txt
+        run: pip install -r API/requirements-dev.txt
 
-      # ── Tests (à activer quand les tests seront créés) ─────────
-      # - name: Run tests
-      #   env:
-      #     DATABASE_URL: postgresql://mspr:mspr@localhost:5432/msprds
-      #   run: pytest API/tests/ -v --tb=short
+      # ── Tests unitaires + intégration backend ──────────────────
+      # Les tests utilisent une base SQLite isolée (cf. tests/conftest.py),
+      # ils n'ont donc pas besoin du service PostgreSQL pour s'exécuter.
+      - name: Run backend tests (pytest)
+        run: |
+          cd API
+          pytest --cov=. --cov-report=term-missing
 
       - name: Check API starts correctly
         env:
@@ -80,3 +82,54 @@ jobs:
           timeout 10 streamlit run app/app.py --logger.level=error &
           sleep 5
           echo "✅ Frontend Streamlit démarrée avec succès"
+
+  e2e:
+    runs-on: ubuntu-latest
+    needs: [test, test-frontend]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install dependencies (API + frontend + e2e)
+        run: |
+          pip install -r API/requirements.txt
+          pip install -r app/requirements.txt
+          pip install -r e2e/requirements.txt
+
+      - name: Install Playwright browser (chromium)
+        run: python -m playwright install --with-deps chromium
+
+      - name: Start API (SQLite)
+        env:
+          DATABASE_URL: sqlite:///./e2e.db
+          SECRET_KEY: e2e-secret
+          ALGORITHM: HS256
+        run: |
+          cd API
+          nohup uvicorn main:app --host 127.0.0.1 --port 8000 > api.log 2>&1 &
+          for i in $(seq 1 20); do
+            curl -sf http://127.0.0.1:8000/ && break || sleep 2
+          done
+
+      - name: Start Streamlit frontend
+        env:
+          API_URL: http://127.0.0.1:8000
+        run: |
+          nohup streamlit run app/app.py --server.port 8501 --server.headless true --logger.level error > streamlit.log 2>&1 &
+          for i in $(seq 1 20); do
+            curl -sf http://localhost:8501/ && break || sleep 2
+          done
+
+      - name: Run E2E tests (Playwright)
+        env:
+          STREAMLIT_URL: http://localhost:8501
+        run: |
+          cd e2e
+          pytest

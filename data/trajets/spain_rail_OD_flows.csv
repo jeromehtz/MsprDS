@@ -1,84 +1,84 @@
-year;origin_station_name;destination_station_name;origin_city;destination_city;origin_region;destination_region;Passengers_millions;Type;source
-2016;Madrid Puerta de Atocha;Barcelona Sants;Madrid;Barcelona;Comunidad de Madrid;Cataluña;10.439;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2016;Madrid Puerta de Atocha;Málaga María Zambrano;Madrid;Málaga;Comunidad de Madrid;Andalucía;3.071;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2016;Madrid Puerta de Atocha;Zaragoza Delicias;Madrid;Zaragoza;Comunidad de Madrid;Aragón;1.498;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2016;Madrid Chamartín;Zaragoza Delicias;Madrid;Zaragoza;Comunidad de Madrid;Aragón;0.777;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2016;Madrid Chamartín;Valladolid Campo Grande;Madrid;Valladolid;Comunidad de Madrid;Castilla y León;2.993;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2016;Barcelona Sants;Málaga María Zambrano;Barcelona;Málaga;Cataluña;Andalucía;0.192;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2016;Valencia Joaquín Sorolla;Valladolid Campo Grande;Valencia;Valladolid;Comunidad Valenciana;Castilla y León;3.929;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2016;Sevilla Santa Justa;Barcelona Sants;Sevilla;Barcelona;Andalucía;Cataluña;4.057;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2016;Sevilla Santa Justa;Valencia Joaquín Sorolla;Sevilla;Valencia;Andalucía;Comunidad Valenciana;0.802;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2016;Málaga María Zambrano;Madrid Puerta de Atocha;Málaga;Madrid;Andalucía;Comunidad de Madrid;1.569;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2016;Málaga María Zambrano;Sevilla Santa Justa;Málaga;Sevilla;Andalucía;Andalucía;0.626;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2016;Málaga María Zambrano;Alicante Terminal;Málaga;Alicante;Andalucía;Comunidad Valenciana;1.169;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2016;Valladolid Campo Grande;Madrid Puerta de Atocha;Valladolid;Madrid;Castilla y León;Comunidad de Madrid;2.94;Larga Distancia;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2016;Valladolid Campo Grande;Sevilla Santa Justa;Valladolid;Sevilla;Castilla y León;Andalucía;2.681;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2017;Madrid Puerta de Atocha;Bilbao-Abando Indalecio Prieto;Madrid;Bilbao;Comunidad de Madrid;País Vasco;0.728;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2017;Madrid Chamartín;Málaga María Zambrano;Madrid;Málaga;Comunidad de Madrid;Andalucía;2.989;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2017;Madrid Chamartín;Bilbao-Abando Indalecio Prieto;Madrid;Bilbao;Comunidad de Madrid;País Vasco;4.499;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2017;Valencia Joaquín Sorolla;Valladolid Campo Grande;Valencia;Valladolid;Comunidad Valenciana;Castilla y León;2.932;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2017;Málaga María Zambrano;Barcelona Sants;Málaga;Barcelona;Andalucía;Cataluña;2.712;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2017;Málaga María Zambrano;Valladolid Campo Grande;Málaga;Valladolid;Andalucía;Castilla y León;0.21;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2017;Alicante Terminal;Valladolid Campo Grande;Alicante;Valladolid;Comunidad Valenciana;Castilla y León;2.505;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2017;Bilbao-Abando Indalecio Prieto;Sevilla Santa Justa;Bilbao;Sevilla;País Vasco;Andalucía;2.356;Larga Distancia;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2017;Valladolid Campo Grande;Valencia Joaquín Sorolla;Valladolid;Valencia;Castilla y León;Comunidad Valenciana;1.886;Larga Distancia;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2017;Valladolid Campo Grande;Málaga María Zambrano;Valladolid;Málaga;Castilla y León;Andalucía;1.813;Larga Distancia;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2018;Madrid Puerta de Atocha;Madrid Chamartín;Madrid;Madrid;Comunidad de Madrid;Comunidad de Madrid;3.35;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2018;Madrid Puerta de Atocha;Valencia Joaquín Sorolla;Madrid;Valencia;Comunidad de Madrid;Comunidad Valenciana;1.793;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2018;Madrid Chamartín;Alicante Terminal;Madrid;Alicante;Comunidad de Madrid;Comunidad Valenciana;0.27;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2018;Barcelona Sants;Valencia Joaquín Sorolla;Barcelona;Valencia;Cataluña;Comunidad Valenciana;13.201;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2018;Sevilla Santa Justa;Madrid Puerta de Atocha;Sevilla;Madrid;Andalucía;Comunidad de Madrid;9.83;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2018;Alicante Terminal;Madrid Chamartín;Alicante;Madrid;Comunidad Valenciana;Comunidad de Madrid;1.745;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2018;Valladolid Campo Grande;Madrid Chamartín;Valladolid;Madrid;Castilla y León;Comunidad de Madrid;3.34;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2019;Madrid Puerta de Atocha;Barcelona Sants;Madrid;Barcelona;Comunidad de Madrid;Cataluña;4.713;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2019;Madrid Chamartín;Sevilla Santa Justa;Madrid;Sevilla;Comunidad de Madrid;Andalucía;0.591;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2019;Sevilla Santa Justa;Valladolid Campo Grande;Sevilla;Valladolid;Andalucía;Castilla y León;2.733;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2019;Málaga María Zambrano;Barcelona Sants;Málaga;Barcelona;Andalucía;Cataluña;3.162;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2019;Zaragoza Delicias;Madrid Puerta de Atocha;Zaragoza;Madrid;Aragón;Comunidad de Madrid;2.361;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2019;Bilbao-Abando Indalecio Prieto;Sevilla Santa Justa;Bilbao;Sevilla;País Vasco;Andalucía;2.611;Larga Distancia;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2019;Valladolid Campo Grande;Madrid Chamartín;Valladolid;Madrid;Castilla y León;Comunidad de Madrid;3.216;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2019;Valladolid Campo Grande;Valencia Joaquín Sorolla;Valladolid;Valencia;Castilla y León;Comunidad Valenciana;2.345;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2020;Barcelona Sants;Madrid Chamartín;Barcelona;Madrid;Cataluña;Comunidad de Madrid;0.317;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2020;Valencia Joaquín Sorolla;Madrid Puerta de Atocha;Valencia;Madrid;Comunidad Valenciana;Comunidad de Madrid;0.582;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2020;Zaragoza Delicias;Barcelona Sants;Zaragoza;Barcelona;Aragón;Cataluña;0.49;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2020;Alicante Terminal;Madrid Puerta de Atocha;Alicante;Madrid;Comunidad Valenciana;Comunidad de Madrid;1.389;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2020;Alicante Terminal;Málaga María Zambrano;Alicante;Málaga;Comunidad Valenciana;Andalucía;3.317;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2020;Bilbao-Abando Indalecio Prieto;Valencia Joaquín Sorolla;Bilbao;Valencia;País Vasco;Comunidad Valenciana;2.148;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2020;Valladolid Campo Grande;Madrid Chamartín;Valladolid;Madrid;Castilla y León;Comunidad de Madrid;3.362;Larga Distancia;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2021;Madrid Puerta de Atocha;Valencia Joaquín Sorolla;Madrid;Valencia;Comunidad de Madrid;Comunidad Valenciana;1.924;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2021;Madrid Chamartín;Madrid Puerta de Atocha;Madrid;Madrid;Comunidad de Madrid;Comunidad de Madrid;2.78;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2021;Barcelona Sants;Málaga María Zambrano;Barcelona;Málaga;Cataluña;Andalucía;2.047;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2021;Sevilla Santa Justa;Madrid Puerta de Atocha;Sevilla;Madrid;Andalucía;Comunidad de Madrid;9.594;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2021;Sevilla Santa Justa;Madrid Chamartín;Sevilla;Madrid;Andalucía;Comunidad de Madrid;1.028;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2021;Sevilla Santa Justa;Barcelona Sants;Sevilla;Barcelona;Andalucía;Cataluña;2.938;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2021;Alicante Terminal;Sevilla Santa Justa;Alicante;Sevilla;Comunidad Valenciana;Andalucía;3.47;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2021;Bilbao-Abando Indalecio Prieto;Madrid Puerta de Atocha;Bilbao;Madrid;País Vasco;Comunidad de Madrid;2.781;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2021;Bilbao-Abando Indalecio Prieto;Zaragoza Delicias;Bilbao;Zaragoza;País Vasco;Aragón;1.473;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2021;Valladolid Campo Grande;Zaragoza Delicias;Valladolid;Zaragoza;Castilla y León;Aragón;1.511;Larga Distancia;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2022;Madrid Chamartín;Valencia Joaquín Sorolla;Madrid;Valencia;Comunidad de Madrid;Comunidad Valenciana;5.514;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2022;Valencia Joaquín Sorolla;Sevilla Santa Justa;Valencia;Sevilla;Comunidad Valenciana;Andalucía;4.578;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2022;Sevilla Santa Justa;Bilbao-Abando Indalecio Prieto;Sevilla;Bilbao;Andalucía;País Vasco;0.551;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2022;Málaga María Zambrano;Sevilla Santa Justa;Málaga;Sevilla;Andalucía;Andalucía;1.168;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2022;Alicante Terminal;Barcelona Sants;Alicante;Barcelona;Comunidad Valenciana;Cataluña;1.28;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2022;Alicante Terminal;Valencia Joaquín Sorolla;Alicante;Valencia;Comunidad Valenciana;Comunidad Valenciana;1.66;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2022;Valladolid Campo Grande;Málaga María Zambrano;Valladolid;Málaga;Castilla y León;Andalucía;2.536;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2023;Madrid Puerta de Atocha;Zaragoza Delicias;Madrid;Zaragoza;Comunidad de Madrid;Aragón;3.276;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2023;Madrid Puerta de Atocha;Alicante Terminal;Madrid;Alicante;Comunidad de Madrid;Comunidad Valenciana;0.617;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2023;Madrid Puerta de Atocha;Bilbao-Abando Indalecio Prieto;Madrid;Bilbao;Comunidad de Madrid;País Vasco;2.458;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2023;Madrid Chamartín;Málaga María Zambrano;Madrid;Málaga;Comunidad de Madrid;Andalucía;3.891;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2023;Barcelona Sants;Madrid Puerta de Atocha;Barcelona;Madrid;Cataluña;Comunidad de Madrid;13.452;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2023;Barcelona Sants;Málaga María Zambrano;Barcelona;Málaga;Cataluña;Andalucía;4.114;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2023;Valencia Joaquín Sorolla;Málaga María Zambrano;Valencia;Málaga;Comunidad Valenciana;Andalucía;1.293;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2023;Valencia Joaquín Sorolla;Bilbao-Abando Indalecio Prieto;Valencia;Bilbao;Comunidad Valenciana;País Vasco;1.931;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2023;Málaga María Zambrano;Madrid Puerta de Atocha;Málaga;Madrid;Andalucía;Comunidad de Madrid;4.386;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2024;Madrid Puerta de Atocha;Sevilla Santa Justa;Madrid;Sevilla;Comunidad de Madrid;Andalucía;4.327;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2024;Madrid Chamartín;Málaga María Zambrano;Madrid;Málaga;Comunidad de Madrid;Andalucía;3.581;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2024;Barcelona Sants;Madrid Puerta de Atocha;Barcelona;Madrid;Cataluña;Comunidad de Madrid;13.294;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2024;Barcelona Sants;Madrid Chamartín;Barcelona;Madrid;Cataluña;Comunidad de Madrid;3.837;Larga Distancia / AVE;Renfe Viajeros - Informes de gestión (viajeros entre corredores AVE y Larga Distancia)
-2024;Barcelona Sants;Alicante Terminal;Barcelona;Alicante;Cataluña;Comunidad Valenciana;1.509;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2024;Valencia Joaquín Sorolla;Madrid Chamartín;Valencia;Madrid;Comunidad Valenciana;Comunidad de Madrid;11.487;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2024;Sevilla Santa Justa;Madrid Puerta de Atocha;Sevilla;Madrid;Andalucía;Comunidad de Madrid;4.196;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2024;Sevilla Santa Justa;Barcelona Sants;Sevilla;Barcelona;Andalucía;Cataluña;2.122;Larga Distancia / AVE;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2024;Zaragoza Delicias;Valencia Joaquín Sorolla;Zaragoza;Valencia;Aragón;Comunidad Valenciana;0.681;Larga Distancia / AVE;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
-2024;Bilbao-Abando Indalecio Prieto;Madrid Chamartín;Bilbao;Madrid;País Vasco;Comunidad de Madrid;5.142;Larga Distancia;Eurostat - Railway passenger transport statistics (used to calibrate total Spain flows)
-2024;Valladolid Campo Grande;Málaga María Zambrano;Valladolid;Málaga;Castilla y León;Andalucía;1.217;Larga Distancia;ADIF - Estadísticas de tráfico ferroviario por relación origen-destino (principales corredores)
+No.;year;origin_country;origin_station_name;origin_city;origin_region;destination_country;destination_station_name;destination_city;destination_region;Passengers_millions;Type
+5574;2016;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Barcelona Sants;Barcelona;Cataluña;10.439;Larga Distancia / AVE
+5575;2016;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Málaga María Zambrano;Málaga;Andalucía;3.071;Larga Distancia / AVE
+5576;2016;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Zaragoza Delicias;Zaragoza;Aragón;1.498;Larga Distancia / AVE
+5577;2016;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Zaragoza Delicias;Zaragoza;Aragón;0.777;Larga Distancia / AVE
+5578;2016;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;2.993;Larga Distancia / AVE
+5579;2016;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Málaga María Zambrano;Málaga;Andalucía;0.192;Larga Distancia / AVE
+5580;2016;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;3.929;Larga Distancia / AVE
+5581;2016;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Barcelona Sants;Barcelona;Cataluña;4.057;Larga Distancia / AVE
+5582;2016;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;0.802;Larga Distancia / AVE
+5583;2016;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;1.569;Larga Distancia / AVE
+5584;2016;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Sevilla Santa Justa;Sevilla;Andalucía;0.626;Larga Distancia / AVE
+5585;2016;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;1.169;Larga Distancia / AVE
+5586;2016;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;2.94;Larga Distancia
+5587;2016;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Sevilla Santa Justa;Sevilla;Andalucía;2.681;Larga Distancia
+5588;2017;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;0.728;Larga Distancia / AVE
+5589;2017;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Málaga María Zambrano;Málaga;Andalucía;2.989;Larga Distancia / AVE
+5590;2017;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;4.499;Larga Distancia / AVE
+5591;2017;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;2.932;Larga Distancia / AVE
+5592;2017;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Barcelona Sants;Barcelona;Cataluña;2.712;Larga Distancia / AVE
+5593;2017;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;0.21;Larga Distancia / AVE
+5594;2017;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;2.505;Larga Distancia / AVE
+5595;2017;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;Spain;Sevilla Santa Justa;Sevilla;Andalucía;2.356;Larga Distancia
+5596;2017;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;1.886;Larga Distancia
+5597;2017;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Málaga María Zambrano;Málaga;Andalucía;1.813;Larga Distancia
+5598;2018;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;3.35;Larga Distancia / AVE
+5599;2018;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;1.793;Larga Distancia / AVE
+5600;2018;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;0.27;Larga Distancia / AVE
+5601;2018;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;13.201;Larga Distancia / AVE
+5602;2018;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;9.83;Larga Distancia / AVE
+5603;2018;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.745;Larga Distancia / AVE
+5604;2018;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;3.34;Larga Distancia
+5605;2019;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Barcelona Sants;Barcelona;Cataluña;4.713;Larga Distancia / AVE
+5606;2019;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Sevilla Santa Justa;Sevilla;Andalucía;0.591;Larga Distancia / AVE
+5607;2019;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;2.733;Larga Distancia / AVE
+5608;2019;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Barcelona Sants;Barcelona;Cataluña;3.162;Larga Distancia / AVE
+5609;2019;Spain;Zaragoza Delicias;Zaragoza;Aragón;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;2.361;Larga Distancia / AVE
+5610;2019;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;Spain;Sevilla Santa Justa;Sevilla;Andalucía;2.611;Larga Distancia
+5611;2019;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;3.216;Larga Distancia
+5612;2019;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;2.345;Larga Distancia
+5613;2020;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;0.317;Larga Distancia / AVE
+5614;2020;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;0.582;Larga Distancia / AVE
+5615;2020;Spain;Zaragoza Delicias;Zaragoza;Aragón;Spain;Barcelona Sants;Barcelona;Cataluña;0.49;Larga Distancia / AVE
+5616;2020;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;1.389;Larga Distancia / AVE
+5617;2020;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;Spain;Málaga María Zambrano;Málaga;Andalucía;3.317;Larga Distancia / AVE
+5618;2020;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;2.148;Larga Distancia
+5619;2020;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;3.362;Larga Distancia
+5620;2021;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;1.924;Larga Distancia / AVE
+5621;2021;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;2.78;Larga Distancia / AVE
+5622;2021;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Málaga María Zambrano;Málaga;Andalucía;2.047;Larga Distancia / AVE
+5623;2021;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;9.594;Larga Distancia / AVE
+5624;2021;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.028;Larga Distancia / AVE
+5625;2021;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Barcelona Sants;Barcelona;Cataluña;2.938;Larga Distancia / AVE
+5626;2021;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;Spain;Sevilla Santa Justa;Sevilla;Andalucía;3.47;Larga Distancia / AVE
+5627;2021;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;2.781;Larga Distancia
+5628;2021;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;Spain;Zaragoza Delicias;Zaragoza;Aragón;1.473;Larga Distancia
+5629;2021;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Zaragoza Delicias;Zaragoza;Aragón;1.511;Larga Distancia
+5630;2022;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;5.514;Larga Distancia / AVE
+5631;2022;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Spain;Sevilla Santa Justa;Sevilla;Andalucía;4.578;Larga Distancia / AVE
+5632;2022;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;0.551;Larga Distancia / AVE
+5633;2022;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Sevilla Santa Justa;Sevilla;Andalucía;1.168;Larga Distancia / AVE
+5634;2022;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;Spain;Barcelona Sants;Barcelona;Cataluña;1.28;Larga Distancia / AVE
+5635;2022;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;1.66;Larga Distancia / AVE
+5636;2022;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Málaga María Zambrano;Málaga;Andalucía;2.536;Larga Distancia
+5637;2023;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Zaragoza Delicias;Zaragoza;Aragón;3.276;Larga Distancia / AVE
+5638;2023;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;0.617;Larga Distancia / AVE
+5639;2023;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;2.458;Larga Distancia / AVE
+5640;2023;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Málaga María Zambrano;Málaga;Andalucía;3.891;Larga Distancia / AVE
+5641;2023;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;13.452;Larga Distancia / AVE
+5642;2023;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Málaga María Zambrano;Málaga;Andalucía;4.114;Larga Distancia / AVE
+5643;2023;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Spain;Málaga María Zambrano;Málaga;Andalucía;1.293;Larga Distancia / AVE
+5644;2023;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;1.931;Larga Distancia / AVE
+5645;2023;Spain;Málaga María Zambrano;Málaga;Andalucía;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;4.386;Larga Distancia / AVE
+5646;2024;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;Spain;Sevilla Santa Justa;Sevilla;Andalucía;4.327;Larga Distancia / AVE
+5647;2024;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Spain;Málaga María Zambrano;Málaga;Andalucía;3.581;Larga Distancia / AVE
+5648;2024;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;13.294;Larga Distancia / AVE
+5649;2024;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;3.837;Larga Distancia / AVE
+5650;2024;Spain;Barcelona Sants;Barcelona;Cataluña;Spain;Alicante Terminal;Alicante;Comunidad Valenciana;1.509;Larga Distancia / AVE
+5651;2024;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;11.487;Larga Distancia / AVE
+5652;2024;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Madrid Puerta de Atocha;Madrid;Comunidad de Madrid;4.196;Larga Distancia / AVE
+5653;2024;Spain;Sevilla Santa Justa;Sevilla;Andalucía;Spain;Barcelona Sants;Barcelona;Cataluña;2.122;Larga Distancia / AVE
+5654;2024;Spain;Zaragoza Delicias;Zaragoza;Aragón;Spain;Valencia Joaquín Sorolla;Valencia;Comunidad Valenciana;0.681;Larga Distancia / AVE
+5655;2024;Spain;Bilbao-Abando Indalecio Prieto;Bilbao;País Vasco;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;5.142;Larga Distancia
+5656;2024;Spain;Valladolid Campo Grande;Valladolid;Castilla y León;Spain;Málaga María Zambrano;Málaga;Andalucía;1.217;Larga Distancia

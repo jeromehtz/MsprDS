@@ -1,397 +1,397 @@
-year;origin_country;origin_station_name;origin_city;origin_region;destination_country;destination_station_name;destination_city;destination_region;Passengers_millions;Type;source
-2016;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.918;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;2.077;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.705;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.258;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.158;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.328;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.881;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;2.236;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;1.451;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.37;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.73;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.154;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.388;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;2.017;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.346;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.319;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.313;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;1.988;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;0.975;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.244;Regional;More and more trains crossing European borders - European Data Journalism Network
-2016;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.356;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;1.003;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;2.461;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.929;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.673;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.378;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.062;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.082;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.016;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.208;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.186;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.54;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.276;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.384;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;2.071;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.599;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.676;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.486;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;2.749;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;1.563;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.642;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.758;Regional;More and more trains crossing European borders - European Data Journalism Network
-2017;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.102;Regional;More and more trains crossing European borders - European Data Journalism Network
-2017;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.087;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;2.425;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.869;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;1.947;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.163;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.171;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.596;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.784;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.64;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.412;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;2.992;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;2.591;Regional;More and more trains crossing European borders - European Data Journalism Network
-2018;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.192;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;0.286;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.03;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.17;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.278;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.271;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;2.059;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.381;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.401;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.42;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;0.772;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.87;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;2.22;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.307;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.582;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.23;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.949;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.46;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;2.726;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;0.335;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;1.153;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.775;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.789;Regional;More and more trains crossing European borders - European Data Journalism Network
-2019;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;0.542;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.718;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.302;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.494;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;1.481;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;0.361;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.057;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.312;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.052;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;1.62;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.005;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;0.694;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;1.519;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.185;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.736;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.558;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.462;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;0.497;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;0.353;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.98;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;2.131;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.57;Regional;More and more trains crossing European borders - European Data Journalism Network
-2020;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.015;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;0.29;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.865;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.333;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.705;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;2.217;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;0.857;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.758;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.766;Regional;More and more trains crossing European borders - European Data Journalism Network
-2020;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.139;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.231;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.495;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.941;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.449;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.697;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.29;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.651;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;0.403;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;1.519;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;2.961;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.86;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.661;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;2.351;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;0.86;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.2;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.988;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;1.275;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;0.559;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.427;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.906;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.205;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.597;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.244;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2022;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;2.878;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.643;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.318;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.184;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.588;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2022;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.587;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;0.253;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.059;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2022;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;3.109;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;1.748;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.298;Regional;More and more trains crossing European borders - European Data Journalism Network
-2022;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.188;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;0.987;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.612;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.471;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.687;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;2.985;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.484;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.792;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.49;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.407;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.027;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.471;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.744;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;1.775;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.925;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.356;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.824;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.616;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.751;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;1.346;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;1.777;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.059;Regional;More and more trains crossing European borders - European Data Journalism Network
-2023;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.383;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.913;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.675;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.93;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.278;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;1.075;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.982;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.579;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.254;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;1.975;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.457;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;0.308;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.193;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.538;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.609;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.162;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.333;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.161;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;0.801;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.784;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;1.368;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.567;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;0.919;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.318;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.647;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.525;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;2.395;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;0.33;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.461;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.358;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.455;Regional;More and more trains crossing European borders - European Data Journalism Network
-2024;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;0.714;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.918;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;2.077;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.705;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.258;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.158;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.328;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;2.881;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;2.236;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;1.451;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.37;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.73;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.154;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.388;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;2.017;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.346;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.319;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.313;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;1.988;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2016;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.975;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2016;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.244;Regional;More and more trains crossing European borders - European Data Journalism Network
-2016;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.356;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2016;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.003;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;2.461;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.929;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.673;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.378;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.062;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.082;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;2.016;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.208;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.186;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.54;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.276;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.384;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;2.071;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.599;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.676;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.486;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2017;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.749;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2017;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;1.563;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.642;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2017;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.758;Regional;More and more trains crossing European borders - European Data Journalism Network
-2017;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.102;Regional;More and more trains crossing European borders - European Data Journalism Network
-2017;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.087;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;2.425;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.869;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;1.947;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;2.163;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.171;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;0.596;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.784;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.64;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.412;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;2.992;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;2.591;Regional;More and more trains crossing European borders - European Data Journalism Network
-2018;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.192;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;0.286;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.03;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.17;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.278;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2018;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.271;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;2.059;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2018;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.381;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.401;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.42;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2018;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.772;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.87;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;2.22;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.307;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.582;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.23;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;0.949;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.46;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;2.726;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;0.335;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;1.153;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.775;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.789;Regional;More and more trains crossing European borders - European Data Journalism Network
-2019;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;0.542;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.718;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.302;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2019;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.494;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.481;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;0.361;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.057;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2019;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.312;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.052;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2019;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.62;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.005;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;0.694;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;1.519;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;2.185;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.736;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;0.558;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.462;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;0.497;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;0.353;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.98;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;2.131;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.57;Regional;More and more trains crossing European borders - European Data Journalism Network
-2020;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.015;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;0.29;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.865;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.333;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2020;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.705;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;2.217;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2020;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.857;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.758;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2020;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.766;Regional;More and more trains crossing European borders - European Data Journalism Network
-2020;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.139;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.231;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.495;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;2.941;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;2.449;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.697;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;1.29;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;0.651;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;0.403;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;1.519;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;2.961;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.86;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.661;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2021;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;2.351;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;0.86;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.2;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.988;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.275;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;0.559;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.427;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2021;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.906;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.205;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2021;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.597;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.244;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2022;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;2.878;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.643;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.318;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.184;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;1.588;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2022;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.587;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;0.253;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.059;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2022;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;3.109;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;1.748;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.298;Regional;More and more trains crossing European borders - European Data Journalism Network
-2022;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.188;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;0.987;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.612;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.471;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.687;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;2.985;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.484;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.792;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2022;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.49;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2022;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.407;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.027;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.471;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.744;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;1.775;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.925;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.356;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.824;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.616;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2023;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.751;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;1.346;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;1.777;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.059;Regional;More and more trains crossing European borders - European Data Journalism Network
-2023;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.383;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.913;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.675;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.93;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.278;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;1.075;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.982;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.579;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2023;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.254;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2023;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.975;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.457;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;0.308;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;2.193;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.538;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.609;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.162;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.333;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.161;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;0.801;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.784;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;1.368;Regional;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.567;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;0.919;Long-distance;More and more trains crossing European borders - European Data Journalism Network
-2024;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.318;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.647;Long-distance;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.525;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.395;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;0.33;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.461;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
-2024;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.358;Regional;All the cross-border trains in Europe - Osservatorio Balcani e Caucaso Transeuropa
-2024;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.455;Regional;More and more trains crossing European borders - European Data Journalism Network
-2024;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.714;Long-distance;Rail operators international route information (SNCF / Renfe / Trenitalia / SBB / DB / CP / etc.)
+No.;year;origin_country;origin_station_name;origin_city;origin_region;destination_country;destination_station_name;destination_city;destination_region;Passengers_millions;Type
+1;2016;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.918;Long-distance
+2;2016;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;2.077;Long-distance
+3;2016;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.705;Long-distance
+4;2016;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.258;Long-distance
+5;2016;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.158;Long-distance
+6;2016;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.328;Long-distance
+7;2016;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.881;Long-distance
+8;2016;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;2.236;Long-distance
+9;2016;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;1.451;Long-distance
+10;2016;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.37;Long-distance
+11;2016;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.73;Regional
+12;2016;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.154;Regional
+13;2016;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.388;Long-distance
+14;2016;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;2.017;Long-distance
+15;2016;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.346;Long-distance
+16;2016;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.319;Long-distance
+17;2016;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.313;Long-distance
+18;2016;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;1.988;Long-distance
+19;2016;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;0.975;Long-distance
+20;2016;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.244;Regional
+21;2016;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.356;Regional
+22;2016;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;1.003;Long-distance
+23;2017;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;2.461;Long-distance
+24;2017;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.929;Long-distance
+25;2017;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.673;Long-distance
+26;2017;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.378;Long-distance
+27;2017;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.062;Long-distance
+28;2017;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.082;Long-distance
+29;2017;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.016;Long-distance
+30;2017;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.208;Long-distance
+31;2017;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.186;Long-distance
+32;2017;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.54;Long-distance
+33;2017;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.276;Regional
+34;2017;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.384;Regional
+35;2017;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;2.071;Long-distance
+36;2017;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.599;Long-distance
+37;2017;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.676;Long-distance
+38;2017;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.486;Long-distance
+39;2017;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;2.749;Long-distance
+40;2017;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;1.563;Long-distance
+41;2017;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.642;Long-distance
+42;2017;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.758;Regional
+43;2017;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.102;Regional
+44;2017;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.087;Long-distance
+45;2018;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;2.425;Long-distance
+46;2018;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.869;Long-distance
+47;2018;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;1.947;Long-distance
+48;2018;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.163;Long-distance
+49;2018;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.171;Long-distance
+50;2018;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.596;Long-distance
+51;2018;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.784;Long-distance
+52;2018;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.64;Long-distance
+53;2018;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.412;Long-distance
+54;2018;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;2.992;Long-distance
+55;2018;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;2.591;Regional
+56;2018;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.192;Regional
+57;2018;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;0.286;Long-distance
+58;2018;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.03;Long-distance
+59;2018;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.17;Long-distance
+60;2018;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.278;Long-distance
+61;2018;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.271;Long-distance
+62;2018;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;2.059;Long-distance
+63;2018;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.381;Long-distance
+64;2018;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.401;Regional
+65;2018;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.42;Regional
+66;2018;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;0.772;Long-distance
+67;2019;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.87;Long-distance
+68;2019;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;2.22;Long-distance
+69;2019;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.307;Long-distance
+70;2019;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.582;Long-distance
+71;2019;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.23;Long-distance
+72;2019;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.949;Long-distance
+73;2019;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.46;Long-distance
+74;2019;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;2.726;Long-distance
+75;2019;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;0.335;Long-distance
+76;2019;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;1.153;Long-distance
+77;2019;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.775;Regional
+78;2019;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.789;Regional
+79;2019;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;0.542;Long-distance
+80;2019;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.718;Long-distance
+81;2019;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.302;Long-distance
+82;2019;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.494;Long-distance
+83;2019;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;1.481;Long-distance
+84;2019;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;0.361;Long-distance
+85;2019;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.057;Long-distance
+86;2019;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.312;Regional
+87;2019;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.052;Regional
+88;2019;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;1.62;Long-distance
+89;2020;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.005;Long-distance
+90;2020;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;0.694;Long-distance
+91;2020;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;1.519;Long-distance
+92;2020;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.185;Long-distance
+93;2020;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.736;Long-distance
+94;2020;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.558;Long-distance
+95;2020;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.462;Long-distance
+96;2020;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;0.497;Long-distance
+97;2020;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;0.353;Long-distance
+98;2020;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.98;Long-distance
+99;2020;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;2.131;Regional
+100;2020;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.57;Regional
+101;2020;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.015;Long-distance
+102;2020;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;0.29;Long-distance
+103;2020;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.865;Long-distance
+104;2020;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.333;Long-distance
+105;2020;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.705;Long-distance
+106;2020;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;2.217;Long-distance
+107;2020;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;0.857;Long-distance
+108;2020;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.758;Regional
+109;2020;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.766;Regional
+110;2020;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.139;Long-distance
+111;2021;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.231;Long-distance
+112;2021;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.495;Long-distance
+113;2021;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.941;Long-distance
+114;2021;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;2.449;Long-distance
+115;2021;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.697;Long-distance
+116;2021;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.29;Long-distance
+117;2021;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.651;Long-distance
+118;2021;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;0.403;Long-distance
+119;2021;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;1.519;Long-distance
+120;2021;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;2.961;Long-distance
+121;2021;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;0.86;Regional
+122;2021;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.661;Regional
+123;2021;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;2.351;Long-distance
+124;2021;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;0.86;Long-distance
+125;2021;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.2;Long-distance
+126;2021;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;1.988;Long-distance
+127;2021;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;1.275;Long-distance
+128;2021;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;0.559;Long-distance
+129;2021;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.427;Long-distance
+130;2021;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.906;Regional
+131;2021;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.205;Regional
+132;2021;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.597;Long-distance
+133;2022;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.244;Long-distance
+134;2022;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;2.878;Long-distance
+135;2022;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.643;Long-distance
+136;2022;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.318;Long-distance
+137;2022;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.184;Long-distance
+138;2022;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.588;Long-distance
+139;2022;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.587;Long-distance
+140;2022;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;0.253;Long-distance
+141;2022;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.059;Long-distance
+142;2022;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;3.109;Long-distance
+143;2022;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;1.748;Regional
+144;2022;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.298;Regional
+145;2022;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.188;Long-distance
+146;2022;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;0.987;Long-distance
+147;2022;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.612;Long-distance
+148;2022;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.471;Long-distance
+149;2022;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.687;Long-distance
+150;2022;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;2.985;Long-distance
+151;2022;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;2.484;Long-distance
+152;2022;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.792;Regional
+153;2022;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.49;Regional
+154;2022;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;2.407;Long-distance
+155;2023;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.027;Long-distance
+156;2023;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;1.471;Long-distance
+157;2023;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;0.744;Long-distance
+158;2023;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;1.775;Long-distance
+159;2023;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.925;Long-distance
+160;2023;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.356;Long-distance
+161;2023;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.824;Long-distance
+162;2023;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.616;Long-distance
+163;2023;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;2.751;Long-distance
+164;2023;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;1.346;Long-distance
+165;2023;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;1.777;Regional
+166;2023;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.059;Regional
+167;2023;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;1.383;Long-distance
+168;2023;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.913;Long-distance
+169;2023;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.675;Long-distance
+170;2023;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.93;Long-distance
+171;2023;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;0.278;Long-distance
+172;2023;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;1.075;Long-distance
+173;2023;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.982;Long-distance
+174;2023;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.579;Regional
+175;2023;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.254;Regional
+176;2023;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;1.975;Long-distance
+177;2024;Italy;Milano Centrale;Milano;Lombardia;Germany;München Hbf;München;Bayern;1.457;Long-distance
+178;2024;Italy;Bolzano;Bolzano;Trentino-Alto Adige;Germany;München Hbf;München;Bayern;0.308;Long-distance
+179;2024;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Zürich HB;Zürich;Zürich;2.193;Long-distance
+180;2024;Italy;Milano Centrale;Milano;Lombardia;Switzerland;Lugano;Lugano;Ticino;0.538;Long-distance
+181;2024;Italy;Domodossola;Domodossola;Piemonte;Switzerland;Brig;Brig;Valais;0.609;Long-distance
+182;2024;Italy;Milano Centrale;Milano;Lombardia;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.162;Long-distance
+183;2024;Italy;Torino Porta Susa;Torino;Piemonte;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.333;Long-distance
+184;2024;Italy;Milano Centrale;Milano;Lombardia;France;Paris Gare de Lyon;Paris;Île-de-France;1.161;Long-distance
+185;2024;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Genève;Genève;Genève;0.801;Long-distance
+186;2024;France;Paris Gare de Lyon;Paris;Île-de-France;Switzerland;Lausanne;Lausanne;Vaud;0.784;Long-distance
+187;2024;France;Mulhouse Ville;Mulhouse;Grand Est;Switzerland;Basel SBB;Basel;Basel-Stadt;1.368;Regional
+188;2024;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;Switzerland;Genève;Genève;Genève;0.567;Regional
+189;2024;France;Paris Est;Paris;Île-de-France;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;0.919;Long-distance
+190;2024;France;Paris Est;Paris;Île-de-France;Germany;München Hbf;München;Bayern;1.318;Long-distance
+191;2024;France;Strasbourg;Strasbourg;Grand Est;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;0.647;Long-distance
+192;2024;France;Paris Gare de Lyon;Paris;Île-de-France;Spain;Barcelona Sants;Barcelona;Cataluña;0.525;Long-distance
+193;2024;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Spain;Barcelona Sants;Barcelona;Cataluña;2.395;Long-distance
+194;2024;France;Toulouse Matabiau;Toulouse;Occitanie;Spain;Barcelona Sants;Barcelona;Cataluña;0.33;Long-distance
+195;2024;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;1.461;Long-distance
+196;2024;Portugal;Porto Campanhã;Porto;Porto;Spain;Vigo Guixar;Vigo;Galicia;0.358;Regional
+197;2024;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;Spain;Vigo Guixar;Vigo;Galicia;0.455;Regional
+198;2024;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;France;Hendaye;Hendaye;Nouvelle-Aquitaine;0.714;Long-distance
+199;2016;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.918;Long-distance
+200;2016;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;2.077;Long-distance
+201;2016;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.705;Long-distance
+202;2016;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.258;Long-distance
+203;2016;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.158;Long-distance
+204;2016;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.328;Long-distance
+205;2016;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;2.881;Long-distance
+206;2016;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;2.236;Long-distance
+207;2016;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;1.451;Long-distance
+208;2016;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.37;Long-distance
+209;2016;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.73;Regional
+210;2016;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.154;Regional
+211;2016;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.388;Long-distance
+212;2016;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;2.017;Long-distance
+213;2016;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.346;Long-distance
+214;2016;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.319;Long-distance
+215;2016;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.313;Long-distance
+216;2016;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;1.988;Long-distance
+217;2016;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.975;Long-distance
+218;2016;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.244;Regional
+219;2016;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.356;Regional
+220;2016;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.003;Long-distance
+221;2017;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;2.461;Long-distance
+222;2017;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.929;Long-distance
+223;2017;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.673;Long-distance
+224;2017;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.378;Long-distance
+225;2017;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.062;Long-distance
+226;2017;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.082;Long-distance
+227;2017;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;2.016;Long-distance
+228;2017;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.208;Long-distance
+229;2017;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.186;Long-distance
+230;2017;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.54;Long-distance
+231;2017;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.276;Regional
+232;2017;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.384;Regional
+233;2017;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;2.071;Long-distance
+234;2017;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.599;Long-distance
+235;2017;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.676;Long-distance
+236;2017;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.486;Long-distance
+237;2017;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.749;Long-distance
+238;2017;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;1.563;Long-distance
+239;2017;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.642;Long-distance
+240;2017;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.758;Regional
+241;2017;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.102;Regional
+242;2017;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.087;Long-distance
+243;2018;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;2.425;Long-distance
+244;2018;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.869;Long-distance
+245;2018;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;1.947;Long-distance
+246;2018;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;2.163;Long-distance
+247;2018;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.171;Long-distance
+248;2018;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;0.596;Long-distance
+249;2018;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.784;Long-distance
+250;2018;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.64;Long-distance
+251;2018;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.412;Long-distance
+252;2018;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;2.992;Long-distance
+253;2018;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;2.591;Regional
+254;2018;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.192;Regional
+255;2018;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;0.286;Long-distance
+256;2018;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.03;Long-distance
+257;2018;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.17;Long-distance
+258;2018;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.278;Long-distance
+259;2018;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.271;Long-distance
+260;2018;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;2.059;Long-distance
+261;2018;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.381;Long-distance
+262;2018;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.401;Regional
+263;2018;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.42;Regional
+264;2018;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.772;Long-distance
+265;2019;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.87;Long-distance
+266;2019;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;2.22;Long-distance
+267;2019;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.307;Long-distance
+268;2019;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.582;Long-distance
+269;2019;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.23;Long-distance
+270;2019;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;0.949;Long-distance
+271;2019;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.46;Long-distance
+272;2019;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;2.726;Long-distance
+273;2019;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;0.335;Long-distance
+274;2019;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;1.153;Long-distance
+275;2019;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.775;Regional
+276;2019;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.789;Regional
+277;2019;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;0.542;Long-distance
+278;2019;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.718;Long-distance
+279;2019;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.302;Long-distance
+280;2019;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.494;Long-distance
+281;2019;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.481;Long-distance
+282;2019;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;0.361;Long-distance
+283;2019;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.057;Long-distance
+284;2019;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.312;Regional
+285;2019;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.052;Regional
+286;2019;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.62;Long-distance
+287;2020;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.005;Long-distance
+288;2020;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;0.694;Long-distance
+289;2020;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;1.519;Long-distance
+290;2020;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;2.185;Long-distance
+291;2020;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.736;Long-distance
+292;2020;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;0.558;Long-distance
+293;2020;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.462;Long-distance
+294;2020;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;0.497;Long-distance
+295;2020;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;0.353;Long-distance
+296;2020;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.98;Long-distance
+297;2020;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;2.131;Regional
+298;2020;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.57;Regional
+299;2020;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.015;Long-distance
+300;2020;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;0.29;Long-distance
+301;2020;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.865;Long-distance
+302;2020;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.333;Long-distance
+303;2020;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.705;Long-distance
+304;2020;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;2.217;Long-distance
+305;2020;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.857;Long-distance
+306;2020;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.758;Regional
+307;2020;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.766;Regional
+308;2020;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.139;Long-distance
+309;2021;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.231;Long-distance
+310;2021;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.495;Long-distance
+311;2021;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;2.941;Long-distance
+312;2021;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;2.449;Long-distance
+313;2021;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.697;Long-distance
+314;2021;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;1.29;Long-distance
+315;2021;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;0.651;Long-distance
+316;2021;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;0.403;Long-distance
+317;2021;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;1.519;Long-distance
+318;2021;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;2.961;Long-distance
+319;2021;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;0.86;Regional
+320;2021;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.661;Regional
+321;2021;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;2.351;Long-distance
+322;2021;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;0.86;Long-distance
+323;2021;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.2;Long-distance
+324;2021;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;1.988;Long-distance
+325;2021;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;1.275;Long-distance
+326;2021;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;0.559;Long-distance
+327;2021;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.427;Long-distance
+328;2021;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.906;Regional
+329;2021;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.205;Regional
+330;2021;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.597;Long-distance
+331;2022;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.244;Long-distance
+332;2022;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;2.878;Long-distance
+333;2022;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.643;Long-distance
+334;2022;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.318;Long-distance
+335;2022;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.184;Long-distance
+336;2022;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;1.588;Long-distance
+337;2022;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.587;Long-distance
+338;2022;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;0.253;Long-distance
+339;2022;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.059;Long-distance
+340;2022;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;3.109;Long-distance
+341;2022;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;1.748;Regional
+342;2022;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.298;Regional
+343;2022;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.188;Long-distance
+344;2022;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;0.987;Long-distance
+345;2022;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.612;Long-distance
+346;2022;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.471;Long-distance
+347;2022;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.687;Long-distance
+348;2022;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;2.985;Long-distance
+349;2022;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.484;Long-distance
+350;2022;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.792;Regional
+351;2022;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.49;Regional
+352;2022;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;2.407;Long-distance
+353;2023;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.027;Long-distance
+354;2023;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;1.471;Long-distance
+355;2023;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;0.744;Long-distance
+356;2023;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;1.775;Long-distance
+357;2023;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.925;Long-distance
+358;2023;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.356;Long-distance
+359;2023;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.824;Long-distance
+360;2023;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.616;Long-distance
+361;2023;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;2.751;Long-distance
+362;2023;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;1.346;Long-distance
+363;2023;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;1.777;Regional
+364;2023;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.059;Regional
+365;2023;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;1.383;Long-distance
+366;2023;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.913;Long-distance
+367;2023;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.675;Long-distance
+368;2023;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.93;Long-distance
+369;2023;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;0.278;Long-distance
+370;2023;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;1.075;Long-distance
+371;2023;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.982;Long-distance
+372;2023;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.579;Regional
+373;2023;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.254;Regional
+374;2023;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.975;Long-distance
+375;2024;Germany;München Hbf;München;Bayern;Italy;Milano Centrale;Milano;Lombardia;1.457;Long-distance
+376;2024;Germany;München Hbf;München;Bayern;Italy;Bolzano;Bolzano;Trentino-Alto Adige;0.308;Long-distance
+377;2024;Switzerland;Zürich HB;Zürich;Zürich;Italy;Milano Centrale;Milano;Lombardia;2.193;Long-distance
+378;2024;Switzerland;Lugano;Lugano;Ticino;Italy;Milano Centrale;Milano;Lombardia;0.538;Long-distance
+379;2024;Switzerland;Brig;Brig;Valais;Italy;Domodossola;Domodossola;Piemonte;0.609;Long-distance
+380;2024;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Milano Centrale;Milano;Lombardia;2.162;Long-distance
+381;2024;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;Italy;Torino Porta Susa;Torino;Piemonte;1.333;Long-distance
+382;2024;France;Paris Gare de Lyon;Paris;Île-de-France;Italy;Milano Centrale;Milano;Lombardia;1.161;Long-distance
+383;2024;Switzerland;Genève;Genève;Genève;France;Paris Gare de Lyon;Paris;Île-de-France;0.801;Long-distance
+384;2024;Switzerland;Lausanne;Lausanne;Vaud;France;Paris Gare de Lyon;Paris;Île-de-France;0.784;Long-distance
+385;2024;Switzerland;Basel SBB;Basel;Basel-Stadt;France;Mulhouse Ville;Mulhouse;Grand Est;1.368;Regional
+386;2024;Switzerland;Genève;Genève;Genève;France;Annemasse;Annemasse;Auvergne-Rhône-Alpes;0.567;Regional
+387;2024;Germany;Frankfurt (Main) Hbf;Frankfurt am Main;Hessen;France;Paris Est;Paris;Île-de-France;0.919;Long-distance
+388;2024;Germany;München Hbf;München;Bayern;France;Paris Est;Paris;Île-de-France;1.318;Long-distance
+389;2024;Germany;Stuttgart Hbf;Stuttgart;Baden-Württemberg;France;Strasbourg;Strasbourg;Grand Est;0.647;Long-distance
+390;2024;Spain;Barcelona Sants;Barcelona;Cataluña;France;Paris Gare de Lyon;Paris;Île-de-France;0.525;Long-distance
+391;2024;Spain;Barcelona Sants;Barcelona;Cataluña;France;Lyon Part-Dieu;Lyon;Auvergne-Rhône-Alpes;2.395;Long-distance
+392;2024;Spain;Barcelona Sants;Barcelona;Cataluña;France;Toulouse Matabiau;Toulouse;Occitanie;0.33;Long-distance
+393;2024;Spain;Madrid Chamartín;Madrid;Comunidad de Madrid;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;1.461;Long-distance
+394;2024;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Porto Campanhã;Porto;Porto;0.358;Regional
+395;2024;Spain;Vigo Guixar;Vigo;Galicia;Portugal;Viana do Castelo;Viana do Castelo;Viana do Castelo;0.455;Regional
+396;2024;France;Hendaye;Hendaye;Nouvelle-Aquitaine;Portugal;Lisboa Santa Apolónia;Lisboa;Lisboa;0.714;Long-distance
