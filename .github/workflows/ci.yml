@@ -40,9 +40,14 @@ jobs:
         run: pip install -r API/requirements-dev.txt
 
       # ── Tests unitaires + intégration backend ──────────────────
-      # Les tests utilisent une base SQLite isolée (cf. tests/conftest.py),
-      # ils n'ont donc pas besoin du service PostgreSQL pour s'exécuter.
+      # Les tests utilisent PostgreSQL en CI (grâce à la variable CI=true),
+      # et SQLite en mémoire en local (conftest.py détecte l'environnement).
       - name: Run backend tests (pytest)
+        env:
+          CI: true
+          DATABASE_URL: postgresql://mspr:mspr@localhost:5432/msprds
+          SECRET_KEY: test-secret-key
+          ALGORITHM: HS256
         run: |
           cd API
           pytest --cov=. --cov-report=term-missing
