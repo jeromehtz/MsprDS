@@ -20,6 +20,7 @@ import os
 import pickle
 from functools import lru_cache
 from pathlib import Path
+import xgboost as xgb
 
 import pandas as pd
 
