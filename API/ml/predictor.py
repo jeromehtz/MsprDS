@@ -236,15 +236,10 @@ def predict_co2(payload: dict) -> dict:
         if col in row:
             row[col] = _safe_category(row[col], cm[col])
 
-    print("\n=== XGBOOST DEBUG ===")
+    print("\n=== Obtenir les catégories ===")
 
-    for col in cats:
-        print(
-            f"{col}: "
-            f"value={row.get(col)!r} | "
-            f"mapping_count={len(cm.get(col, []))} | "
-            f"first_categories={cm.get(col, [])[:5]}"
-        )
+    print("XGBoost :", xgb.__version__)
+    print("get_categories :", hasattr(model.get_booster(), "get_categories"))
 
     print("=====================\n")
 
