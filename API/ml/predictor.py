@@ -234,14 +234,16 @@ def predict_co2(payload: dict) -> dict:
     # connues du modèle entraîné (cf. _safe_category) avant de construire le DataFrame.
     for col in cats:
         if col in row:
-            row[col] = _safe_category(row[col], cm[col])
+            original_value = row[col]
+            safe_value = _safe_category(row[col], cm[col])
 
-    print("\n=== Obtenir les catégories ===")
+            if original_value != safe_value:
+                print(
+                    f"⚠️ Catégorie remplacée : "
+                    f"{col} = {original_value!r} → {safe_value!r}"
+                )
 
-    print("XGBoost :", xgb.__version__)
-    print("get_categories :", hasattr(model.get_booster(), "get_categories"))
-
-    print("=====================\n")
+            row[col] = safe_value
 
     X = pd.DataFrame([row])[feats]
 

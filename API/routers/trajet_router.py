@@ -14,6 +14,7 @@ router = APIRouter(
     tags=["Trajets"]
 )
 
+BC_ENABLED = os.getenv("BC_ENABLED", "true").lower() == "true"
 BC_BASE_URL = os.getenv("BC_BASE_URL")
 BC_ACCESS_TOKEN = os.getenv("BC_ACCESS_TOKEN")
 BC_COMPANY_ID = os.getenv("BC_COMPANY_ID")
@@ -241,7 +242,7 @@ def get_trajet_filters(
     current_user: str = Depends(get_current_user),
 ):
     """Valeurs distinctes disponibles pour alimenter les filtres de l'interface."""
-    if BC_BASE_URL and BC_ACCESS_TOKEN:
+    if BC_ENABLED and BC_BASE_URL and BC_ACCESS_TOKEN:
         trajets = _get_bc_trajets()
 
         def _distinct(key):
@@ -281,7 +282,7 @@ def get_trajets(
     limit: int = Query(default=500, ge=1, le=5000),
 ):
     """Liste des trajets, avec filtres optionnels (année, type de service, régions, recherche gare)."""
-    if BC_BASE_URL and BC_ACCESS_TOKEN:
+    if BC_ENABLED and BC_BASE_URL and BC_ACCESS_TOKEN:
         trajets = _get_bc_trajets()
 
         if year is not None:

@@ -34,6 +34,7 @@ from fastapi.testclient import TestClient
 from database import Base, get_db
 import models.user   # noqa: F401 — enregistre la table `users` sur Base.metadata
 import models.trajet  # noqa: F401 — enregistre la table `trajets` sur Base.metadata
+os.environ["BC_ENABLED"] = "false"
 from main import app
 
 # Créer l'engine approprié selon l'environnement
