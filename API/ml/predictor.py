@@ -249,19 +249,28 @@ def predict_co2(payload: dict) -> dict:
         bad_column_index = int(match.group(1))
         bad_column = X.columns[bad_column_index]
 
-        print(
-            f"⚠️ Catégorie XGBoost inconnue pour {bad_column}, "
-            f"fallback appliqué"
-        )
+        # cm[bad_column] peut contenir des modalités inconnues du modèle réellement
+        # entraîné (référentiel enrichi après coup) : on essaie plusieurs candidats
+        # jusqu'à ce que le booster en accepte un.
+        already_tried = {row[bad_column]}
+        train_g_km = None
 
-        fallback = cm[bad_column][0]
+        for candidate in cm[bad_column]:
+            if candidate in already_tried:
+                continue
+            already_tried.add(candidate)
 
-        X[bad_column] = pd.Categorical(
-            [fallback],
-            categories=cm[bad_column]
-        )
+            X[bad_column] = pd.Categorical([candidate], categories=cm[bad_column])
 
-        train_g_km = float(model.predict(X)[0])
+            try:
+                train_g_km = float(model.predict(X)[0])
+                print(f"⚠️ Catégorie XGBoost inconnue pour {bad_column}, fallback vers '{candidate}' appliqué")
+                break
+            except xgb.core.XGBoostError:
+                continue
+
+        if train_g_km is None:
+            raise
 
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
