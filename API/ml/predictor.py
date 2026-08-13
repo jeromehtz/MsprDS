@@ -254,7 +254,10 @@ def predict_co2(payload: dict) -> dict:
                 f"remplacée par une valeur manquante"
             )
 
-            X[bad_column] = pd.Categorical([None], categories=cm[bad_column])
+            # Vide aussi la liste des catégories, sinon XGBoost re-signale
+            # la même colonne indéfiniment (il valide le dtype entier,
+            # pas juste la valeur utilisée).
+            X[bad_column] = pd.Categorical([None], categories=[])
 
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
