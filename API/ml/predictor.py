@@ -229,48 +229,32 @@ def predict_co2(payload: dict) -> dict:
     for col in cats:
         X[col] = pd.Categorical(X[col], categories=cm[col])
 
-    try:
-        train_g_km = float(model.predict(X)[0])
+    while True:
+        try:
+            train_g_km = float(model.predict(X)[0])
+            break
+        except xgb.core.XGBoostError as e:
+            message = str(e)
 
-    except xgb.core.XGBoostError as e:
-        message = str(e)
+            if "Found a category not in the training set" not in message:
+                raise
 
-        if "Found a category not in the training set" not in message:
-            raise
+            match = re.search(
+                r"for the (\d+)th \(0-based\) column",
+                message
+            )
+            if not match:
+                raise
 
-        match = re.search(
-            r"for the (\d+)th \(0-based\) column",
-            message
-        )
+            bad_column_index = int(match.group(1))
+            bad_column = X.columns[bad_column_index]
 
-        if not match:
-            raise
+            print(
+                f"⚠️ Catégorie XGBoost inconnue pour {bad_column}, "
+                f"remplacée par une valeur manquante"
+            )
 
-        bad_column_index = int(match.group(1))
-        bad_column = X.columns[bad_column_index]
-
-        # cm[bad_column] peut contenir des modalités inconnues du modèle réellement
-        # entraîné (référentiel enrichi après coup) : on essaie plusieurs candidats
-        # jusqu'à ce que le booster en accepte un.
-        already_tried = {row[bad_column]}
-        train_g_km = None
-
-        for candidate in cm[bad_column]:
-            if candidate in already_tried:
-                continue
-            already_tried.add(candidate)
-
-            X[bad_column] = pd.Categorical([candidate], categories=cm[bad_column])
-
-            try:
-                train_g_km = float(model.predict(X)[0])
-                print(f"⚠️ Catégorie XGBoost inconnue pour {bad_column}, fallback vers '{candidate}' appliqué")
-                break
-            except xgb.core.XGBoostError:
-                continue
-
-        if train_g_km is None:
-            raise
+            X[bad_column] = pd.Categorical([None], categories=cm[bad_column])
 
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
