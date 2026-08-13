@@ -129,14 +129,26 @@ def _plane_factor(iso: str) -> float:
 
 def _safe_category(value: str, categories: list, fallback: str | None = None) -> str:
     """
-    Retombe sur une modalité connue du modèle si `value` n'est pas dans les catégories
-    vues à l'entraînement. Nécessaire car le booster XGBoost garde en interne sa propre
-    liste de catégories : une valeur présente dans `category_mappings` (référentiel
-    potentiellement enrichi après coup) peut malgré tout être inconnue du modèle entraîné.
+    Garantit que la valeur retournée appartient aux catégories connues
+    du modèle XGBoost.
     """
+    if not categories:
+        raise ValueError(
+            "Aucune catégorie disponible pour cette feature XGBoost."
+        )
+
     if value in categories:
         return value
-    return fallback if fallback in categories else categories[0]
+
+    if fallback is not None and fallback in categories:
+        return fallback
+
+    print(
+        f"⚠️ Catégorie XGBoost inconnue : {value!r}, "
+        f"remplacée par {categories[0]!r}"
+    )
+
+    return categories[0]
 
 
 def get_options() -> dict:
@@ -224,40 +236,24 @@ def predict_co2(payload: dict) -> dict:
         if col in row:
             row[col] = _safe_category(row[col], cm[col])
 
+    print("\n=== XGBOOST DEBUG ===")
+
+    for col in cats:
+        print(
+            f"{col}: "
+            f"value={row.get(col)!r} | "
+            f"mapping_count={len(cm.get(col, []))} | "
+            f"first_categories={cm.get(col, [])[:5]}"
+        )
+
+    print("=====================\n")
+
     X = pd.DataFrame([row])[feats]
 
     for col in cats:
         X[col] = pd.Categorical(X[col], categories=cm[col])
 
-    while True:
-        try:
-            train_g_km = float(model.predict(X)[0])
-            break
-        except xgb.core.XGBoostError as e:
-            message = str(e)
-
-            if "Found a category not in the training set" not in message:
-                raise
-
-            match = re.search(
-                r"for the (\d+)th \(0-based\) column",
-                message
-            )
-            if not match:
-                raise
-
-            bad_column_index = int(match.group(1))
-            bad_column = X.columns[bad_column_index]
-
-            print(
-                f"⚠️ Catégorie XGBoost inconnue pour {bad_column}, "
-                f"remplacée par une valeur manquante"
-            )
-
-            # Vide aussi la liste des catégories, sinon XGBoost re-signale
-            # la même colonne indéfiniment (il valide le dtype entier,
-            # pas juste la valeur utilisée).
-            X[bad_column] = pd.Categorical([None], categories=[])
+    train_g_km = float(model.predict(X)[0])
 
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
