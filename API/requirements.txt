@@ -11,6 +11,6 @@ python-multipart
 pandas
 numpy
 scikit-learn
-xgboost
+xgboost=3.2.0
 mlflow
 requests
