@@ -232,6 +232,9 @@ def predict_co2(payload: dict) -> dict:
 
     # Sécurise toutes les colonnes catégorielles vis-à-vis des catégories réellement
     # connues du modèle entraîné (cf. _safe_category) avant de construire le DataFrame.
+
+    X = pd.DataFrame([row])[feats]
+    
     for col in cats:
         if col in row:
             original_value = row[col]
@@ -243,7 +246,7 @@ def predict_co2(payload: dict) -> dict:
                     f"{col} = {original_value!r} → {safe_value!r}"
                 )
             row[col] = safe_value
-            
+
         value = X.iloc[0][col]
         if value not in cm[col]:
             print(
@@ -251,8 +254,6 @@ def predict_co2(payload: dict) -> dict:
                 f"col={col!r}, value={value!r}"
             )
             print(f"Catégories disponibles : {cm[col][:20]}")
-
-    X = pd.DataFrame([row])[feats]
 
     for col in cats:
         X[col] = pd.Categorical(X[col], categories=cm[col])
