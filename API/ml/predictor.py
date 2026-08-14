@@ -251,15 +251,15 @@ def predict_co2(payload: dict) -> dict:
         X[col] = pd.Categorical(X[col], categories=cm[col])
     
     for col in cats:
-    value = X.iloc[0][col]
-    if value not in cm[col]:
-        print(
-            f"❌ CATÉGORIE ENCORE INVALIDE : "
-            f"col={col!r}, value={value!r}"
-        )
-        print(f"Catégories disponibles : {cm[col][:20]}")
+        value = X.iloc[0][col]
+        if value not in cm[col]:
+            print(
+                f"❌ CATÉGORIE ENCORE INVALIDE : "
+                f"col={col!r}, value={value!r}"
+            )
+            print(f"Catégories disponibles : {cm[col][:20]}")
 
-    train_g_km = float(model.predict(X)[0])
+        train_g_km = float(model.predict(X)[0])
 
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
