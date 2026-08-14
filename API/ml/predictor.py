@@ -242,15 +242,8 @@ def predict_co2(payload: dict) -> dict:
                     f"⚠️ Catégorie remplacée : "
                     f"{col} = {original_value!r} → {safe_value!r}"
                 )
-
             row[col] = safe_value
-
-    X = pd.DataFrame([row])[feats]
-
-    for col in cats:
-        X[col] = pd.Categorical(X[col], categories=cm[col])
-    
-    for col in cats:
+            
         value = X.iloc[0][col]
         if value not in cm[col]:
             print(
@@ -259,7 +252,12 @@ def predict_co2(payload: dict) -> dict:
             )
             print(f"Catégories disponibles : {cm[col][:20]}")
 
-        train_g_km = float(model.predict(X)[0])
+    X = pd.DataFrame([row])[feats]
+
+    for col in cats:
+        X[col] = pd.Categorical(X[col], categories=cm[col])
+
+    train_g_km = float(model.predict(X)[0])
 
     car_g_km = float(emissions_car)
     plane_g_km = _plane_factor(o_iso)
