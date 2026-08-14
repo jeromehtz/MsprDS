@@ -232,6 +232,7 @@ def predict_co2(payload: dict) -> dict:
     # Sécurise toutes les colonnes catégorielles vis-à-vis des catégories réellement
     # connues du modèle entraîné (cf. _safe_category) avant de construire le DataFrame.
 
+    # Sécurisation des catégories AVANT de construire X
     for col in cats:
         if col in row:
             original_value = row[col]
@@ -249,11 +250,11 @@ def predict_co2(payload: dict) -> dict:
                 )
 
 
-    # On construit X seulement après avoir corrigé les catégories
+    # Construction du DataFrame APRÈS correction
     X = pd.DataFrame([row])[feats]
 
 
-    # Vérification finale avant XGBoost
+    # Vérification finale des catégories réellement envoyées à XGBoost
     for col in cats:
         value = X.iloc[0][col]
 
@@ -269,6 +270,7 @@ def predict_co2(payload: dict) -> dict:
             )
 
 
+    # Application des catégories attendues par XGBoost
     for col in cats:
         X[col] = pd.Categorical(
             X[col],
