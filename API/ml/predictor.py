@@ -127,28 +127,27 @@ def _plane_factor(iso: str) -> float:
     return plane_by_iso.get(iso, 250.0)  # défaut Europe si pays inconnu
 
 
-def _safe_category(value: str, categories: list, fallback: str | None = None) -> str:
-    """
-    Garantit que la valeur retournée appartient aux catégories connues
-    du modèle XGBoost.
-    """
-    if not categories:
-        raise ValueError(
-            "Aucune catégorie disponible pour cette feature XGBoost."
-        )
+def _safe_category(value, categories, fallback=None):
+    categories = list(categories)
 
+    # Valeur valide
     if value in categories:
         return value
 
-    if fallback is not None and fallback in categories:
-        return fallback
+    # Si aucune catégorie n'est disponible
+    if not categories:
+        return None
+
+    # Le fallback doit lui-même être valide
+    if fallback not in categories:
+        fallback = categories[0]
 
     print(
-        f"⚠️ Catégorie XGBoost inconnue : {value!r}, "
-        f"remplacée par {categories[0]!r}"
+        f"⚠️ Catégorie XGBoost inconnue : "
+        f"{value!r}, remplacée par {fallback!r}"
     )
 
-    return categories[0]
+    return fallback
 
 
 def get_options() -> dict:
@@ -233,30 +232,48 @@ def predict_co2(payload: dict) -> dict:
     # Sécurise toutes les colonnes catégorielles vis-à-vis des catégories réellement
     # connues du modèle entraîné (cf. _safe_category) avant de construire le DataFrame.
 
-    X = pd.DataFrame([row])[feats]
-    
     for col in cats:
         if col in row:
             original_value = row[col]
-            safe_value = _safe_category(row[col], cm[col])
 
-            if original_value != safe_value:
+            row[col] = _safe_category(
+                original_value,
+                cm[col],
+                fallback=cm[col][0] if cm[col] else None,
+            )
+
+            if original_value != row[col]:
                 print(
                     f"⚠️ Catégorie remplacée : "
-                    f"{col} = {original_value!r} → {safe_value!r}"
+                    f"{col} = {original_value!r} → {row[col]!r}"
                 )
-            row[col] = safe_value
 
+
+    # On construit X seulement après avoir corrigé les catégories
+    X = pd.DataFrame([row])[feats]
+
+
+    # Vérification finale avant XGBoost
+    for col in cats:
         value = X.iloc[0][col]
+
         if value not in cm[col]:
             print(
                 f"❌ CATÉGORIE ENCORE INVALIDE : "
                 f"col={col!r}, value={value!r}"
             )
-            print(f"Catégories disponibles : {cm[col][:20]}")
+        else:
+            print(
+                f"✅ Catégorie valide : "
+                f"col={col!r}, value={value!r}"
+            )
+
 
     for col in cats:
-        X[col] = pd.Categorical(X[col], categories=cm[col])
+        X[col] = pd.Categorical(
+            X[col],
+            categories=cm[col]
+        )
 
     train_g_km = float(model.predict(X)[0])
 
