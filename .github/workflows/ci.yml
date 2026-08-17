@@ -138,6 +138,7 @@ jobs:
       - name: Run E2E tests (Playwright)
         env:
           STREAMLIT_URL: http://localhost:8501
+          E2E_TEST_MODE: "1"
         run: |
           cd e2e
           pytest

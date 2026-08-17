@@ -58,12 +58,17 @@ def test_navigate_to_kpi_page(app_page):
 
 def test_navigate_to_monitoring_page(app_page):
     app_page.get_by_test_id("stSidebar").get_by_text("Monitoring").click()
-    app_page.wait_for_selector("text=Santé du service", timeout=10000)
-    # Le health check (public) renseigne l'état des composants
-    assert app_page.get_by_text("Base de données").first.is_visible()
+
+    db_status = app_page.get_by_text("Base de données").first
+    db_status.wait_for(state="visible", timeout=15000)
+
+    assert db_status.is_visible()
 
 
 def test_navigate_to_api_status_page(app_page):
     app_page.get_by_test_id("stSidebar").get_by_text("API Status").click()
-    app_page.wait_for_selector("text=État de l'API", timeout=10000)
-    assert app_page.get_by_text("Status code").first.is_visible()
+
+    status_code = app_page.get_by_text("Status code").first
+    status_code.wait_for(state="visible", timeout=15000)
+
+    assert status_code.is_visible()

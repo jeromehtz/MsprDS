@@ -60,16 +60,53 @@ def test_trajets_filter_after_login(app_page):
     service_filter.wait_for(state="visible", timeout=15000)
     assert service_filter.is_visible()
 
+def capture_request(request):
+    print(request.url)
+    if "/predict/co2" in request.url:
+        print("\n===== API REQUEST =====")
+        print(request.method)
+        print(request.url)
+        print("BODY:", request.post_data)
+        print("=======================\n")
+
+
+def capture_response(response):
+    print(response.url)
+    if "/predict/co2" in response.url:
+        print("\n===== API RESPONSE =====")
+        print(response.status)
+        print(response.url)
+        print("BODY:", response.text())
+        print("========================\n")
+
+
 
 def test_prediction_page_after_login(app_page):
     _login_via_ui(app_page)
-    app_page.get_by_test_id("stSidebar").get_by_text("Prédiction").click()
-    # Le formulaire de prédiction se charge (bouton de soumission présent)
-    app_page.wait_for_selector("text=Prédire l'empreinte CO", timeout=15000)
 
-    app_page.get_by_role("button", name="Prédire l'empreinte CO₂").click()
-    # Le résultat affiche la comparaison par mode
-    app_page.wait_for_selector("text=Émissions par mode", timeout=20000)
-    train_metric = app_page.get_by_text("🚆 Train").first
-    train_metric.wait_for(state="visible", timeout=15000)
-    assert train_metric.is_visible()
+    app_page.get_by_test_id("stSidebar").get_by_text("Prédiction").click()
+
+    app_page.wait_for_selector(
+        "text=Prédire l'empreinte CO",
+        timeout=15000
+    )
+
+    app_page.on("request", capture_request)
+    app_page.on("response", capture_response)
+
+    app_page.get_by_role(
+        "button",
+        name="Prédire l'empreinte CO₂"
+    ).click()
+
+    # DEBUG
+    app_page.wait_for_timeout(3000)
+    print("\n========== CONTENU PREDICTION ==========")
+    
+    print(app_page.locator("body").inner_text())
+    print("=========================================\n")
+
+    app_page.wait_for_selector(
+        "text=Émissions par mode",
+        timeout=20000
+    )

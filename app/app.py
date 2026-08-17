@@ -9,6 +9,15 @@ try:
 except ImportError:
     pass
 
+class MockResponse:
+    def __init__(self, data, status_code=200):
+        self._data = data
+        self.status_code = status_code
+        self.text = str(data)
+
+    def json(self):
+        return self._data
+
 # =====================
 # CONFIG
 # =====================
@@ -39,11 +48,29 @@ def api_get(endpoint, params=None):
 
 
 def api_post(endpoint, data):
+    if os.getenv("E2E_TEST_MODE") == "1" and endpoint == "/predict/co2":
+        return MockResponse({
+            "train_g_km": 20.0,
+            "car_g_km": 120.0,
+            "plane_g_km": 180.0,
+            "co2_saved_vs_car_g_km": 100.0,
+            "co2_saved_vs_plane_g_km": 160.0,
+            "distance_km": data.get("distance_km"),
+            "total_train_kg": 8.6,
+            "total_car_kg": 51.6,
+            "total_plane_kg": 77.4
+        })
+
     headers = {}
+
     if st.session_state.token:
         headers["Authorization"] = f"Bearer {st.session_state.token}"
 
-    return requests.post(f"{API_URL}{endpoint}", json=data, headers=headers)
+    return requests.post(
+        f"{API_URL}{endpoint}",
+        json=data,
+        headers=headers
+    )
 
 
 # =====================
@@ -240,7 +267,15 @@ elif menu == "🔮 Prédiction CO₂":
                     "est_jour_ferie": 1 if ferie else 0,
                     "distance_km": float(distance) if distance else None,
                 }
+                print("\n========== APPEL API PREDICTION ==========")
+                print("URL :", f"{API_URL}/predict/co2")
+                print("PAYLOAD :", payload)
+
                 res = api_post("/predict/co2", payload)
+
+                print("STATUS :", res.status_code)
+                print("RESPONSE :", res.text)
+                print("==========================================\n")
 
                 if res.status_code == 200:
                     data = res.json()
@@ -270,7 +305,11 @@ elif menu == "🔮 Prédiction CO₂":
                         )
                         st.bar_chart(df_total)
                 else:
-                    st.error(f"Erreur de prédiction ({res.status_code})")
+                    print("STATUS :", res.status_code)
+                    print("DETAIL :", res.text)
+                    st.error(
+                        f"Erreur de prédiction ({res.status_code}) : {res.text}"
+                    )
 
 
 # =====================

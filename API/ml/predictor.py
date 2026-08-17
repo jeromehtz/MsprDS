@@ -23,6 +23,7 @@ from pathlib import Path
 import xgboost as xgb
 import re
 import pandas as pd
+import mlflow.xgboost
 
 # Racine du dépôt : API/ml/predictor.py -> parents[2]
 ROOT = Path(__file__).resolve().parents[2]
@@ -73,8 +74,18 @@ def _model():
     if _use_mlflow():
         model_uri = os.getenv("MLFLOW_MODEL_URI", "models:/co2-xgboost/latest")
         try:
-            import mlflow.xgboost  # import paresseux : MLflow optionnel
+            print("\n========== MODÈLE CHARGÉ ==========")
+            print("URI :", model_uri)
+            print("TYPE :", type(model))
+            print("FEATURE NAMES :", model.feature_names)
+            print("FEATURE TYPES :", model.feature_types)
 
+            if hasattr(model, "get_booster"):
+                booster = model.get_booster()
+                print("BOOSTER FEATURES :", booster.feature_names)
+                print("BOOSTER TYPES :", booster.feature_types)
+
+            print("===================================\n")
             tracking_uri = os.getenv("MLFLOW_TRACKING_URI")
             if tracking_uri:
                 mlflow.set_tracking_uri(tracking_uri)
@@ -243,12 +254,20 @@ def predict_co2(payload: dict) -> dict:
                 fallback=cm[col][0] if cm[col] else None,
             )
 
+            print(
+                f"DEBUG CATEGORY | {col} | "
+                f"original={original_value!r} | "
+                f"corrected={row[col]!r} | "
+                f"in_cm={row[col] in cm[col]}"
+            )
+
             if original_value != row[col]:
                 print(
                     f"⚠️ Catégorie remplacée : "
                     f"{col} = {original_value!r} → {row[col]!r}"
                 )
 
+    print("===========================\n")
 
     # Construction du DataFrame APRÈS correction
     X = pd.DataFrame([row])[feats]
@@ -269,6 +288,18 @@ def predict_co2(payload: dict) -> dict:
                 f"col={col!r}, value={value!r}"
             )
 
+    print("\n===== DEBUG PREDICTOR =====")
+    print("ROW APRÈS SÉCURISATION :")
+    for col in cats:
+        print(
+            f"{col}: "
+            f"value={row.get(col)!r} | "
+            f"valide={row.get(col) in cm[col]}"
+        )
+
+    print("\nX AVANT CATEGORICAL :")
+    print(X)
+
 
     # Application des catégories attendues par XGBoost
     for col in cats:
@@ -276,6 +307,40 @@ def predict_co2(payload: dict) -> dict:
             X[col],
             categories=cm[col]
         )
+
+    print("\n===== X APRÈS CATEGORICAL =====")
+    for col in cats:
+        print(
+            f"{col}: "
+            f"value={X[col].iloc[0]!r} | "
+            f"code={X[col].cat.codes.iloc[0]} | "
+            f"valide={X[col].iloc[0] in cm[col]}"
+        )
+    print("===============================\n")
+
+    print("\n========== MODÈLE / BUNDLE ==========")
+    print("USE_MLFLOW :", _use_mlflow())
+    print("MODEL TYPE :", type(model))
+
+    print("\nCATÉGORIES BUNDLE :")
+    for col in cats:
+        print(f"{col}: {len(cm[col])} catégories")
+
+    print("\nX :")
+    for col in cats:
+        print(
+            f"{col}: "
+            f"value={X[col].iloc[0]!r} | "
+            f"code={X[col].cat.codes.iloc[0]} | "
+            f"categories={len(X[col].cat.categories)}"
+        )
+
+    print("======================================\n")
+
+    print("\n========== AVANT MODEL.PREDICT ==========")
+    for col in cats:
+        print(f"{col} = {X[col].iloc[0]!r}")
+    print("=========================================\n")
 
     train_g_km = float(model.predict(X)[0])
 
