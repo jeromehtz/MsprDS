@@ -1,17 +1,18 @@
-from playwright.sync_api import sync_playwright
-import requests
-import re
 import os
+import requests
+import pytest
+from playwright.async_api import async_playwright
+
 
 # ============================================================
 # CONFIGURATION
 # ============================================================
 
-BASE_URL = "http://localhost:8501"
-API_URL = "http://127.0.0.1:8000"
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
+BASE_URL = os.getenv("STREAMLIT_URL", "http://127.0.0.1:8501")
 
-USERNAME = "azertyuiop"
-PASSWORD = "azertyuiop123"
+TEST_EMAIL = os.getenv("TEST_EMAIL", "test@example.com")
+TEST_PASSWORD = os.getenv("TEST_PASSWORD", "test1234")
 
 
 # ============================================================
@@ -20,20 +21,22 @@ PASSWORD = "azertyuiop123"
 
 def check_api():
     print("\n========== VÉRIFICATION API ==========")
-    print("URL :", API_URL)
+    print(f"URL : {API_URL}")
 
     try:
         response = requests.get(
-            f"{API_URL}/",
-            timeout=5
+            API_URL,
+            timeout=10
         )
 
-        print("STATUS :", response.status_code)
+        print(f"STATUS : {response.status_code}")
 
-        assert response.status_code < 500, (
-            f"L'API répond avec une erreur HTTP "
-            f"{response.status_code}"
-        )
+        if response.status_code != 200:
+            raise AssertionError(
+                f"\n❌ API inaccessible sur {API_URL}\n"
+                f"Status HTTP : {response.status_code}\n"
+                f"Réponse : {response.text}"
+            )
 
         print("✅ API disponible")
 
@@ -46,339 +49,253 @@ def check_api():
 
 
 # ============================================================
-# REMPLISSAGE DES CHAMPS
+# TEST LOGIN
 # ============================================================
 
-def _set_field(page, label, index, value):
-
-    field = page.get_by_label(label).nth(index)
-
-    field.fill(value)
-
-    print(
-        f"{label} rempli :",
-        repr(field.input_value())
-    )
-
-    field.blur()
-
-    page.wait_for_timeout(500)
-
-
-# ============================================================
-# LOG REQUÊTE API
-# ============================================================
-
-def log_request(request):
-
-    print("\n>>> REQUEST API")
-
-    print("METHOD :", request.method)
-    print("URL    :", request.url)
-    print("DATA   :", request.post_data)
-
-
-# ============================================================
-# LOG RÉPONSE API
-# ============================================================
-
-def log_response(response):
-
-    print("\n<<< RESPONSE API")
-
-    print("STATUS :", response.status)
-    print("URL    :", response.url)
-
-    try:
-        print("BODY   :", response.text())
-
-    except Exception as e:
-
-        print(
-            "BODY   : impossible à lire :",
-            e
-        )
-
-
-# ============================================================
-# LOGIN VIA L'INTERFACE STREAMLIT
-# ============================================================
-
-def _login_via_ui(page):
-
-    print("\n========== DEBUG IDENTIFIANTS ==========")
-
-    print("USERNAME :", USERNAME)
-    print("PASSWORD :", PASSWORD)
-
-    print("========================================")
-
-    # ========================================================
-    # ACTIVATION DES LOGS RÉSEAU
-    # ========================================================
-
-    page.on("request", log_request)
-    page.on("response", log_response)
-
-    # ========================================================
-    # AUTHENTIFICATION
-    # ========================================================
-
-    print("\n========== AUTHENTIFICATION ==========")
-
-    page.get_by_test_id(
-        "stSidebar"
-    ).get_by_text(
-        "Authentification"
-    ).click()
-
-    page.wait_for_selector(
-        "text=Register",
-        timeout=10000
-    )
-
-    # ========================================================
-    # REGISTER
-    # ========================================================
-
-    print("\n========== REGISTER ==========")
-
-    page.get_by_role(
-        "tab",
-        name="Register"
-    ).click()
-
-    _set_field(
-        page,
-        "Nom d'utilisateur",
-        1,
-        USERNAME
-    )
-
-    _set_field(
-        page,
-        "Mot de passe",
-        1,
-        PASSWORD
-    )
-
-    print(
-        "\n--- VALEURS DES INPUTS APRÈS REMPLISSAGE ---"
-    )
-
-    inputs = page.locator("input")
-
-    print(
-        "Nombre total d'inputs :",
-        inputs.count()
-    )
-
-    # ========================================================
-    # CRÉATION DU COMPTE
-    # ========================================================
-
-    print("\n--- CLIC CRÉER COMPTE ---")
-
-    page.get_by_role(
-        "button",
-        name="Créer compte"
-    ).click()
-
-    print("Clic effectué.")
-
-    page.wait_for_timeout(3000)
-
-    # ========================================================
-    # APRÈS REGISTER
-    # ========================================================
-
-    print("\n========== APRÈS REGISTER ==========")
-
-    print("URL :", page.url)
-
-    page.screenshot(
-        path="e2e/after_register.png",
-        full_page=True
-    )
-
-    # ========================================================
-    # RÉCUPÉRATION DES ALERTES
-    # ========================================================
-
-    all_alerts = page.locator(
-        '[data-testid="stAlert"]'
-    )
-
-    page.wait_for_timeout(1000)
-
-    print(
-        f"\nAlertes trouvées : {all_alerts.count()}"
-    )
-
-    for i in range(all_alerts.count()):
-
-        print(
-            f"  Alerte {i} :",
-            repr(
-                all_alerts.nth(i).inner_text()
-            )
-        )
-
-    # ========================================================
-    # VÉRIFICATION SUCCÈS REGISTER
-    # ========================================================
-
-    success_alert = page.locator(
-        '[data-testid="stAlert"]'
-    ).filter(
-        has_text=re.compile(
-            "succès|réussi",
-            re.IGNORECASE
-        )
-    )
-
-    assert success_alert.count() > 0, (
-        "Aucun message de succès détecté."
-    )
-
-    print("✅ Inscription réussie")
-
-    # ========================================================
-    # LOGIN
-    # ========================================================
-
-    print("\n========== LOGIN ==========")
-
-    print("USERNAME :", USERNAME)
-    print("PASSWORD :", PASSWORD)
-
-    print("============================")
-
-    page.get_by_role(
-        "tab",
-        name="Login"
-    ).click()
-
-    _set_field(
-        page,
-        "Nom d'utilisateur",
-        0,
-        USERNAME
-    )
-
-    _set_field(
-        page,
-        "Mot de passe",
-        0,
-        PASSWORD
-    )
-
-    print("\n--- VALEURS LOGIN ---")
-
-    print("\n--- CLIC SE CONNECTER ---")
-
-    page.get_by_role(
-        "button",
-        name="Se connecter"
-    ).click()
-
-    # ========================================================
-    # VÉRIFICATION MESSAGE LOGIN
-    # ========================================================
-
-    alert_or_toast = page.locator(
-        '[data-testid="stAlert"], '
-        '[data-testid="stToast"]'
-    )
-
-    try:
-
-        page.wait_for_timeout(1000)
-
-        text = alert_or_toast.first.inner_text()
-
-        print(
-            "Message détecté :",
-            repr(text)
-        )
-
-        assert text.strip() != "", (
-            "Message vide"
-        )
-
-    except Exception:
-
-        page.screenshot(
-            path="e2e/login_failed.png",
-            full_page=True
-        )
-
-        raise
-
-    # ========================================================
-    # APRÈS LOGIN
-    # ========================================================
-
-    print("\n========== APRÈS LOGIN ==========")
-
-    print("URL :", page.url)
-
-    page.screenshot(
-        path="e2e/debug_apres_login.png",
-        full_page=True
-    )
-
-    print("✅ Login terminé")
-
-
-# ============================================================
-# TEST LOGIN LOCAL
-# ============================================================
-
-def test_login_local():
+@pytest.mark.asyncio
+async def test_login_local():
 
     print("\n")
     print("=" * 60)
     print("              TEST E2E LOGIN LOCAL")
     print("=" * 60)
-    # ========================================================
-    # VÉRIFICATION API
-    # ========================================================
+
+    # --------------------------------------------------------
+    # Vérification API
+    # --------------------------------------------------------
+
     check_api()
-    # ========================================================
-    # PLAYWRIGHT
-    # =======================================================
-    print("\n========== DÉMARRAGE PLAYWRIGHT ==========")
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=os.getenv("CI", "").lower() == "true"
-        )
-        page = browser.new_page()
-        # ====================================================
-        # OUVERTURE STREAMLIT
-        # ====================================================
 
-        print("\n========== OUVERTURE STREAMLIT ==========")
-        print("URL :", BASE_URL)
-        page.goto(BASE_URL)
+    # --------------------------------------------------------
+    # Playwright
+    # --------------------------------------------------------
 
-        page.wait_for_load_state(
-            "networkidle"
+    print("========== DÉMARRAGE PLAYWRIGHT ==========")
+
+    async with async_playwright() as p:
+
+        browser = await p.chromium.launch(
+            headless=True
         )
 
-        print("✅ Streamlit chargé")
-        # ====================================================
-        # AUTHENTIFICATION
-        # ====================================================
+        page = await browser.new_page()
 
-        _login_via_ui(page)
-        print("\n")
-        print("=" * 60)
-        print("          ✅ CONNEXION RÉUSSIE !")
-        print("=" * 60)
+        try:
 
-        # ====================================================
-        # FERMETURE NAVIGATEUR
-        # ====================================================
-        browser.close()
-        print("✅ Navigateur fermé")
+            # ------------------------------------------------
+            # Ouverture Streamlit
+            # ------------------------------------------------
+
+            print(f"Ouverture : {BASE_URL}")
+
+            await page.goto(
+                BASE_URL,
+                wait_until="domcontentloaded",
+                timeout=30000
+            )
+
+            # ------------------------------------------------
+            # Attente du chargement
+            # ------------------------------------------------
+
+            await page.wait_for_timeout(3000)
+
+            print(f"Titre : {await page.title()}")
+
+            # ------------------------------------------------
+            # Vérification page
+            # ------------------------------------------------
+
+            body_text = await page.locator("body").inner_text()
+
+            print("\n========== CONTENU PAGE ==========")
+            print(body_text[:3000])
+
+            # ------------------------------------------------
+            # Navigation vers authentification
+            # ------------------------------------------------
+
+            auth_link = page.get_by_text(
+                "Authentification",
+                exact=True
+            )
+
+            if await auth_link.count() > 0:
+
+                print("➡️ Navigation vers Authentification")
+
+                await auth_link.first.click()
+
+                await page.wait_for_timeout(2000)
+
+            else:
+
+                print(
+                    "⚠️ Lien Authentification non trouvé, "
+                    "la page actuelle est peut-être déjà la page de connexion."
+                )
+
+            # ------------------------------------------------
+            # Vérification formulaire
+            # ------------------------------------------------
+
+            body_text = await page.locator("body").inner_text()
+
+            print("\n========== PAGE AUTHENTIFICATION ==========")
+            print(body_text[:3000])
+
+            # ------------------------------------------------
+            # Recherche champs
+            # ------------------------------------------------
+
+            email_input = page.locator(
+                'input[type="email"]'
+            ).first
+
+            if await email_input.count() == 0:
+
+                email_input = page.locator(
+                    'input[placeholder*="mail" i]'
+                ).first
+
+            password_input = page.locator(
+                'input[type="password"]'
+            ).first
+
+            # ------------------------------------------------
+            # Vérification
+            # ------------------------------------------------
+
+            assert await email_input.count() > 0, (
+                "❌ Champ email introuvable"
+            )
+
+            assert await password_input.count() > 0, (
+                "❌ Champ mot de passe introuvable"
+            )
+
+            print("✅ Champs de connexion trouvés")
+
+            # ------------------------------------------------
+            # Remplissage
+            # ------------------------------------------------
+
+            await email_input.fill(TEST_EMAIL)
+
+            await password_input.fill(TEST_PASSWORD)
+
+            print("✅ Identifiants renseignés")
+
+            # ------------------------------------------------
+            # Bouton connexion
+            # ------------------------------------------------
+
+            login_button = page.get_by_role(
+                "button",
+                name="Connexion"
+            )
+
+            if await login_button.count() == 0:
+
+                login_button = page.get_by_text(
+                    "Connexion",
+                    exact=True
+                )
+
+            assert await login_button.count() > 0, (
+                "❌ Bouton Connexion introuvable"
+            )
+
+            print("✅ Bouton Connexion trouvé")
+
+            # ------------------------------------------------
+            # Connexion
+            # ------------------------------------------------
+
+            await login_button.first.click()
+
+            print("➡️ Connexion en cours...")
+
+            # ------------------------------------------------
+            # Attente résultat
+            # ------------------------------------------------
+
+            await page.wait_for_timeout(2000)
+
+            body_text = await page.locator("body").inner_text()
+
+            print("\n========== APRÈS CONNEXION ==========")
+            print(body_text[:3000])
+
+            # ------------------------------------------------
+            # Vérification succès
+            # ------------------------------------------------
+
+            success = (
+                "Connexion réussie" in body_text
+                or "Bienvenue" in body_text
+                or "Déconnexion" in body_text
+                or "Se déconnecter" in body_text
+            )
+
+            # ------------------------------------------------
+            # Vérification erreur
+            # ------------------------------------------------
+
+            error_messages = [
+                "Identifiants incorrects",
+                "Connexion échouée",
+                "Erreur de connexion",
+                "Unauthorized",
+                "401",
+                "Invalid credentials",
+            ]
+
+            detected_errors = [
+                error
+                for error in error_messages
+                if error in body_text
+            ]
+
+            if detected_errors:
+
+                print(
+                    f"❌ Erreur de connexion détectée : "
+                    f"{detected_errors}"
+                )
+
+            assert not detected_errors, (
+                f"❌ La connexion a échoué : {detected_errors}"
+            )
+
+            assert success, (
+                "❌ Aucun indicateur de connexion réussie "
+                "n'a été trouvé."
+            )
+
+            print("✅ Connexion réussie")
+
+        finally:
+
+            # ------------------------------------------------
+            # Screenshot en cas de problème
+            # ------------------------------------------------
+
+            try:
+
+                await page.screenshot(
+                    path="login_local_result.png",
+                    full_page=True
+                )
+
+                print(
+                    "📸 Screenshot enregistré : "
+                    "login_local_result.png"
+                )
+
+            except Exception:
+                pass
+
+            await browser.close()
+
+            print("========== PLAYWRIGHT TERMINÉ ==========")
