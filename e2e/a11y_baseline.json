@@ -1,0 +1,20 @@
+{
+  "_comment": "Violations RGAA/WCAG connues à la mise en place des tests E2E. Le test échoue sur toute NOUVELLE violation (régression). Objectif : résorber progressivement cette liste jusqu'à la vider. Plusieurs proviennent du chrome de Streamlit (boutons d'interface du framework).",
+  "known_violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "note": "Attributs ARIA non supportés sur des éléments du framework Streamlit."
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "note": "Boutons d'interface Streamlit (repli sidebar, menu) sans intitulé accessible."
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "note": "Contraste insuffisant à corriger (thème) pour atteindre le ratio WCAG AA 4.5:1."
+    }
+  ]
+}
