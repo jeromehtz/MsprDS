@@ -1,7 +1,7 @@
 import os
 import requests
-
-from playwright.sync_api import sync_playwright
+import pytest
+from playwright.async_api import async_playwright
 
 
 # ============================================================
@@ -47,22 +47,21 @@ def check_api():
 
         print(f"STATUS : {response.status_code}")
 
-        if response.status_code != 200:
-
-            raise AssertionError(
-                f"\n❌ API inaccessible sur {API_URL}\n"
-                f"Status HTTP : {response.status_code}\n"
-                f"Réponse : {response.text}"
-            )
+        assert response.status_code == 200, (
+            f"\n❌ API inaccessible\n"
+            f"URL : {API_URL}\n"
+            f"Status : {response.status_code}\n"
+            f"Réponse : {response.text}"
+        )
 
         print("✅ API disponible")
 
     except requests.RequestException as e:
 
-        raise AssertionError(
-            f"\n❌ API inaccessible sur {API_URL}\n"
-            f"Erreur : {e}\n\n"
-            f"Assure-toi que FastAPI est lancé avant le test."
+        pytest.fail(
+            f"\n❌ Impossible de joindre l'API\n"
+            f"URL : {API_URL}\n"
+            f"Erreur : {e}"
         )
 
 
@@ -70,7 +69,8 @@ def check_api():
 # TEST LOGIN
 # ============================================================
 
-def test_login_local():
+@pytest.mark.asyncio
+async def test_login_local():
 
     print("\n")
     print("=" * 60)
@@ -78,58 +78,60 @@ def test_login_local():
     print("=" * 60)
 
     # --------------------------------------------------------
-    # Vérification API
+    # API
     # --------------------------------------------------------
 
     check_api()
 
     # --------------------------------------------------------
-    # Playwright
+    # PLAYWRIGHT ASYNC
     # --------------------------------------------------------
 
     print("========== DÉMARRAGE PLAYWRIGHT ==========")
 
-    with sync_playwright() as p:
+    async with async_playwright() as p:
 
-        browser = p.chromium.launch(
+        browser = await p.chromium.launch(
             headless=True
         )
 
-        page = browser.new_page()
+        page = await browser.new_page()
 
         try:
 
             # ------------------------------------------------
-            # Ouverture Streamlit
+            # OUVERTURE STREAMLIT
             # ------------------------------------------------
 
             print(f"Ouverture : {BASE_URL}")
 
-            page.goto(
+            await page.goto(
                 BASE_URL,
                 wait_until="domcontentloaded",
                 timeout=30000
             )
 
-            # ------------------------------------------------
-            # Attente Streamlit
-            # ------------------------------------------------
-
-            page.wait_for_timeout(3000)
-
-            print(f"Titre : {page.title()}")
+            print("✅ Streamlit ouverte")
 
             # ------------------------------------------------
-            # Contenu initial
+            # ATTENTE
             # ------------------------------------------------
 
-            body_text = page.locator("body").inner_text()
+            await page.wait_for_timeout(3000)
+
+            print(f"Titre : {await page.title()}")
+
+            # ------------------------------------------------
+            # CONTENU INITIAL
+            # ------------------------------------------------
+
+            body_text = await page.locator("body").inner_text()
 
             print("\n========== CONTENU PAGE ==========")
             print(body_text[:3000])
 
             # ------------------------------------------------
-            # Navigation Authentification
+            # NAVIGATION AUTHENTIFICATION
             # ------------------------------------------------
 
             auth_link = page.get_by_text(
@@ -137,13 +139,13 @@ def test_login_local():
                 exact=True
             )
 
-            if auth_link.count() > 0:
+            if await auth_link.count() > 0:
 
                 print("➡️ Navigation vers Authentification")
 
-                auth_link.first.click()
+                await auth_link.first.click()
 
-                page.wait_for_timeout(2000)
+                await page.wait_for_timeout(2000)
 
             else:
 
@@ -152,10 +154,10 @@ def test_login_local():
                 )
 
             # ------------------------------------------------
-            # Contenu page authentification
+            # CONTENU AUTH
             # ------------------------------------------------
 
-            body_text = page.locator("body").inner_text()
+            body_text = await page.locator("body").inner_text()
 
             print(
                 "\n========== PAGE AUTHENTIFICATION =========="
@@ -164,21 +166,21 @@ def test_login_local():
             print(body_text[:3000])
 
             # ------------------------------------------------
-            # Recherche champ email
+            # CHAMP EMAIL
             # ------------------------------------------------
 
             email_input = page.locator(
                 'input[type="email"]'
             ).first
 
-            if email_input.count() == 0:
+            if await email_input.count() == 0:
 
                 email_input = page.locator(
                     'input[placeholder*="mail" i]'
                 ).first
 
             # ------------------------------------------------
-            # Recherche mot de passe
+            # CHAMP PASSWORD
             # ------------------------------------------------
 
             password_input = page.locator(
@@ -186,31 +188,31 @@ def test_login_local():
             ).first
 
             # ------------------------------------------------
-            # Vérification champs
+            # VÉRIFICATION CHAMPS
             # ------------------------------------------------
 
-            assert email_input.count() > 0, (
+            assert await email_input.count() > 0, (
                 "❌ Champ email introuvable"
             )
 
-            assert password_input.count() > 0, (
+            assert await password_input.count() > 0, (
                 "❌ Champ mot de passe introuvable"
             )
 
             print("✅ Champs de connexion trouvés")
 
             # ------------------------------------------------
-            # Remplissage
+            # REMPLISSAGE
             # ------------------------------------------------
 
-            email_input.fill(TEST_EMAIL)
+            await email_input.fill(TEST_EMAIL)
 
-            password_input.fill(TEST_PASSWORD)
+            await password_input.fill(TEST_PASSWORD)
 
             print("✅ Identifiants renseignés")
 
             # ------------------------------------------------
-            # Bouton connexion
+            # BOUTON CONNEXION
             # ------------------------------------------------
 
             login_button = page.get_by_role(
@@ -218,34 +220,34 @@ def test_login_local():
                 name="Connexion"
             )
 
-            if login_button.count() == 0:
+            if await login_button.count() == 0:
 
                 login_button = page.get_by_text(
                     "Connexion",
                     exact=True
                 )
 
-            assert login_button.count() > 0, (
+            assert await login_button.count() > 0, (
                 "❌ Bouton Connexion introuvable"
             )
 
             print("✅ Bouton Connexion trouvé")
 
             # ------------------------------------------------
-            # Connexion
+            # CONNEXION
             # ------------------------------------------------
 
-            login_button.first.click()
+            await login_button.first.click()
 
             print("➡️ Connexion en cours...")
 
             # ------------------------------------------------
-            # Attente résultat
+            # ATTENTE RÉSULTAT
             # ------------------------------------------------
 
-            page.wait_for_timeout(3000)
+            await page.wait_for_timeout(3000)
 
-            body_text = page.locator("body").inner_text()
+            body_text = await page.locator("body").inner_text()
 
             print(
                 "\n========== APRÈS CONNEXION =========="
@@ -254,18 +256,7 @@ def test_login_local():
             print(body_text[:3000])
 
             # ------------------------------------------------
-            # Détection succès
-            # ------------------------------------------------
-
-            success = (
-                "Connexion réussie" in body_text
-                or "Bienvenue" in body_text
-                or "Déconnexion" in body_text
-                or "Se déconnecter" in body_text
-            )
-
-            # ------------------------------------------------
-            # Détection erreurs
+            # ERREURS
             # ------------------------------------------------
 
             error_messages = [
@@ -286,13 +277,29 @@ def test_login_local():
             if detected_errors:
 
                 print(
-                    "❌ Erreur de connexion détectée : "
+                    "❌ Erreur détectée : "
                     f"{detected_errors}"
                 )
 
             assert not detected_errors, (
                 f"❌ La connexion a échoué : "
                 f"{detected_errors}"
+            )
+
+            # ------------------------------------------------
+            # SUCCÈS
+            # ------------------------------------------------
+
+            success_indicators = [
+                "Connexion réussie",
+                "Bienvenue",
+                "Déconnexion",
+                "Se déconnecter",
+            ]
+
+            success = any(
+                indicator in body_text
+                for indicator in success_indicators
             )
 
             assert success, (
@@ -305,25 +312,32 @@ def test_login_local():
         finally:
 
             # ------------------------------------------------
-            # Screenshot
+            # SCREENSHOT
             # ------------------------------------------------
 
             try:
 
-                page.screenshot(
+                await page.screenshot(
                     path="login_local_result.png",
                     full_page=True
                 )
 
                 print(
-                    "📸 Screenshot enregistré : "
+                    "📸 Screenshot : "
                     "login_local_result.png"
                 )
 
-            except Exception:
-                pass
+            except Exception as e:
 
-            browser.close()
+                print(
+                    f"⚠️ Screenshot impossible : {e}"
+                )
+
+            # ------------------------------------------------
+            # FERMETURE
+            # ------------------------------------------------
+
+            await browser.close()
 
             print(
                 "========== PLAYWRIGHT TERMINÉ =========="
