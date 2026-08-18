@@ -9,7 +9,7 @@ python-dotenv
 prometheus_client
 python-multipart
 pandas
-numpy
+numpy==2.2.6
 scikit-learn
 xgboost==3.2.0
 mlflow
