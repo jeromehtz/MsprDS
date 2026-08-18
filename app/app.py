@@ -66,11 +66,22 @@ def api_post(endpoint, data):
     if st.session_state.token:
         headers["Authorization"] = f"Bearer {st.session_state.token}"
 
-    return requests.post(
-        f"{API_URL}{endpoint}",
-        json=data,
-        headers=headers
-    )
+    print(f"\n>>> APPEL API : POST {API_URL}{endpoint}")
+    print("PAYLOAD :", data)
+
+    try:
+        res = requests.post(
+            f"{API_URL}{endpoint}",
+            json=data,
+            headers=headers,
+            timeout=5
+        )
+        print("STATUS :", res.status_code)
+        print("BODY   :", res.text)
+        return res
+    except Exception as e:
+        print("ERREUR REQUESTS :", repr(e))
+        raise
 
 
 # =====================
@@ -97,7 +108,7 @@ if menu == "🏠 Accueil":
 
     res = api_get("/")
 
-    if res.status_code == 200:
+    if res.status_code in (200, 201):
         st.success(res.json()["message"])
     else:
         st.error("API inaccessible")
@@ -123,32 +134,50 @@ elif menu == "🔐 Authentification":
         password = st.text_input("Mot de passe", type="password", key="login_password")
 
         if st.button("Se connecter"):
-            res = api_post("/auth/login", {
-                "username": username,
-                "password": password
-            })
+            if username and password :
+                res = api_post("/auth/login", {
+                    "username": username,
+                    "password": password
+                })
 
-            if res.status_code == 200:
-                st.session_state.token = res.json().get("access_token")
-                st.success("Connexion réussie")
+                if res.status_code in (200, 201):
+                    st.session_state.token = res.json().get("access_token")
+                    st.success("Connexion réussie")
+                else:
+                    st.error("Erreur de connexion")
             else:
-                st.error("Erreur de connexion")
+                st.error("Champs vides.")
 
     # ---------------- REGISTER ----------------
     with tab2:
         username_r = st.text_input("Nom d'utilisateur", key="register_username")
         password_r = st.text_input("Mot de passe", type="password", key="register_password")
-
         if st.button("Créer compte"):
-            res = api_post("/auth/register", {
-                "username": username_r,
-                "password": password_r
-            })
+            print("\n========== REGISTER DEBUG ==========")
+            print("username_r =", repr(username_r))
+            print("password_r =", repr(password_r))
+            print("username_r truthy =", bool(username_r))
+            print("password_r truthy =", bool(password_r))
+            print("====================================")
 
-            if res.status_code == 200:
-                st.success("Compte créé avec succès")
-            else:
-                st.error("Erreur création compte")
+            if username_r and password_r:
+                print(">>> Les deux champs sont remplis")
+
+                res = api_post("/auth/register", {
+                    "username": username_r,
+                    "password": password_r
+                })
+
+                print(">>> RETOUR REGISTER")
+                print("STATUS :", res.status_code)
+                print("BODY   :", res.text)
+
+                if res.status_code in (200, 201):
+                    st.success("Compte créé avec succès")
+                    print(">>> COMPTE CRÉÉ")
+                else:
+                    st.error("Erreur création compte")
+                    print(">>> ERREUR CREATION COMPTE")
 
 
 # =====================
@@ -191,7 +220,7 @@ elif menu == "🚆 Trajets":
 
         res = api_get("/trajets/", params=params)
 
-        if res.status_code == 200:
+        if res.status_code in (200, 201):
             data = res.json()
             df = pd.DataFrame(data)
 
@@ -277,7 +306,7 @@ elif menu == "🔮 Prédiction CO₂":
                 print("RESPONSE :", res.text)
                 print("==========================================\n")
 
-                if res.status_code == 200:
+                if res.status_code in (200, 201):
                     data = res.json()
 
                     st.subheader("Émissions par mode (g CO₂ / km)")
@@ -438,7 +467,7 @@ elif menu == "🧪 API Status":
 
     st.write("Status code:", res.status_code)
 
-    if res.status_code == 200:
+    if res.status_code in (200, 201):
         st.success("API en ligne 🚀")
         st.json(res.json())
     else:

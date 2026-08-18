@@ -50,7 +50,7 @@ services:
     depends_on:
       - api
     environment:
-      - API_URL=http://api:8000
+      API_URL: http://api:8000
     ports:
       - "8501:8501"
     volumes:
