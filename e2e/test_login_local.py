@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 import requests
 import re
-
+import os
 
 # ============================================================
 # CONFIGURATION
@@ -351,7 +351,7 @@ def test_login_local():
     print("\n========== DÉMARRAGE PLAYWRIGHT ==========")
     with sync_playwright() as p:
         browser = p.chromium.launch(
-            headless=False
+            headless=os.getenv("CI", "").lower() == "true"
         )
         page = browser.new_page()
         # ====================================================

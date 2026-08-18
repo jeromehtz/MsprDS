@@ -137,7 +137,9 @@ jobs:
 
       - name: Run E2E tests (Playwright)
         env:
+          CI: "true"
           STREAMLIT_URL: http://localhost:8501
+          API_URL: http://127.0.0.1:8000
           E2E_TEST_MODE: "1"
         run: |
           cd e2e
