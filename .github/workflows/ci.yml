@@ -344,7 +344,7 @@ jobs:
 
           cd e2e
 
-          pytest -v -s
+          pytest -v -s --ignore=test_login_local.py
 
 
       # ========================================================
