@@ -135,12 +135,119 @@ jobs:
             curl -sf http://localhost:8501/ && break || sleep 2
           done
 
-      - name: Run E2E tests (Playwright)
+      - name: Start services and run E2E tests
         env:
-          CI: "true"
-          STREAMLIT_URL: http://localhost:8501
+          DATABASE_URL: sqlite:///./e2e.db
+          SECRET_KEY: e2e-secret
+          ALGORITHM: HS256
           API_URL: http://127.0.0.1:8000
+          STREAMLIT_URL: http://127.0.0.1:8501
           E2E_TEST_MODE: "1"
         run: |
+          set -e
+
+          echo "=========================================="
+          echo "           DÉMARRAGE API"
+          echo "=========================================="
+
+          cd API
+
+          nohup python -m uvicorn main:app \
+            --host 127.0.0.1 \
+            --port 8000 \
+            > api.log 2>&1 &
+
+          API_PID=$!
+
+          echo "API PID = $API_PID"
+
+          cd ..
+
+          echo "⏳ Attente API..."
+
+          for i in $(seq 1 30); do
+            if curl -sf http://127.0.0.1:8000/ > /dev/null; then
+              echo "✅ API disponible"
+              break
+            fi
+
+            if ! kill -0 "$API_PID" 2>/dev/null; then
+              echo "❌ Le processus API est mort !"
+              echo ""
+              echo "========== API LOG =========="
+              cat API/api.log || true
+              exit 1
+            fi
+
+            sleep 1
+          done
+
+          echo ""
+          echo "========== VÉRIFICATION API =========="
+
+          if ! curl -v http://127.0.0.1:8000/; then
+            echo "❌ Impossible de joindre l'API"
+            echo ""
+            echo "========== API LOG =========="
+            cat API/api.log || true
+            exit 1
+          fi
+
+          echo ""
+          echo "=========================================="
+          echo "        DÉMARRAGE STREAMLIT"
+          echo "=========================================="
+
+          nohup streamlit run app/app.py \
+            --server.address 127.0.0.1 \
+            --server.port 8501 \
+            --server.headless true \
+            --logger.level error \
+            > streamlit.log 2>&1 &
+
+          STREAMLIT_PID=$!
+
+          echo "Streamlit PID = $STREAMLIT_PID"
+
+          echo "⏳ Attente Streamlit..."
+
+          for i in $(seq 1 30); do
+            if curl -sf http://127.0.0.1:8501/ > /dev/null; then
+              echo "✅ Streamlit disponible"
+              break
+            fi
+
+            if ! kill -0 "$STREAMLIT_PID" 2>/dev/null; then
+              echo "❌ Streamlit est mort !"
+              cat streamlit.log || true
+              exit 1
+            fi
+
+            sleep 1
+          done
+
+          echo ""
+          echo "=========================================="
+          echo "        VÉRIFICATION AVANT PYTEST"
+          echo "=========================================="
+
+          echo "API :"
+          curl -sf http://127.0.0.1:8000/ || true
+
+          echo ""
+          echo "Streamlit :"
+          curl -sf http://127.0.0.1:8501/ > /dev/null \
+            && echo "✅ Streamlit OK" \
+            || echo "❌ Streamlit KO"
+
+          echo ""
+          echo "Processus :"
+          ps aux | grep -E "uvicorn|streamlit" | grep -v grep || true
+
+          echo ""
+          echo "=========================================="
+          echo "             LANCEMENT PYTEST"
+          echo "=========================================="
+
           cd e2e
-          pytest
+          pytest -v -s
