@@ -91,7 +91,7 @@ jobs:
           sleep 5
           echo "✅ Frontend Streamlit démarrée avec succès"
 
-    e2e:
+  e2e:
     runs-on: ubuntu-latest
     needs: [test, test-frontend]
 
@@ -112,104 +112,33 @@ jobs:
           pip install -r e2e/requirements.txt
 
       - name: Install Playwright browser (chromium)
-        run: |
-          python -m playwright install --with-deps chromium
+        run: python -m playwright install --with-deps chromium
 
-      # ======================================================
-      # API
-      # ======================================================
-
-      - name: Start API
+      - name: Start API (SQLite)
         env:
           DATABASE_URL: sqlite:///./e2e.db
           SECRET_KEY: e2e-secret
           ALGORITHM: HS256
         run: |
           cd API
-
-          nohup uvicorn main:app \
-            --host 127.0.0.1 \
-            --port 8000 \
-            > api.log 2>&1 &
-
-          echo $! > api.pid
-
-          echo "⏳ Attente du démarrage de l'API..."
-
-          for i in $(seq 1 30); do
-            if curl -sf http://127.0.0.1:8000/ > /dev/null; then
-              echo "✅ API disponible"
-              break
-            fi
-
-            if [ "$i" -eq 30 ]; then
-              echo "❌ API inaccessible"
-              cat api.log
-              exit 1
-            fi
-
-            sleep 1
+          nohup uvicorn main:app --host 127.0.0.1 --port 8000 > api.log 2>&1 &
+          for i in $(seq 1 20); do
+            curl -sf http://127.0.0.1:8000/ && break || sleep 2
           done
-
-      # ======================================================
-      # STREAMLIT
-      # ======================================================
 
       - name: Start Streamlit frontend
         env:
           API_URL: http://127.0.0.1:8000
         run: |
-          nohup streamlit run app/app.py \
-            --server.address 127.0.0.1 \
-            --server.port 8501 \
-            --server.headless true \
-            --logger.level error \
-            > streamlit.log 2>&1 &
-
-          echo $! > streamlit.pid
-
-          echo "⏳ Attente du démarrage de Streamlit..."
-
-          for i in $(seq 1 30); do
-            if curl -sf http://127.0.0.1:8501/ > /dev/null; then
-              echo "✅ Streamlit disponible"
-              break
-            fi
-
-            if [ "$i" -eq 30 ]; then
-              echo "❌ Streamlit inaccessible"
-              cat streamlit.log
-              exit 1
-            fi
-
-            sleep 1
+          nohup streamlit run app/app.py --server.port 8501 --server.headless true --logger.level error > streamlit.log 2>&1 &
+          for i in $(seq 1 20); do
+            curl -sf http://localhost:8501/ && break || sleep 2
           done
-
-      # ======================================================
-      # PLAYWRIGHT
-      # ======================================================
 
       - name: Run E2E tests (Playwright)
         env:
           STREAMLIT_URL: http://localhost:8501
-          API_URL: http://127.0.0.1:8000
           E2E_TEST_MODE: "1"
         run: |
           cd e2e
-          pytest -v -s
-
-      # ======================================================
-      # LOGS EN CAS D'ÉCHEC
-      # ======================================================
-
-      - name: Display API logs
-        if: always()
-        run: |
-          echo "========== API LOG =========="
-          cat API/api.log || true
-
-      - name: Display Streamlit logs
-        if: always()
-        run: |
-          echo "========== STREAMLIT LOG =========="
-          cat streamlit.log || true
+          pytest
