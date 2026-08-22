@@ -6,8 +6,10 @@ from sqlalchemy.orm import Session
 from database import get_db
 from models.trajet import Trajet
 from schemas.trajet_schema import TrajetCreate, TrajetResponse
-
 from auth.dependencies import get_current_user
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(
     prefix="/trajets",
@@ -223,6 +225,7 @@ def _get_bc_trajets() -> list[dict]:
 
 
 def _get_local_trajets(
+    db: Session,
     year: Optional[int],
     service_type: Optional[str],
     origin_region: Optional[str],
@@ -230,78 +233,6 @@ def _get_local_trajets(
     search: Optional[str],
     limit: int,
 ) -> list[Trajet]:
-    query = SessionLocal = None
-    query = get_db()  # type: ignore
-    # fallback logic is intentionally not used; local DB route remains unchanged
-    return []
-
-
-@router.get("/filters")
-def get_trajet_filters(
-    db: Session = Depends(get_db),
-    current_user: str = Depends(get_current_user),
-):
-    """Valeurs distinctes disponibles pour alimenter les filtres de l'interface."""
-    if BC_ENABLED and BC_BASE_URL and BC_ACCESS_TOKEN:
-        trajets = _get_bc_trajets()
-
-        def _distinct(key):
-            return sorted({t[key] for t in trajets if t.get(key) is not None})
-
-        return {
-            "years": _distinct("year"),
-            "service_types": _distinct("type"),
-            "origin_regions": _distinct("origin_region"),
-            "destination_regions": _distinct("destination_region"),
-        }
-
-    def _distinct(column):
-        rows = db.query(column).distinct().all()
-        return sorted({r[0] for r in rows if r[0] is not None})
-
-    return {
-        "years": _distinct(Trajet.year),
-        "service_types": _distinct(Trajet.type),
-        "origin_regions": _distinct(Trajet.origin_region),
-        "destination_regions": _distinct(Trajet.destination_region),
-    }
-
-
-@router.get(
-    "/",
-    response_model=list[TrajetResponse]
-)
-def get_trajets(
-    db: Session = Depends(get_db),
-    current_user: str = Depends(get_current_user),
-    year: Optional[int] = None,
-    service_type: Optional[str] = None,
-    origin_region: Optional[str] = None,
-    destination_region: Optional[str] = None,
-    search: Optional[str] = Query(default=None, description="Filtre sur le nom des gares (origine ou destination)"),
-    limit: int = Query(default=500, ge=1, le=5000),
-):
-    """Liste des trajets, avec filtres optionnels (année, type de service, régions, recherche gare)."""
-    if BC_ENABLED and BC_BASE_URL and BC_ACCESS_TOKEN:
-        trajets = _get_bc_trajets()
-
-        if year is not None:
-            trajets = [t for t in trajets if t.get("year") == year]
-        if service_type:
-            trajets = [t for t in trajets if t.get("type") == service_type]
-        if origin_region:
-            trajets = [t for t in trajets if t.get("origin_region") == origin_region]
-        if destination_region:
-            trajets = [t for t in trajets if t.get("destination_region") == destination_region]
-        if search:
-            text = search.lower()
-            trajets = [
-                t for t in trajets
-                if text in (t.get("origin_station_name") or "").lower()
-                or text in (t.get("destination_station_name") or "").lower()
-            ]
-        return trajets[:limit]
-
     query = db.query(Trajet)
 
     if year is not None:
@@ -320,6 +251,86 @@ def get_trajets(
         )
 
     return query.limit(limit).all()
+
+def _get_local_trajet_filters(db: Session) -> dict:
+    def _distinct(column):
+        rows = db.query(column).distinct().all()
+        return sorted({r[0] for r in rows if r[0] is not None})
+
+    return {
+        "years": _distinct(Trajet.year),
+        "service_types": _distinct(Trajet.type),
+        "origin_regions": _distinct(Trajet.origin_region),
+        "destination_regions": _distinct(Trajet.destination_region),
+    }
+
+
+@router.get("/filters")
+def get_trajet_filters(
+    db: Session = Depends(get_db),
+    current_user: str = Depends(get_current_user),
+):
+    """Valeurs distinctes disponibles pour alimenter les filtres de l'interface."""
+    if BC_ENABLED and BC_BASE_URL and BC_ACCESS_TOKEN:
+        try:
+            trajets = _get_bc_trajets()
+
+            def _distinct(key):
+                return sorted({t[key] for t in trajets if t.get(key) is not None})
+
+            return {
+                "years": _distinct("year"),
+                "service_types": _distinct("type"),
+                "origin_regions": _distinct("origin_region"),
+                "destination_regions": _distinct("destination_region"),
+            }
+        except (requests.exceptions.RequestException, HTTPException, RuntimeError) as e:
+            logger.warning("BC indisponible pour /filters, fallback PostgreSQL: %s", e)
+
+    return _get_local_trajet_filters(db)
+
+
+@router.get(
+    "/",
+    response_model=list[TrajetResponse]
+)
+def get_trajets(
+    db: Session = Depends(get_db),
+    current_user: str = Depends(get_current_user),
+    year: Optional[int] = None,
+    service_type: Optional[str] = None,
+    origin_region: Optional[str] = None,
+    destination_region: Optional[str] = None,
+    search: Optional[str] = Query(default=None, description="Filtre sur le nom des gares (origine ou destination)"),
+    limit: int = Query(default=500, ge=1, le=5000),
+):
+    """Liste des trajets, avec filtres optionnels (année, type de service, régions, recherche gare)."""
+    if BC_ENABLED and BC_BASE_URL and BC_ACCESS_TOKEN:
+        try:
+            trajets = _get_bc_trajets()
+
+            if year is not None:
+                trajets = [t for t in trajets if t.get("year") == year]
+            if service_type:
+                trajets = [t for t in trajets if t.get("type") == service_type]
+            if origin_region:
+                trajets = [t for t in trajets if t.get("origin_region") == origin_region]
+            if destination_region:
+                trajets = [t for t in trajets if t.get("destination_region") == destination_region]
+            if search:
+                text = search.lower()
+                trajets = [
+                    t for t in trajets
+                    if text in (t.get("origin_station_name") or "").lower()
+                    or text in (t.get("destination_station_name") or "").lower()
+                ]
+            return trajets[:limit]
+        except (requests.exceptions.RequestException, HTTPException, RuntimeError) as e:
+            logger.warning("BC indisponible pour /trajets, fallback PostgreSQL: %s", e)
+
+    return _get_local_trajets(
+        db, year, service_type, origin_region, destination_region, search, limit
+    )
 
 
 @router.post("/")
